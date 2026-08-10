@@ -23,5 +23,8 @@
     { "id": "curse_of_the_tower", "name": "Curse of the Tower", "iconUrl": "images/items/collectibles_371_curseofthetower.png", "icon": "🗼", "enabled": true },
     { "id": "guppys_head", "name": "Guppy's Head", "iconUrl": "images/items/collectibles_145_guppyshead.png", "icon": "🐈", "enabled": false },
     {"id":"myreflection","name":"My Reflection","iconUrl":"images/items/collectibles_005_myreflection.png","icon":"👀","enabled":true},
-    {"id":"adollar","name":"A Dollar","iconUrl":"images/items/collectibles_018_adollar.png","icon":"💲","enabled":true}
+    {"id":"adollar","name":"A Dollar","iconUrl":"images/items/collectibles_018_adollar.png","icon":"💲","enabled":true},
+    {"id":"moneyispower","name":"Money = Power","iconUrl":"images/items/collectibles_109_moneyispower.png","icon":"🤑","enabled":true},
+    {"id":"saturnus","name":"Saturnus","iconUrl":"images/items/collectibles_595_saturnus.png","icon":"🪐","enabled":true},
+    {"id":"spiritsword","name":"Spirit Sword","iconUrl":"images/items/collectibles_579_spiritsword.png","icon":"⚔","enabled":true}
 ]
