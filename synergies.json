@@ -1,86 +1,86 @@
-const isaacSynergies = [
-    { 
-        id: 1, 
-        requiredItems: ['brimstone', 'spoon_bender'], 
-        title: 'Homing Blood Laser', 
-        type: 'OP / Broken', 
-        description: 'Lasers automatically curve towards and track enemies across the room.' 
+[
+    {
+        "id": 1,
+        "requiredItems": ["brimstone", "spoon_bender"],
+        "title": "Homing Blood Laser",
+        "type": "OP / Broken",
+        "description": "Lasers automatically curve towards and track enemies across the room."
     },
-    { 
-        id: 2, 
-        requiredItems: ['dr_fetus', 'ipecac', 'pyromaniac'], 
-        title: 'Immortal Bomb Master', 
-        type: 'OP / Broken', 
-        description: 'Explosions from bombs completely heal you instead of hurting you, granting infinite safety.' 
+    {
+        "id": 2,
+        "requiredItems": ["dr_fetus", "ipecac", "pyromaniac"],
+        "title": "Immortal Bomb Master",
+        "type": "OP / Broken",
+        "description": "Explosions from bombs completely heal you instead of hurting you, granting infinite safety."
     },
-    { 
-        id: 3, 
-        requiredItems: ['soy_milk', 'lump_of_coal'], 
-        title: 'High-Velocity Glass Cannon', 
-        type: 'Good Synergy', 
-        description: 'Distance scaling from Lump of Coal applies after Soy Milk math, creating massive DPS laser-like tears.' 
+    {
+        "id": 3,
+        "requiredItems": ["soy_milk", "lump_of_coal"],
+        "title": "High-Velocity Glass Cannon",
+        "type": "Good Synergy",
+        "description": "Distance scaling from Lump of Coal applies after Soy Milk math, creating massive DPS laser-like tears."
     },
-    { 
-        id: 4, 
-        requiredItems: ['brimstone', 'tammy_head'], 
-        title: 'Room-Wiping Blast', 
-        type: 'OP / Broken', 
-        description: 'Using Tammy\'s Head fires giant Brimstone lasers in 360 degrees, clearing most rooms instantly.' 
+    {
+        "id": 4,
+        "requiredItems": ["brimstone", "tammy_head"],
+        "title": "Room-Wiping Blast",
+        "type": "OP / Broken",
+        "description": "Using Tammy's Head fires giant Brimstone lasers in 360 degrees, clearing most rooms instantly."
     },
-    { 
-        id: 5, 
-        requiredItems: ['tiny_planet', 'lost_contact'], 
-        title: 'Orbiting Shield', 
-        type: 'Good Synergy', 
-        description: 'Tears orbit permanently around Isaac, blocking incoming enemy projectiles like a shield.' 
+    {
+        "id": 5,
+        "requiredItems": ["tiny_planet", "lost_contact"],
+        "title": "Orbiting Shield",
+        "type": "Good Synergy",
+        "description": "Tears orbit permanently around Isaac, blocking incoming enemy projectiles like a shield."
     },
-    { 
-        id: 6, 
-        requiredItems: ['ludovico', 'ipecac'], 
-        title: 'Sluggish Explosive Ludo', 
-        type: 'Ruined / Bad', 
-        description: 'Massively tanks tick speed and fire rate, ruining your damage output despite the cool concept.' 
+    {
+        "id": 6,
+        "requiredItems": ["ludovico", "ipecac"],
+        "title": "Sluggish Explosive Ludo",
+        "type": "Ruined / Bad",
+        "description": "Massively tanks tick speed and fire rate, ruining your damage output despite the cool concept."
     },
-    { 
-        id: 7, 
-        requiredItems: ['c_section', 'brimstone'], 
-        title: 'Laser Fetuses', 
-        type: 'OP / Broken', 
-        description: 'Spawned fetuses fire out continuous Brimstone lasers, covering the screen in deadly crossfire.' 
+    {
+        "id": 7,
+        "requiredItems": ["c_section", "brimstone"],
+        "title": "Laser Fetuses",
+        "type": "OP / Broken",
+        "description": "Spawned fetuses fire out continuous Brimstone lasers, covering the screen in deadly crossfire."
     },
-    { 
-        id: 8, 
-        requiredItems: ['moms_knife', 'brimstone'], 
-        title: 'Brimstone Knife Beam', 
-        type: 'OP / Broken', 
-        description: 'Replaces standard knife throw with a powerful laser beam loaded with flying knives.' 
+    {
+        "id": 8,
+        "requiredItems": ["moms_knife", "brimstone"],
+        "title": "Brimstone Knife Beam",
+        "type": "OP / Broken",
+        "description": "Replaces standard knife throw with a powerful laser beam loaded with flying knives."
     },
-    { 
-        id: 9, 
-        requiredItems: ['moms_knife', 'mutant_spider'], 
-        title: 'Quad Knife Fan', 
-        type: 'Good Synergy', 
-        description: 'Fires a wide fan of multiple knives simultaneously for massive upfront burst damage.' 
+    {
+        "id": 9,
+        "requiredItems": ["moms_knife", "mutant_spider"],
+        "title": "Quad Knife Fan",
+        "type": "Good Synergy",
+        "description": "Fires a wide fan of multiple knives simultaneously for massive upfront burst damage."
     },
-    { 
-        id: 10, 
-        requiredItems: ['curse_of_the_tower', 'safety_scissors'], 
-        title: 'Infinite Safe Bombs', 
-        type: 'OP / Broken', 
-        description: 'Troll bombs spawned by taking damage can be safely defused to grant you free standard bombs instead of blowing you up.' 
+    {
+        "id": 10,
+        "requiredItems": ["curse_of_the_tower", "safety_scissors"],
+        "title": "Infinite Safe Bombs",
+        "type": "OP / Broken",
+        "description": "Troll bombs spawned by taking damage can be safely defused to grant you free standard bombs instead of blowing you up."
     },
-    { 
-        id: 11, 
-        requiredItems: ['ghost_pepper', 'sacred_heart'], 
-        title: 'Divine Fireballs', 
-        type: 'Good Synergy', 
-        description: 'High luck scaling and homing properties make spawned ghost flames deal devastating fiery damage.' 
+    {
+        "id": 11,
+        "requiredItems": ["ghost_pepper", "sacred_heart"],
+        "title": "Divine Fireballs",
+        "type": "Good Synergy",
+        "description": "High luck scaling and homing properties make spawned ghost flames deal devastating fiery damage."
     },
-    { 
-        id: 12, 
-        requiredItems: ['tech_x', 'spoon_bender'], 
-        title: 'Homing Laser Rings', 
-        type: 'Good Synergy', 
-        description: 'Tech X laser rings gracefully curve to home in on targets.' 
+    {
+        "id": 12,
+        "requiredItems": ["tech_x", "spoon_bender"],
+        "title": "Homing Laser Rings",
+        "type": "Good Synergy",
+        "description": "Tech X laser rings gracefully curve to home in on targets."
     }
-];
+]
