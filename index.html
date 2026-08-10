@@ -33,6 +33,12 @@
         h1, h2, h3, .font-cinzel { font-family: 'Cinzel', serif; }
         [x-cloak] { display: none !important; }
 
+        /* Фікс для чітких піксельних іконок без "мила" */
+        img {
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
         .custom-tooltip {
             visibility: hidden;
             opacity: 0;
