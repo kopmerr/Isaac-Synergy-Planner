@@ -61,7 +61,7 @@
                 <span class="text-xs bg-red-950 text-red-400 border border-red-800 px-2 py-0.5 rounded-full font-semibold">Repentance+ JSON Edition</span>
             </div>
             <div>
-                <span class="text-xs text-gray-400" x-text="isLoading ? 'Loading JSON data...' : items.length + ' items loaded'"></span>
+                <span class="text-xs text-gray-400" x-text="isLoading ? 'Loading JSON data...' : filteredItems.length + ' items available'"></span>
             </div>
         </div>
     </header>
@@ -203,9 +203,13 @@
                     }
                 },
 
+                // Фільтрація предметів: враховує статус enabled та пошуковий запит
                 get filteredItems() {
-                    if (!this.searchQuery) return this.items;
-                    return this.items.filter(i => i.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
+                    // Залишаємо тільки ті предмети, у яких enabled не дорівнює false
+                    let activeList = this.items.filter(i => i.enabled !== false);
+
+                    if (!this.searchQuery) return activeList;
+                    return activeList.filter(i => i.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
                 },
 
                 getItem(id) {
