@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "requiredItems": ["brimstone", "moms_knife"],
+        "title": "Brimstone Knife Beam",
+        "type": "OP / Broken",
+        "description": "Replaces standard knife throw with a powerful laser beam."
+    }
+]
