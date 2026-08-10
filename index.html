@@ -227,34 +227,33 @@
                     }
                 },
 
-                // Виправлена перевірка: підсвічує предмет тільки якщо всі інші предмети синергії УЖЕ вибрані
+                // Виправлена строга перевірка підсвічування
                 getItemSynergyState(itemId) {
-                    if (this.selectedItems.length === 0) return null;
-
-                    let matchingSynergies = this.synergies.filter(syn => {
-                        if (!syn.requiredItems || !syn.requiredItems.includes(itemId)) return false;
-
-                        // Перевіряємо, чи всі інші предмети синергії (окрім поточного) вже є у вибраних
-                        let otherItems = syn.requiredItems.filter(id => id !== itemId);
+                    const relevantSynergies = this.synergies.filter(s => s.requiredItems && s.requiredItems.includes(itemId));
+                    
+                    for (let syn of relevantSynergies) {
+                        // Чи всі вже вибрані предмети в інвентарі повністю входять саме в цю синергію?
+                        const fitsInSyn = this.selectedItems.every(selectedId => syn.requiredItems.includes(selectedId));
                         
-                        // Якщо в синергії є інші предмети, і ВСІ вони вибрані гравцем — підсвічуємо
-                        if (otherItems.length === 0) return false;
-                        return otherItems.every(reqId => this.selectedItems.includes(reqId));
-                    });
-
-                    if (matchingSynergies.length === 0) return null;
-
-                    // Пріоритет кольорів
-                    if (matchingSynergies.some(s => s.type && (s.type.toLowerCase().includes('op') || s.type.toLowerCase().includes('broken')))) {
-                        return 'blue';
+                        if (fitsInSyn) {
+                            // Перевіряємо, чи синергія ще не заповнена повністю
+                            const notYetCompleted = !syn.requiredItems.every(reqId => this.selectedItems.includes(reqId));
+                            
+                            if (notYetCompleted) {
+                                if (syn.type && (syn.type.toLowerCase().includes('op') || syn.type.toLowerCase().includes('broken'))) {
+                                    return 'blue';
+                                }
+                                if (syn.type && syn.type.toLowerCase().includes('good')) {
+                                    return 'green';
+                                }
+                                if (syn.type && (syn.type.toLowerCase().includes('ruined') || syn.type.toLowerCase().includes('bad'))) {
+                                    return 'yellow';
+                                }
+                                return 'green';
+                            }
+                        }
                     }
-                    if (matchingSynergies.some(s => s.type && s.type.toLowerCase().includes('good'))) {
-                        return 'green';
-                    }
-                    if (matchingSynergies.some(s => s.type && (s.type.toLowerCase().includes('ruined') || s.type.toLowerCase().includes('bad')))) {
-                        return 'yellow';
-                    }
-                    return 'green';
+                    return null;
                 },
 
                 get activeSynergies() {
