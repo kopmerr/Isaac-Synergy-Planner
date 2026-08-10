@@ -1,5 +1,5 @@
 [
-    { "id": "brimstone", "name": "Brimstone", "iconUrl": "https://static.wikia.nocookie.net/bindingofisaac/images/a/a4/118collectibles.png/revision/latest?cb=20181213064559&path-prefix=ru", "icon": "🩸" },
+    { "id": "brimstone", "name": "Brimstone", "iconUrl": "[https://static.wikia.nocookie.net/bindingofisaac/images/a/a4/118collectibles.png/revision/latest?cb=20181213064559&path-prefix=ru]", "icon": "🩸" },
     { "id": "spoon_bender", "name": "Spoon Bender", "iconUrl": "", "icon": "🥄" },
     { "id": "dr_fetus", "name": "Dr. Fetus", "iconUrl": "", "icon": "💣" },
     { "id": "ipecac", "name": "Ipecac", "iconUrl": "", "icon": "🟢" },
