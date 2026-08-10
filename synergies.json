@@ -84,10 +84,17 @@
         "description": "Tech X laser rings gracefully curve to home in on targets." 
     },
     { 
-        "id": 12, 
+        "id": 13, 
         "requiredItems": ["pyromaniac", "curse_of_the_tower"], 
         "title": "Explosive Self-Care", 
         "type": "Good Synergy", 
         "description": "Getting hit triggers Curse of the Tower, spawning a cluster of ticking bombs right around Tainted Magdalene. Thanks to Pyromaniac, every single one of those explosions is completely negated and instead heals her. This creates an aggressive, self-sustaining loop where taking damage actually restores your health and clears the room in a chain of friendly explosions." 
+    },
+    {
+    "id": 14,
+    "requiredItems": ["c_section", "spiritsword"],
+    "title": "Womb Swarm",
+    "type": "Good Synergy",
+    "description": "Fires fetus pods that lash out alongside sword swings, creating a chaotic storm of slashing melee attacks and fetal energy."
     }
 ]
