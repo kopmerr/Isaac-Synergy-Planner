@@ -227,21 +227,24 @@
                     }
                 },
 
-                // Перевірка синергії для не вибраних предметів
+                // Виправлена перевірка: підсвічує предмет тільки якщо всі інші предмети синергії УЖЕ вибрані
                 getItemSynergyState(itemId) {
                     if (this.selectedItems.length === 0) return null;
 
-                    // Шукаємо синергії, які спрацюють, якщо додати цей item до вже вибраних
                     let matchingSynergies = this.synergies.filter(syn => {
                         if (!syn.requiredItems || !syn.requiredItems.includes(itemId)) return false;
-                        // Перевіряємо, чи всі інші предмети цієї синергії вже є у вибраних
+
+                        // Перевіряємо, чи всі інші предмети синергії (окрім поточного) вже є у вибраних
                         let otherItems = syn.requiredItems.filter(id => id !== itemId);
+                        
+                        // Якщо в синергії є інші предмети, і ВСІ вони вибрані гравцем — підсвічуємо
+                        if (otherItems.length === 0) return false;
                         return otherItems.every(reqId => this.selectedItems.includes(reqId));
                     });
 
                     if (matchingSynergies.length === 0) return null;
 
-                    // Пріоритет кольорів за типом синергії
+                    // Пріоритет кольорів
                     if (matchingSynergies.some(s => s.type && (s.type.toLowerCase().includes('op') || s.type.toLowerCase().includes('broken')))) {
                         return 'blue';
                     }
@@ -251,7 +254,7 @@
                     if (matchingSynergies.some(s => s.type && (s.type.toLowerCase().includes('ruined') || s.type.toLowerCase().includes('bad')))) {
                         return 'yellow';
                     }
-                    return 'green'; // дефолтний колір для інших типів
+                    return 'green';
                 },
 
                 get activeSynergies() {
