@@ -92,7 +92,13 @@
                     <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-3 max-h-96 overflow-y-auto overflow-x-hidden pr-1">
                         <template x-for="item in filteredItems" :key="item.id">
                             <div @click="toggleItem(item.id)" 
-                                 :class="selectedItems.includes(item.id) ? 'border-red-600 bg-red-950/40 ring-2 ring-red-600/50' : 'border-isaac-border bg-isaac-dark hover:border-gray-500'"
+                                 :class="{
+                                     'border-red-600 bg-red-950/40 ring-2 ring-red-600/50': selectedItems.includes(item.id),
+                                     'border-blue-500 bg-blue-950/40 ring-2 ring-blue-500/50': !selectedItems.includes(item.id) && getItemSynergyState(item.id) === 'blue',
+                                     'border-green-500 bg-green-950/40 ring-2 ring-green-500/50': !selectedItems.includes(item.id) && getItemSynergyState(item.id) === 'green',
+                                     'border-yellow-500 bg-yellow-950/40 ring-2 ring-yellow-500/50': !selectedItems.includes(item.id) && getItemSynergyState(item.id) === 'yellow',
+                                     'border-isaac-border bg-isaac-dark hover:border-gray-500': !selectedItems.includes(item.id) && !getItemSynergyState(item.id)
+                                 }"
                                  class="item-card border rounded-lg aspect-square flex flex-col items-center justify-center cursor-pointer transition relative group">
                                  
                                 <div class="custom-tooltip absolute inset-x-1 bottom-1 bg-isaac-card/95 border border-red-900 text-gray-200 text-[9px] font-medium px-1 py-1 rounded text-center shadow-md z-20 truncate">
@@ -203,11 +209,8 @@
                     }
                 },
 
-                // Фільтрація предметів: враховує статус enabled та пошуковий запит
                 get filteredItems() {
-                    // Залишаємо тільки ті предмети, у яких enabled не дорівнює false
                     let activeList = this.items.filter(i => i.enabled !== false);
-
                     if (!this.searchQuery) return activeList;
                     return activeList.filter(i => i.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
                 },
@@ -222,6 +225,33 @@
                     } else {
                         this.selectedItems.push(id);
                     }
+                },
+
+                // Перевірка синергії для не вибраних предметів
+                getItemSynergyState(itemId) {
+                    if (this.selectedItems.length === 0) return null;
+
+                    // Шукаємо синергії, які спрацюють, якщо додати цей item до вже вибраних
+                    let matchingSynergies = this.synergies.filter(syn => {
+                        if (!syn.requiredItems || !syn.requiredItems.includes(itemId)) return false;
+                        // Перевіряємо, чи всі інші предмети цієї синергії вже є у вибраних
+                        let otherItems = syn.requiredItems.filter(id => id !== itemId);
+                        return otherItems.every(reqId => this.selectedItems.includes(reqId));
+                    });
+
+                    if (matchingSynergies.length === 0) return null;
+
+                    // Пріоритет кольорів за типом синергії
+                    if (matchingSynergies.some(s => s.type && (s.type.toLowerCase().includes('op') || s.type.toLowerCase().includes('broken')))) {
+                        return 'blue';
+                    }
+                    if (matchingSynergies.some(s => s.type && s.type.toLowerCase().includes('good'))) {
+                        return 'green';
+                    }
+                    if (matchingSynergies.some(s => s.type && (s.type.toLowerCase().includes('ruined') || s.type.toLowerCase().includes('bad')))) {
+                        return 'yellow';
+                    }
+                    return 'green'; // дефолтний колір для інших типів
                 },
 
                 get activeSynergies() {
