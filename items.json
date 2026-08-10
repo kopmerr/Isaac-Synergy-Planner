@@ -21,5 +21,7 @@
     { "id": "spindown_dice", "name": "Spindown Dice", "iconUrl": "images/items/collectibles_723_spindowndice.png", "icon": "🎲", "enabled": false },
     { "id": "ghost_pepper", "name": "Ghost Pepper", "iconUrl": "images/items/collectibles_495_ghostpepper.png", "icon": "🌶️", "enabled": false },
     { "id": "curse_of_the_tower", "name": "Curse of the Tower", "iconUrl": "images/items/collectibles_371_curseofthetower.png", "icon": "🗼", "enabled": true },
-    { "id": "guppys_head", "name": "Guppy's Head", "iconUrl": "images/items/collectibles_145_guppyshead.png", "icon": "🐈", "enabled": false }
+    { "id": "guppys_head", "name": "Guppy's Head", "iconUrl": "images/items/collectibles_145_guppyshead.png", "icon": "🐈", "enabled": false },
+    {"id":"myreflection","name":"My Reflection","iconUrl":"images/items/collectibles_005_myreflection.png","icon":"👀","enabled":true},
+    {"id":"adollar","name":"A Dollar","iconUrl":"images/items/collectibles_018_adollar.png","icon":"💲","enabled":true}
 ]
