@@ -184,7 +184,7 @@
                         ]);
 
                         if (!itemsRes.ok || !synsRes.ok) {
-                            throw new Error('Не вдалося завантажити JSON файли. Переконайся, що items.json та synergies.json лежать у тій самій па папці.');
+                            throw new Error('Не вдалося завантажити JSON файли.');
                         }
 
                         this.items = await itemsRes.json();
