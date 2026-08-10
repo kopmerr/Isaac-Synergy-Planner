@@ -227,16 +227,17 @@
                     }
                 },
 
-                // Виправлена строга перевірка підсвічування
+                // Перевірка підсвічування (не працює, якщо нічого не вибрано)
                 getItemSynergyState(itemId) {
+                    // Якщо в інвентарі немає жодного предмета — нічого не підсвічуємо
+                    if (this.selectedItems.length === 0) return null;
+
                     const relevantSynergies = this.synergies.filter(s => s.requiredItems && s.requiredItems.includes(itemId));
                     
                     for (let syn of relevantSynergies) {
-                        // Чи всі вже вибрані предмети в інвентарі повністю входять саме в цю синергію?
                         const fitsInSyn = this.selectedItems.every(selectedId => syn.requiredItems.includes(selectedId));
                         
                         if (fitsInSyn) {
-                            // Перевіряємо, чи синергія ще не заповнена повністю
                             const notYetCompleted = !syn.requiredItems.every(reqId => this.selectedItems.includes(reqId));
                             
                             if (notYetCompleted) {
