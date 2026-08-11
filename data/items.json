@@ -26,10 +26,10 @@
  {
   "id": "cricketshead",
   "gid": 4,
-  "name": "Bombs are Key",
+  "name": "Crickets Head",
   "icon": "images/items/collectibles_004_cricketshead.png",
   "quote": "",
-  "desc": "Swaps Isaac's number of bombs and keys · Golden bombs and keys are also swapped"
+  "desc": ""
  },
  {
   "id": "myreflection",
@@ -74,10 +74,10 @@
  {
   "id": "haloofflies",
   "gid": 10,
-  "name": "Wiggle Worm",
+  "name": "Halo of Flies",
   "icon": "images/items/collectibles_010_haloofflies.png",
   "quote": "Two non-damaging fly orbitals",
-  "desc": "↑ +0.4 Tears · Spectral tears · Isaac's tears move in waves"
+  "desc": ""
  },
  {
   "id": "1up",
@@ -114,18 +114,18 @@
  {
   "id": "heart",
   "gid": 15,
-  "name": "Lucky Rock",
+  "name": "<3",
   "icon": "images/items/collectibles_015_heart.png",
   "quote": "Full heal",
-  "desc": "Destroying rocks has a 33% chance to spawn a coin"
+  "desc": ""
  },
  {
   "id": "rawliver",
   "gid": 16,
-  "name": "Mom's Toenail",
+  "name": "Raw Liver",
   "icon": "images/items/collectibles_016_rawliver.png",
   "quote": "Full heal",
-  "desc": "Mom's Foot stomps a random spot in the room every 20 seconds"
+  "desc": ""
  },
  {
   "id": "skeletonkey",
@@ -154,25 +154,25 @@
  {
   "id": "transcendence",
   "gid": 20,
-  "name": "XIX - The Sun",
+  "name": "Transcendence",
   "icon": "images/items/collectibles_020_transcendence.png",
-  "quote": "Flight",
-  "desc": "Full health · Deals 100 damage to all enemies · Full mapping effect for the floor (except Super / Ultra Secret Room) · Removes Curse of Darkness"
+  "quote": "We all float down here...",
+  "desc": "Gives Isaac the ability to fly"
  },
  {
   "id": "thecompass",
   "gid": 21,
-  "name": "XX - Judgement",
+  "name": "The Compass",
   "icon": "images/items/collectibles_021_thecompass.png",
-  "quote": "Reveals special rooms",
-  "desc": "Spawns a Beggar · 33% chance for it to be a Devil Beggar · 5% chance for it to be a Key Master, Bomb Bum, Battery Bum, or Rotten Beggar"
+  "quote": "The end is near",
+  "desc": "Shows most icons on the map (Shops, Item Rooms, Boss Rooms etc.)"
  },
  {
   "id": "lunch",
   "gid": 22,
   "name": "Lunch",
   "icon": "images/items/collectibles_022_lunch.png",
-  "quote": "",
+  "quote": "HP up",
   "desc": "↑ +1 Health · Heals 1 heart"
  },
  {
