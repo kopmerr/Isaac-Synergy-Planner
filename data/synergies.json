@@ -1,0 +1,205 @@
+[
+ {
+  "id": "blood-nova",
+  "name": "Blood Nova",
+  "items": ["brimstone", "tammyshead"],
+  "conflicts": ["spiritsword"],
+  "desc": "Tammy's Head fires 10 Brimstone beams at once — the room dies instantly."
+ },
+ {
+  "id": "tech-brim",
+  "name": "Techno Brimstone",
+  "items": ["brimstone", "technology"],
+  "conflicts": ["momsknife", "spiritsword"],
+  "desc": "A constant heavy laser with no charge time: Technology firing with Brimstone power."
+ },
+ {
+  "id": "ludo-brim",
+  "name": "Guided Ring of Death",
+  "items": ["brimstone", "theludovicotechnique"],
+  "conflicts": ["drfetus"],
+  "desc": "A steerable blood ring you can park right on top of a boss."
+ },
+ {
+  "id": "techx-brim",
+  "name": "Rings of Hell",
+  "items": ["brimstone", "techx"],
+  "conflicts": ["momsknife"],
+  "desc": "Ring lasers gain Brimstone's damage and appearance."
+ },
+ {
+  "id": "sulfur-bomb",
+  "name": "Sulfur Bomb",
+  "items": ["brimstone", "ipecac"],
+  "conflicts": ["spiritsword"],
+  "desc": "The charged shot becomes a huge explosive sulfur ball with massive damage."
+ },
+ {
+  "id": "beam-trap",
+  "name": "Beam Trap",
+  "items": ["brimstone", "antigravity"],
+  "conflicts": ["spiritsword"],
+  "desc": "Hold fire to place hovering beams, then release them all at once."
+ },
+ {
+  "id": "void-ray",
+  "name": "Void Ray",
+  "items": ["brimstone", "mawofthevoid"],
+  "conflicts": [],
+  "desc": "Both charge together: a blood beam surrounded by a soul-stealing black ring."
+ },
+ {
+  "id": "exp-shotgun",
+  "name": "Explosive Shotgun",
+  "items": ["ipecac", "monstroslung"],
+  "conflicts": ["drfetus", "spiritsword"],
+  "desc": "A volley of 14 explosive shots. One charge — one deleted room."
+ },
+ {
+  "id": "safe-bomber",
+  "name": "Painless Bomber",
+  "items": ["ipecac", "pyromaniac"],
+  "conflicts": ["spiritsword"],
+  "desc": "Your explosive tears no longer hurt you — they heal you instead."
+ },
+ {
+  "id": "gatling",
+  "name": "Explosive Machine Gun",
+  "items": ["ipecac", "soymilk"],
+  "conflicts": ["drfetus", "spiritsword"],
+  "desc": "A rapid stream of tiny explosive tears. Chaos that works for you."
+ },
+ {
+  "id": "point-blank",
+  "name": "Point-Blank Nuke",
+  "items": ["ipecac", "proptosis"],
+  "conflicts": ["theludovicotechnique"],
+  "desc": "Triple-damage explosive tears up close — bosses melt in seconds."
+ },
+ {
+  "id": "straight-shot",
+  "name": "Straight Shot",
+  "items": ["ipecac", "tractorbeam"],
+  "conflicts": ["spiritsword"],
+  "desc": "Tractor Beam flattens Ipecac's arc into a safe, precise straight line."
+ },
+ {
+  "id": "guided-missiles",
+  "name": "Guided Missiles",
+  "items": ["ipecac", "sacredheart"],
+  "conflicts": ["spiritsword"],
+  "desc": "Homing explosive shots that chase enemies around corners."
+ },
+ {
+  "id": "heavy-ordnance",
+  "name": "Heavy Ordnance",
+  "items": ["ipecac", "polyphemus"],
+  "conflicts": ["spiritsword"],
+  "desc": "One colossal explosive shot with absurd combined damage."
+ },
+ {
+  "id": "blast-shield",
+  "name": "Blast Shield",
+  "items": ["ipecac", "hosthat"],
+  "conflicts": [],
+  "desc": "Host Hat blocks explosions — including your own Ipecac blasts."
+ },
+ {
+  "id": "spider-nest",
+  "name": "Spider Nest",
+  "items": ["theinnereye", "mutantspider", "2020"],
+  "conflicts": ["brimstone", "momsknife", "drfetus", "spiritsword"],
+  "desc": "A wall of 8+ tears every shot. Nothing gets through."
+ },
+ {
+  "id": "heaven",
+  "name": "Heaven's Wrath",
+  "items": ["sacredheart", "godhead"],
+  "conflicts": [],
+  "desc": "Homing divine tears with damage auras and enormous damage."
+ },
+ {
+  "id": "twin-halos",
+  "name": "Twin Halos",
+  "items": ["godhead", "2020"],
+  "conflicts": ["momsknife", "brimstone", "drfetus", "spiritsword"],
+  "desc": "Two Godhead tears — two overlapping damage auras per shot."
+ },
+ {
+  "id": "remote-fetus",
+  "name": "Remote Fetus",
+  "items": ["drfetus", "remotedetonator"],
+  "conflicts": [],
+  "desc": "Mine the whole room with bomb-tears and detonate everything with one press."
+ },
+ {
+  "id": "bomb-diet",
+  "name": "Bomb Diet",
+  "items": ["drfetus", "pyromaniac"],
+  "conflicts": [],
+  "desc": "Every bomb-tear that hits you heals you. Walk through your own minefield."
+ },
+ {
+  "id": "seeker-bombs",
+  "name": "Seeker Bombs",
+  "items": ["drfetus", "bobbybomb"],
+  "conflicts": [],
+  "desc": "Your bomb-tears home in on enemies by themselves."
+ },
+ {
+  "id": "danger-close",
+  "name": "Danger Close",
+  "items": ["epicfetus", "pyromaniac"],
+  "conflicts": [],
+  "desc": "Call in air strikes on your own position with zero risk."
+ },
+ {
+  "id": "holy-blade",
+  "name": "Seraph's Blade",
+  "items": ["spiritsword", "trisagion"],
+  "conflicts": [],
+  "desc": "Every sword swing fires beams of holy light across the room."
+ },
+ {
+  "id": "orbital-laser",
+  "name": "Orbital Laser",
+  "items": ["technology", "theludovicotechnique"],
+  "conflicts": ["momsknife"],
+  "desc": "The controlled tear projects a laser ring that damages everything around it."
+ },
+ {
+  "id": "chain-reaction",
+  "name": "Chain Reaction",
+  "items": ["haemolacria", "cricketsbody"],
+  "conflicts": ["drfetus", "spiritsword"],
+  "desc": "Bursting tears split, and the splits split again. A shrapnel storm."
+ },
+ {
+  "id": "endless-split",
+  "name": "Endless Split",
+  "items": ["theparasite", "cricketsbody"],
+  "conflicts": ["momsknife", "spiritsword"],
+  "desc": "Every tear fragments on impact into even more tears."
+ },
+ {
+  "id": "guppy",
+  "name": "Guppy Transformation",
+  "items": ["guppyshead", "guppyscollar", "guppystail"],
+  "conflicts": [],
+  "desc": "Three Guppy items turn Isaac into Guppy: flight + blue flies on every hit."
+ },
+ {
+  "id": "fun-guy",
+  "name": "Fun Guy Transformation",
+  "items": ["magicmushroom", "minimushroom", "oddmushroomlarge"],
+  "conflicts": [],
+  "desc": "Three mushroom items: +1 heart and the Fun Guy form."
+ },
+ {
+  "id": "beelzebub",
+  "name": "Beelzebub Transformation",
+  "items": ["skatole", "distantadmiration", "foreveralone"],
+  "conflicts": [],
+  "desc": "Three fly items: flight, and enemy flies become friendly."
+ }
+]
