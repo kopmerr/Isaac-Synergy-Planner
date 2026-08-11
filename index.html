@@ -469,8 +469,7 @@ function buildGrid(){
     b.setAttribute('aria-pressed','false');
     b.innerHTML = `
       <span class="quality">#${it.gid}</span>
-      ${iconImg(it.id,'icon',64)}
-      <span class="pedestal" aria-hidden="true"></span>
+      ${iconImg(it.id,'icon',56)}
       <span class="name">${it.name}</span>`;
     b.addEventListener('click', () => toggleItem(it.id));
     b.addEventListener('mouseenter', () => showTip(it, b));
