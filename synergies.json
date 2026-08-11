@@ -1,100 +1,205 @@
 [
-    { 
-        "id": 1, 
-        "requiredItems": ["brimstone", "spoon_bender"], 
-        "title": "Homing Blood Laser", 
-        "type": "OP / Broken", 
-        "description": "Lasers automatically curve towards and track enemies across the room." 
-    },
-    { 
-        "id": 2, 
-        "requiredItems": ["dr_fetus", "ipecac", "pyromaniac"], 
-        "title": "Immortal Bomb Master", 
-        "type": "OP / Broken", 
-        "description": "Explosions from bombs completely heal you instead of hurting you, granting infinite safety." 
-    },
-    { 
-        "id": 3, 
-        "requiredItems": ["soy_milk", "lump_of_coal"], 
-        "title": "High-Velocity Glass Cannon", 
-        "type": "Good Synergy", 
-        "description": "Distance scaling from Lump of Coal applies after Soy Milk math, creating massive DPS laser-like tears." 
-    },
-    { 
-        "id": 4, 
-        "requiredItems": ["brimstone", "tammy_head"], 
-        "title": "Room-Wiping Blast", 
-        "type": "OP / Broken", 
-        "description": "Using Tammy's Head fires giant Brimstone lasers in 360 degrees, clearing most rooms instantly." 
-    },
-    { 
-        "id": 5, 
-        "requiredItems": ["tiny_planet", "lost_contact"], 
-        "title": "Orbiting Shield", 
-        "type": "Good Synergy", 
-        "description": "Tears orbit permanently around Isaac, blocking incoming enemy projectiles like a shield." 
-    },
-    { 
-        "id": 6, 
-        "requiredItems": ["ludovico", "ipecac"], 
-        "title": "Sluggish Explosive Ludo", 
-        "type": "Ruined / Bad", 
-        "description": "Massively tanks tick speed and fire rate, ruining your damage output despite the cool concept." 
-    },
-    { 
-        "id": 7, 
-        "requiredItems": ["c_section", "brimstone"], 
-        "title": "Laser Fetuses", 
-        "type": "OP / Broken", 
-        "description": "Spawned fetuses fire out continuous Brimstone lasers, covering the screen in deadly crossfire." 
-    },
-    { 
-        "id": 8, 
-        "requiredItems": ["moms_knife", "brimstone"], 
-        "title": "Brimstone Knife Beam", 
-        "type": "OP / Broken", 
-        "description": "Replaces standard knife throw with a powerful laser beam loaded with flying knives." 
-    },
-    { 
-        "id": 9, 
-        "requiredItems": ["moms_knife", "mutant_spider"], 
-        "title": "Quad Knife Fan", 
-        "type": "Good Synergy", 
-        "description": "Fires a wide fan of multiple knives simultaneously for massive upfront burst damage." 
-    },
-    { 
-        "id": 10, 
-        "requiredItems": ["curse_of_the_tower", "safety_scissors"], 
-        "title": "Infinite Safe Bombs", 
-        "type": "OP / Broken", 
-        "description": "Troll bombs spawned by taking damage can be safely defused to grant you free standard bombs instead of blowing you up." 
-    },
-    { 
-        "id": 11, 
-        "requiredItems": ["ghost_pepper", "sacred_heart"], 
-        "title": "Divine Fireballs", 
-        "type": "Good Synergy", 
-        "description": "High luck scaling and homing properties make spawned ghost flames deal devastating fiery damage." 
-    },
-    { 
-        "id": 12, 
-        "requiredItems": ["tech_x", "spoon_bender"], 
-        "title": "Homing Laser Rings", 
-        "type": "Good Synergy", 
-        "description": "Tech X laser rings gracefully curve to home in on targets." 
-    },
-    { 
-        "id": 13, 
-        "requiredItems": ["pyromaniac", "curse_of_the_tower"], 
-        "title": "Explosive Self-Care", 
-        "type": "Good Synergy", 
-        "description": "Getting hit triggers Curse of the Tower, spawning a cluster of ticking bombs right around Tainted Magdalene. Thanks to Pyromaniac, every single one of those explosions is completely negated and instead heals her. This creates an aggressive, self-sustaining loop where taking damage actually restores your health and clears the room in a chain of friendly explosions." 
-    },
-    {
-    "id": 14,
-    "requiredItems": ["c_section", "spiritsword"],
-    "title": "Womb Swarm",
-    "type": "Good Synergy",
-    "description": "Fires fetus pods that lash out alongside sword swings, creating a chaotic storm of slashing melee attacks and fetal energy."
-    }
+ {
+  "id": "blood-nova",
+  "name": "Blood Nova",
+  "items": ["brimstone", "tammyshead"],
+  "conflicts": ["spiritsword"],
+  "desc": "Tammy's Head fires 10 Brimstone beams at once — the room dies instantly."
+ },
+ {
+  "id": "tech-brim",
+  "name": "Techno Brimstone",
+  "items": ["brimstone", "technology"],
+  "conflicts": ["momsknife", "spiritsword"],
+  "desc": "A constant heavy laser with no charge time: Technology firing with Brimstone power."
+ },
+ {
+  "id": "ludo-brim",
+  "name": "Guided Ring of Death",
+  "items": ["brimstone", "theludovicotechnique"],
+  "conflicts": ["drfetus"],
+  "desc": "A steerable blood ring you can park right on top of a boss."
+ },
+ {
+  "id": "techx-brim",
+  "name": "Rings of Hell",
+  "items": ["brimstone", "techx"],
+  "conflicts": ["momsknife"],
+  "desc": "Ring lasers gain Brimstone's damage and appearance."
+ },
+ {
+  "id": "sulfur-bomb",
+  "name": "Sulfur Bomb",
+  "items": ["brimstone", "ipecac"],
+  "conflicts": ["spiritsword"],
+  "desc": "The charged shot becomes a huge explosive sulfur ball with massive damage."
+ },
+ {
+  "id": "beam-trap",
+  "name": "Beam Trap",
+  "items": ["brimstone", "antigravity"],
+  "conflicts": ["spiritsword"],
+  "desc": "Hold fire to place hovering beams, then release them all at once."
+ },
+ {
+  "id": "void-ray",
+  "name": "Void Ray",
+  "items": ["brimstone", "mawofthevoid"],
+  "conflicts": [],
+  "desc": "Both charge together: a blood beam surrounded by a soul-stealing black ring."
+ },
+ {
+  "id": "exp-shotgun",
+  "name": "Explosive Shotgun",
+  "items": ["ipecac", "monstroslung"],
+  "conflicts": ["drfetus", "spiritsword"],
+  "desc": "A volley of 14 explosive shots. One charge — one deleted room."
+ },
+ {
+  "id": "safe-bomber",
+  "name": "Painless Bomber",
+  "items": ["ipecac", "pyromaniac"],
+  "conflicts": ["spiritsword"],
+  "desc": "Your explosive tears no longer hurt you — they heal you instead."
+ },
+ {
+  "id": "gatling",
+  "name": "Explosive Machine Gun",
+  "items": ["ipecac", "soymilk"],
+  "conflicts": ["drfetus", "spiritsword"],
+  "desc": "A rapid stream of tiny explosive tears. Chaos that works for you."
+ },
+ {
+  "id": "point-blank",
+  "name": "Point-Blank Nuke",
+  "items": ["ipecac", "proptosis"],
+  "conflicts": ["theludovicotechnique"],
+  "desc": "Triple-damage explosive tears up close — bosses melt in seconds."
+ },
+ {
+  "id": "straight-shot",
+  "name": "Straight Shot",
+  "items": ["ipecac", "tractorbeam"],
+  "conflicts": ["spiritsword"],
+  "desc": "Tractor Beam flattens Ipecac's arc into a safe, precise straight line."
+ },
+ {
+  "id": "guided-missiles",
+  "name": "Guided Missiles",
+  "items": ["ipecac", "sacredheart"],
+  "conflicts": ["spiritsword"],
+  "desc": "Homing explosive shots that chase enemies around corners."
+ },
+ {
+  "id": "heavy-ordnance",
+  "name": "Heavy Ordnance",
+  "items": ["ipecac", "polyphemus"],
+  "conflicts": ["spiritsword"],
+  "desc": "One colossal explosive shot with absurd combined damage."
+ },
+ {
+  "id": "blast-shield",
+  "name": "Blast Shield",
+  "items": ["ipecac", "hosthat"],
+  "conflicts": [],
+  "desc": "Host Hat blocks explosions — including your own Ipecac blasts."
+ },
+ {
+  "id": "spider-nest",
+  "name": "Spider Nest",
+  "items": ["theinnereye", "mutantspider", "2020"],
+  "conflicts": ["brimstone", "momsknife", "drfetus", "spiritsword"],
+  "desc": "A wall of 8+ tears every shot. Nothing gets through."
+ },
+ {
+  "id": "heaven",
+  "name": "Heaven's Wrath",
+  "items": ["sacredheart", "godhead"],
+  "conflicts": [],
+  "desc": "Homing divine tears with damage auras and enormous damage."
+ },
+ {
+  "id": "twin-halos",
+  "name": "Twin Halos",
+  "items": ["godhead", "2020"],
+  "conflicts": ["momsknife", "brimstone", "drfetus", "spiritsword"],
+  "desc": "Two Godhead tears — two overlapping damage auras per shot."
+ },
+ {
+  "id": "remote-fetus",
+  "name": "Remote Fetus",
+  "items": ["drfetus", "remotedetonator"],
+  "conflicts": [],
+  "desc": "Mine the whole room with bomb-tears and detonate everything with one press."
+ },
+ {
+  "id": "bomb-diet",
+  "name": "Bomb Diet",
+  "items": ["drfetus", "pyromaniac"],
+  "conflicts": [],
+  "desc": "Every bomb-tear that hits you heals you. Walk through your own minefield."
+ },
+ {
+  "id": "seeker-bombs",
+  "name": "Seeker Bombs",
+  "items": ["drfetus", "bobbybomb"],
+  "conflicts": [],
+  "desc": "Your bomb-tears home in on enemies by themselves."
+ },
+ {
+  "id": "danger-close",
+  "name": "Danger Close",
+  "items": ["epicfetus", "pyromaniac"],
+  "conflicts": [],
+  "desc": "Call in air strikes on your own position with zero risk."
+ },
+ {
+  "id": "holy-blade",
+  "name": "Seraph's Blade",
+  "items": ["spiritsword", "trisagion"],
+  "conflicts": [],
+  "desc": "Every sword swing fires beams of holy light across the room."
+ },
+ {
+  "id": "orbital-laser",
+  "name": "Orbital Laser",
+  "items": ["technology", "theludovicotechnique"],
+  "conflicts": ["momsknife"],
+  "desc": "The controlled tear projects a laser ring that damages everything around it."
+ },
+ {
+  "id": "chain-reaction",
+  "name": "Chain Reaction",
+  "items": ["haemolacria", "cricketsbody"],
+  "conflicts": ["drfetus", "spiritsword"],
+  "desc": "Bursting tears split, and the splits split again. A shrapnel storm."
+ },
+ {
+  "id": "endless-split",
+  "name": "Endless Split",
+  "items": ["theparasite", "cricketsbody"],
+  "conflicts": ["momsknife", "spiritsword"],
+  "desc": "Every tear fragments on impact into even more tears."
+ },
+ {
+  "id": "guppy",
+  "name": "Guppy Transformation",
+  "items": ["guppyshead", "guppyscollar", "guppystail"],
+  "conflicts": [],
+  "desc": "Three Guppy items turn Isaac into Guppy: flight + blue flies on every hit."
+ },
+ {
+  "id": "fun-guy",
+  "name": "Fun Guy Transformation",
+  "items": ["magicmushroom", "minimushroom", "oddmushroomlarge"],
+  "conflicts": [],
+  "desc": "Three mushroom items: +1 heart and the Fun Guy form."
+ },
+ {
+  "id": "beelzebub",
+  "name": "Beelzebub Transformation",
+  "items": ["skatole", "distantadmiration", "foreveralone"],
+  "conflicts": [],
+  "desc": "Three fly items: flight, and enemy flies become friendly."
+ }
 ]
