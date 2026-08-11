@@ -129,7 +129,12 @@
   }
   .item{
     position:relative; cursor:pointer; text-align:center;
-    padding:12px 6px 10px;
+    padding:12px 6px;
+    aspect-ratio: 1 / 1; /* Робить кнопку квадратною */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font:inherit; color:var(--parchment);
     transition:filter .1s;
   }
