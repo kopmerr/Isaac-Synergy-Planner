@@ -1,272 +1,660 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaac Synergy Planner | Repentance+</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        isaac: {
-                            dark: '#121214',
-                            card: '#1a1a1e',
-                            border: '#2a2a32',
-                            accent: '#8b0000',
-                            gold: '#d4af37'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Alpine.js -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, .font-cinzel { font-family: 'Cinzel', serif; }
-        [x-cloak] { display: none !important; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isaac Synergy Planner — Repentance+</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-deep:   #0e0a08;
+    --bg-room:   #1a120d;
+    --panel:     #241812;
+    --panel-hi:  #4a3625;  /* bevel light edge */
+    --panel-lo:  #120b07;  /* bevel dark edge */
+    --slot:      #1c1210;
+    --parchment: #e6d3a8;
+    --dim:       #9c8668;
+    --blood:     #b02a2a;
+    --blood-hi:  #e04a3a;
+    --unholy:    #8fd13f;
+    --gold:      #f2b632;
+    --px: 4px;             /* pixel unit for chunky borders */
+  }
 
-        /* Фікс для чітких піксельних іконок без "мила" */
-        img {
-            image-rendering: pixelated;
-            image-rendering: crisp-edges;
-        }
+  *{ margin:0; padding:0; box-sizing:border-box; }
 
-        .custom-tooltip {
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.15s ease-in-out;
-        }
-        .item-card:hover .custom-tooltip {
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
+  html{ scrollbar-color:var(--panel-hi) var(--bg-deep); }
+
+  body{
+    font-family:'VT323', monospace;
+    font-size:20px;
+    color:var(--parchment);
+    background:var(--bg-deep);
+    min-height:100vh;
+    line-height:1.35;
+    image-rendering:pixelated;
+  }
+
+  /* dirt-block backdrop: coarse checker like basement tiles */
+  body::before{
+    content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+    background:
+      linear-gradient(rgba(26,18,13,.92), rgba(14,10,8,.96)),
+      repeating-conic-gradient(#20150f 0% 25%, #191009 0% 50%);
+    background-size:auto, 48px 48px;
+  }
+  body::after{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:2;
+    box-shadow:inset 0 0 160px 40px rgba(0,0,0,.8);
+  }
+
+  .wrap{ position:relative; z-index:1; max-width:1280px; margin:0 auto; padding:0 20px 80px; }
+
+  /* ── chunky pixel bevel (Minecraft-style raised block) ── */
+  .bevel{
+    border-radius:0;
+    border:var(--px) solid;
+    border-color:var(--panel-hi) var(--panel-lo) var(--panel-lo) var(--panel-hi);
+    background:var(--panel);
+    box-shadow:0 var(--px) 0 rgba(0,0,0,.6);
+  }
+  .bevel-in{ /* sunken slot */
+    border-radius:0;
+    border:var(--px) solid;
+    border-color:var(--panel-lo) var(--panel-hi) var(--panel-hi) var(--panel-lo);
+    background:var(--slot);
+  }
+
+  /* ── Header ── */
+  header{ text-align:center; padding:44px 0 8px; }
+  .eyebrow{
+    font-family:'Press Start 2P', monospace; font-size:10px;
+    letter-spacing:.25em; color:var(--blood-hi);
+  }
+  h1{
+    font-family:'Press Start 2P', monospace; font-weight:400;
+    font-size:clamp(22px, 4.6vw, 44px); line-height:1.25;
+    margin:16px 0 10px;
+    text-shadow: 4px 4px 0 #000, 8px 8px 0 rgba(176,42,42,.35);
+  }
+  h1 em{ font-style:normal; color:var(--blood-hi); }
+  .sub{ color:var(--dim); font-size:22px; max-width:640px; margin:0 auto; }
+
+  /* ── Layout ── */
+  .layout{
+    display:grid; grid-template-columns:1fr 350px;
+    gap:26px; margin-top:34px; align-items:start;
+  }
+
+  /* ── Toolbar ── */
+  .toolbar{ display:flex; gap:12px; flex-wrap:wrap; margin-bottom:16px; }
+  .search{ flex:1; min-width:220px; position:relative; }
+  .search input{
+    width:100%; padding:10px 14px 10px 44px;
+    font:inherit; font-size:22px; color:var(--parchment);
+    outline:none; caret-color:var(--gold);
+  }
+  .search input::placeholder{ color:var(--dim); }
+  .search input:focus{ border-color:var(--gold); }
+  .search .mag{
+    position:absolute; left:14px; top:50%; transform:translateY(-50%);
+    font-family:'Press Start 2P'; font-size:14px; color:var(--dim);
+  }
+  .counter{
+    align-self:center; color:var(--dim);
+    font-family:'Press Start 2P', monospace; font-size:10px; white-space:nowrap;
+  }
+
+  /* ── Legend ── */
+  .legend{
+    display:flex; gap:20px; flex-wrap:wrap; margin-bottom:16px;
+    font-size:19px; color:var(--dim);
+  }
+  .legend span{ display:inline-flex; align-items:center; gap:8px; }
+  .dot{
+    width:14px; height:14px; display:inline-block; border-radius:0;
+    border:2px solid #000;
+  }
+  .dot.g{ background:var(--gold); }
+  .dot.s{ background:var(--unholy); }
+  .dot.b{ background:var(--blood-hi); }
+
+  /* ── Item grid ── */
+  .grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(126px, 1fr));
+    gap:14px;
+  }
+  .item{
+    position:relative; cursor:pointer; text-align:center;
+    padding:12px 6px 10px;
+    font:inherit; color:var(--parchment);
+    transition:filter .1s;
+  }
+  .item:hover{ filter:brightness(1.15); }
+  .item:active{ transform:translateY(var(--px)); box-shadow:none; }
+  .item:focus-visible{ outline:3px solid var(--gold); outline-offset:2px; }
+
+  .item .icon{
+    width:64px; height:64px; display:block; margin:0 auto;
+    image-rendering:pixelated;
+    filter:drop-shadow(0 4px 0 rgba(0,0,0,.55));
+    transition:transform .1s;
+  }
+  .item:hover .icon{ transform:scale(1.1); }
+
+  /* stone pedestal, blocky */
+  .item .pedestal{
+    width:56px; height:10px; margin:6px auto 8px;
+    background:#3c2c1e;
+    border:3px solid; border-color:#553f2b #17100b #17100b #553f2b;
+  }
+  .item .name{ font-size:19px; line-height:1.1; display:block; min-height:2.2em; }
+  .item .quality{
+    position:absolute; top:5px; right:7px;
+    font-family:'Press Start 2P', monospace; font-size:8px; color:var(--dim);
+  }
+
+  /* highlight states — recolor the bevel like tinted blocks */
+  .item.owned{
+    border-color:#ffd97a var(--panel-lo) var(--panel-lo) #ffd97a;
+    box-shadow:0 var(--px) 0 rgba(0,0,0,.6), 0 0 14px rgba(242,182,50,.35);
+  }
+  .item.owned::after{
+    content:"✔"; position:absolute; top:4px; left:7px;
+    font-family:'Press Start 2P'; font-size:10px; color:var(--gold);
+    text-shadow:2px 2px 0 #000;
+  }
+  .item.suggested{
+    border-color:#b8ef6a var(--panel-lo) var(--panel-lo) #b8ef6a;
+    box-shadow:0 var(--px) 0 rgba(0,0,0,.6), 0 0 16px rgba(143,209,63,.5);
+    animation:pulse 1.4s steps(2, jump-none) infinite;
+  }
+  .item.breaks{
+    border-color:var(--blood-hi) var(--panel-lo) var(--panel-lo) var(--blood-hi);
+    box-shadow:0 var(--px) 0 rgba(0,0,0,.6), 0 0 12px rgba(176,42,42,.45);
+  }
+  .item.breaks .icon{ filter:drop-shadow(0 4px 0 rgba(0,0,0,.55)) saturate(.55); }
+  .item.dimmed{ opacity:.35; }
+  .item.hidden{ display:none; }
+
+  /* stepped, "8-bit" pulse instead of smooth glow */
+  @keyframes pulse{
+    0%,100%{ box-shadow:0 var(--px) 0 rgba(0,0,0,.6), 0 0 8px rgba(143,209,63,.35); }
+    50%    { box-shadow:0 var(--px) 0 rgba(0,0,0,.6), 0 0 22px rgba(143,209,63,.7); }
+  }
+
+  /* ── Tooltip ── */
+  .tooltip{
+    position:fixed; z-index:50; pointer-events:none;
+    max-width:280px; padding:12px 14px;
+    background:#0b0705;
+    border:var(--px) solid;
+    border-color:var(--panel-hi) var(--panel-lo) var(--panel-lo) var(--panel-hi);
+    box-shadow:6px 6px 0 rgba(0,0,0,.5);
+    opacity:0; transition:opacity .08s;
+  }
+  .tooltip.show{ opacity:1; }
+  .tooltip .t-name{
+    font-family:'Press Start 2P', monospace; font-size:13px; line-height:1.4;
+    color:var(--parchment);
+  }
+  .tooltip .t-quote{ color:var(--blood-hi); font-size:19px; margin:4px 0 4px; }
+  .tooltip .t-desc{ font-size:19px; color:var(--dim); }
+  .tooltip .t-hint{ margin-top:8px; font-size:19px; }
+  .tooltip .t-hint.good{ color:var(--unholy); }
+  .tooltip .t-hint.bad{ color:var(--blood-hi); }
+
+  /* ── Sidebar ── */
+  aside{ position:sticky; top:20px; display:flex; flex-direction:column; gap:20px; }
+  .panel{ padding:16px 16px 14px; }
+  .panel h2{
+    font-family:'Press Start 2P', monospace; font-weight:400; font-size:14px;
+    line-height:1.4; margin-bottom:14px;
+    display:flex; align-items:baseline; justify-content:space-between; gap:10px;
+    text-shadow:2px 2px 0 #000;
+  }
+  .panel h2 small{ font-family:'VT323'; font-size:18px; color:var(--dim); }
+
+  .inv-empty, .syn-empty{ color:var(--dim); font-size:20px; padding:4px 2px; }
+
+  .inv-list{ list-style:none; display:flex; flex-direction:column; gap:8px; }
+  .inv-list li{
+    display:flex; align-items:center; gap:10px;
+    padding:6px 10px; font-size:21px;
+  }
+  .inv-list .icon{
+    width:28px; height:28px; image-rendering:pixelated;
+    filter:drop-shadow(0 2px 0 rgba(0,0,0,.5));
+  }
+  .inv-list .nm{ flex:1; }
+  .inv-list button{
+    font-family:'Press Start 2P', monospace; font-size:8px; color:var(--blood-hi);
+    background:none; border:2px solid transparent; cursor:pointer; padding:4px 7px;
+  }
+  .inv-list button:hover{ border-color:var(--blood); background:rgba(176,42,42,.15); }
+  .inv-list button:focus-visible{ outline:2px solid var(--blood-hi); }
+
+  .clear-btn{
+    margin-top:12px; width:100%;
+    font-family:'Press Start 2P', monospace; font-size:9px; color:var(--dim);
+    background:var(--slot);
+    border:var(--px) solid;
+    border-color:var(--panel-hi) var(--panel-lo) var(--panel-lo) var(--panel-hi);
+    padding:10px; cursor:pointer;
+  }
+  .clear-btn:hover{ color:var(--blood-hi); }
+  .clear-btn:active{ transform:translateY(2px); }
+  .clear-btn:focus-visible{ outline:2px solid var(--gold); }
+
+  /* synergy cards */
+  .syn-card{ padding:10px 12px; margin-bottom:10px; }
+  .syn-card:last-child{ margin-bottom:0; }
+  .syn-card .s-name{
+    font-family:'Press Start 2P', monospace; font-size:12px; line-height:1.5;
+  }
+  .syn-card .s-items{ font-size:18px; color:var(--dim); margin:4px 0 4px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+  .syn-card .s-items img{ width:22px; height:22px; image-rendering:pixelated; vertical-align:middle; }
+  .syn-card .s-desc{ font-size:19px; }
+  .syn-card .s-tag{
+    display:inline-block; font-family:'Press Start 2P', monospace; font-size:8px;
+    padding:4px 7px; margin-bottom:7px; border:2px solid #000;
+  }
+
+  .syn-card.active{
+    border-color:#b8ef6a var(--panel-lo) var(--panel-lo) #b8ef6a;
+    box-shadow:0 var(--px) 0 rgba(0,0,0,.6), 0 0 14px rgba(143,209,63,.25);
+    animation:synIn .25s steps(3, jump-none);
+  }
+  .syn-card.active .s-tag{ background:var(--unholy); color:#122b00; }
+  .syn-card.active .s-name{ color:var(--unholy); }
+
+  .syn-card.partial .s-tag{ background:var(--gold); color:#3a2600; }
+  .syn-card.partial .s-name{ color:var(--gold); }
+
+  .syn-card.blocked{ opacity:.8; }
+  .syn-card.blocked .s-tag{ background:var(--blood); color:#ffd9d0; }
+  .syn-card.blocked .s-name{ color:var(--blood-hi); text-decoration:line-through; text-decoration-thickness:3px; }
+  .syn-card.blocked .s-block{ font-size:18px; color:var(--blood-hi); margin-top:4px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+  .syn-card.blocked .s-block img{ width:22px; height:22px; image-rendering:pixelated; }
+
+  @keyframes synIn{ from{ transform:scale(.9); opacity:0; } to{ transform:scale(1); opacity:1; } }
+
+  /* ── Data loading error screen ── */
+  .load-error{
+    max-width:640px; margin:40px auto 0; padding:20px 22px;
+    font-size:21px;
+  }
+  .load-error h3{
+    font-family:'Press Start 2P', monospace; font-size:14px;
+    color:var(--blood-hi); margin-bottom:12px;
+  }
+  .load-error code{
+    font-family:'VT323', monospace; font-size:20px;
+    background:#0b0705; padding:2px 8px; border:2px solid var(--panel-lo);
+    color:var(--gold); display:inline-block; margin-top:4px;
+  }
+
+  footer{
+    margin-top:60px; text-align:center; color:var(--dim); font-size:18px;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width:900px){
+    .layout{ grid-template-columns:1fr; }
+    aside{ position:static; }
+    .grid{ grid-template-columns:repeat(auto-fill, minmax(106px, 1fr)); }
+  }
+  @media (max-width:480px){
+    .grid{ grid-template-columns:repeat(auto-fill, minmax(92px, 1fr)); gap:10px; }
+    .item .icon{ width:48px; height:48px; }
+    h1{ font-size:20px; }
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *, *::before, *::after{ animation:none !important; transition:none !important; }
+  }
+</style>
 </head>
-<body class="bg-isaac-dark text-gray-100 min-h-screen flex flex-col justify-between" x-data="isaacApp()">
+<body>
+<div class="wrap">
 
-    <!-- Header -->
-    <header class="border-b border-isaac-border bg-isaac-card/50 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <span class="text-2xl">🩸</span>
-                <h1 class="text-xl font-bold tracking-wider text-red-500 font-cinzel">ISAAC SYNERGY PLANNER</h1>
-                <span class="text-xs bg-red-950 text-red-400 border border-red-800 px-2 py-0.5 rounded-full font-semibold">Repentance+ JSON Edition</span>
-            </div>
-            <div>
-                <span class="text-xs text-gray-400" x-text="isLoading ? 'Loading JSON data...' : filteredItems.length + ' items available'"></span>
-            </div>
+  <header>
+    <div class="eyebrow">The Binding of Isaac &middot; Repentance+</div>
+    <h1>SYNERGY <em>PLANNER</em></h1>
+    <p class="sub">Pick up items for your run — the basement will tell you what completes your build and what ruins the combo.</p>
+  </header>
+
+  <div class="layout" id="app" hidden>
+
+    <!-- LEFT: search + grid -->
+    <main>
+      <div class="toolbar">
+        <div class="search">
+          <span class="mag" aria-hidden="true">?</span>
+          <input id="searchInput" class="bevel-in" type="search" placeholder="Search items... (e.g. Brimstone)" autocomplete="off" aria-label="Search items">
         </div>
-    </header>
+        <div class="counter" id="counter"></div>
+      </div>
 
-    <!-- Main Container -->
-    <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full">
+      <div class="legend" aria-hidden="true">
+        <span><i class="dot g"></i> in inventory</span>
+        <span><i class="dot s"></i> completes your build</span>
+        <span><i class="dot b"></i> ruins a combo</span>
+      </div>
 
-        <!-- Loading State -->
-        <div x-show="isLoading" class="flex flex-col items-center justify-center py-20 space-y-4">
-            <div class="animate-spin rounded-full h-10 w-10 border-b-2 border-red-600"></div>
-            <p class="text-sm text-gray-400">Loading items.json and synergies.json...</p>
-        </div>
-
-        <!-- Planner View -->
-        <div x-show="!isLoading" class="grid grid-cols-1 lg:grid-cols-3 gap-8" x-cloak>
-            
-            <!-- Left & Middle: Item Selection & Active Inventory -->
-            <div class="lg:col-span-2 space-y-6">
-                <!-- Search -->
-                <div class="bg-isaac-card border border-isaac-border rounded-xl p-4 shadow-lg">
-                    <h2 class="text-sm font-semibold text-gray-400 mb-3 uppercase tracking-wider">1. Select Items in Your Run</h2>
-                    <input type="text" x-model="searchQuery" placeholder="Search items (e.g. Brimstone, C-Section)..." class="w-full bg-isaac-dark border border-isaac-border rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-red-600 transition">
-                </div>
-
-                <!-- Item Grid -->
-                <div class="bg-isaac-card border border-isaac-border rounded-xl p-4 shadow-lg">
-                    <h3 class="text-xs font-semibold text-gray-400 mb-3 uppercase tracking-wider">Available Items</h3>
-                    <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-3 max-h-96 overflow-y-auto overflow-x-hidden pr-1">
-                        <template x-for="item in filteredItems" :key="item.id">
-                            <div @click="toggleItem(item.id)" 
-                                 :class="{
-                                     'border-red-600 bg-red-950/40 ring-2 ring-red-600/50': selectedItems.includes(item.id),
-                                     'border-blue-500 bg-blue-950/40 ring-2 ring-blue-500/50': !selectedItems.includes(item.id) && getItemSynergyState(item.id) === 'blue',
-                                     'border-green-500 bg-green-950/40 ring-2 ring-green-500/50': !selectedItems.includes(item.id) && getItemSynergyState(item.id) === 'green',
-                                     'border-yellow-500 bg-yellow-950/40 ring-2 ring-yellow-500/50': !selectedItems.includes(item.id) && getItemSynergyState(item.id) === 'yellow',
-                                     'border-isaac-border bg-isaac-dark hover:border-gray-500': !selectedItems.includes(item.id) && !getItemSynergyState(item.id)
-                                 }"
-                                 class="item-card border rounded-lg aspect-square flex flex-col items-center justify-center cursor-pointer transition relative group">
-                                 
-                                <div class="custom-tooltip absolute inset-x-1 bottom-1 bg-isaac-card/95 border border-red-900 text-gray-200 text-[9px] font-medium px-1 py-1 rounded text-center shadow-md z-20 truncate">
-                                    <span x-text="item.name"></span>
-                                </div>
-
-                                <template x-if="item.iconUrl && item.iconUrl.trim() !== ''">
-                                    <img :src="item.iconUrl" :alt="item.name" class="w-full h-full object-contain p-1.5 group-hover:scale-110 transition-transform duration-300">
-                                </template>
-                                <template x-if="!item.iconUrl || item.iconUrl.trim() === ''">
-                                    <div class="flex flex-col items-center justify-center text-center h-full p-1">
-                                        <span class="text-2xl mb-1" x-text="item.icon || '📦'"></span>
-                                        <span class="text-[9px] font-medium text-gray-400 px-1 leading-tight truncate w-full" x-text="item.name"></span>
-                                    </div>
-                                </template>
-
-                                <div x-show="selectedItems.includes(item.id)" class="absolute top-1 right-1 bg-red-600 rounded-full p-0.5 shadow-lg z-10">
-                                    <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                                </div>
-                            </div>
-                        </template>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Sidebar: Inventory & Synergies -->
-            <div class="space-y-6">
-                <!-- Active Inventory -->
-                <div class="bg-isaac-card border border-isaac-border rounded-xl p-4 shadow-lg">
-                    <h2 class="text-sm font-semibold text-gray-400 mb-3 uppercase tracking-wider">Active Inventory (<span x-text="selectedItems.length"></span>)</h2>
-                    <div class="flex flex-wrap gap-2 min-h-[60px] items-center">
-                        <template x-for="id in selectedItems" :key="id">
-                            <div class="bg-isaac-dark border border-red-600/50 rounded-full pl-1.5 pr-2.5 py-1 flex items-center space-x-2 text-xs">
-                                <template x-if="getItem(id).iconUrl">
-                                    <img :src="getItem(id).iconUrl" class="w-5 h-5 rounded-full object-cover border border-red-700">
-                                </template>
-                                <template x-if="!getItem(id).iconUrl">
-                                    <span class="text-sm" x-text="getItem(id).icon"></span>
-                                </template>
-                                <span x-text="getItem(id).name"></span>
-                                <button @click="toggleItem(id)" class="text-gray-400 hover:text-red-400 ml-1">×</button>
-                            </div>
-                        </template>
-                        <span x-show="selectedItems.length === 0" class="text-xs text-gray-500 italic">No items selected yet. Click items on the left!</span>
-                    </div>
-                </div>
-
-                <!-- Detected Synergies -->
-                <div class="bg-isaac-card border border-isaac-border rounded-xl p-4 shadow-lg">
-                    <h2 class="text-sm font-semibold text-gray-400 mb-3 uppercase tracking-wider">🔥 Active Synergies</h2>
-                    <div class="space-y-3">
-                        <template x-for="syn in activeSynergies" :key="syn.id">
-                            <div class="border border-isaac-border bg-isaac-dark rounded-lg p-3 relative overflow-hidden">
-                                <div class="absolute top-0 left-0 bottom-1 w-1 bg-red-600"></div>
-                                <div class="flex justify-between items-start mb-1">
-                                    <h4 class="text-xs font-bold text-red-400 font-cinzel" x-text="syn.title"></h4>
-                                    <span class="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded bg-red-950 text-red-300 border border-red-900" x-text="syn.type"></span>
-                                </div>
-                                <p class="text-xs text-gray-300 mb-2" x-text="syn.description"></p>
-                                <div class="flex flex-wrap gap-1 mt-1 pt-2 border-t border-isaac-border">
-                                    <template x-for="reqId in syn.requiredItems" :key="reqId">
-                                        <span class="text-[10px] bg-isaac-dark border border-gray-700 px-1.5 py-0.5 rounded text-gray-300" x-text="getItem(reqId).name"></span>
-                                    </template>
-                                </div>
-                            </div>
-                        </template>
-                        <span x-show="activeSynergies.length === 0" class="text-xs text-gray-500 italic">Select items to discover hidden synergies and combos.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+      <div class="grid" id="grid" role="list"></div>
     </main>
 
-    <!-- Footer -->
-    <footer class="border-t border-isaac-border py-4 text-center text-xs text-gray-500">
-        Isaac Synergy Planner © 2026. Powered by JSON files.
-    </footer>
+    <!-- RIGHT: inventory + synergies -->
+    <aside>
+      <section class="panel bevel" aria-labelledby="invTitle">
+        <h2 id="invTitle">ACTIVE INVENTORY <small id="invCount"></small></h2>
+        <div id="invBody"></div>
+      </section>
 
-    <!-- App Logic with Fetch -->
-    <script>
-        function isaacApp() {
-            return {
-                isLoading: true,
-                searchQuery: '',
-                selectedItems: [],
-                items: [],
-                synergies: [],
+      <section class="panel bevel" aria-labelledby="synTitle">
+        <h2 id="synTitle">ACTIVE SYNERGIES</h2>
+        <div id="synBody"></div>
+      </section>
+    </aside>
 
-                async init() {
-                    try {
-                        const [itemsRes, synsRes] = await Promise.all([
-                            fetch('items.json'),
-                            fetch('synergies.json')
-                        ]);
+  </div>
 
-                        if (!itemsRes.ok || !synsRes.ok) {
-                            throw new Error('Не вдалося завантажити JSON файли.');
-                        }
+  <div class="load-error bevel" id="loadError" hidden>
+    <h3>DATA NOT FOUND</h3>
+    <p>Couldn't load <code>data/items.json</code> / <code>data/synergies.json</code>.</p>
+    <p style="margin-top:10px">Browsers block <b>fetch()</b> when a page is opened directly from disk (file://). Run a tiny local server from the site folder and open the printed address:</p>
+    <p><code>python -m http.server 8000</code> &nbsp;→&nbsp; <code>http://localhost:8000</code></p>
+    <p style="margin-top:10px">Or use any other static server (<code>npx serve</code>, VS Code Live Server, etc.).</p>
+  </div>
 
-                        this.items = await itemsRes.json();
-                        this.synergies = await synsRes.json();
-                    } catch (error) {
-                        console.error(error);
-                        alert('Помилка завантаження даних! Відкрий консоль (F12) для деталей.');
-                    } finally {
-                        this.isLoading = false;
-                    }
-                },
+  <footer>Unofficial fan-made tool. The Binding of Isaac &copy; Edmund McMillen &amp; Nicalis. Item data adapted from the External Item Descriptions mod &amp; Rebirth Item Tracker.</footer>
+</div>
 
-                get filteredItems() {
-                    let activeList = this.items.filter(i => i.enabled !== false);
-                    if (!this.searchQuery) return activeList;
-                    return activeList.filter(i => i.name.toLowerCase().includes(this.searchQuery.toLowerCase()));
-                },
+<div class="tooltip" id="tooltip" role="tooltip"></div>
 
-                getItem(id) {
-                    return this.items.find(i => i.id === id) || { name: 'Unknown', icon: '❓', iconUrl: '' };
-                },
+<script>
+/* ═══════════════ DATA (loaded from JSON) ═══════════════ */
 
-                toggleItem(id) {
-                    if (this.selectedItems.includes(id)) {
-                        this.selectedItems = this.selectedItems.filter(i => i !== id);
-                    } else {
-                        this.selectedItems.push(id);
-                    }
-                },
+let ITEMS = [];
+let SYNERGIES = [];
+let byId = {};
 
-                // Перевірка підсвічування (не працює, якщо нічого не вибрано)
-                getItemSynergyState(itemId) {
-                    // Якщо в інвентарі немає жодного предмета — нічого не підсвічуємо
-                    if (this.selectedItems.length === 0) return null;
+async function loadData(){
+  const [itemsRes, synRes] = await Promise.all([
+    fetch('data/items.json'),
+    fetch('data/synergies.json'),
+  ]);
+  if(!itemsRes.ok || !synRes.ok) throw new Error('HTTP error while loading data');
+  ITEMS = await itemsRes.json();
+  SYNERGIES = await synRes.json();
 
-                    const relevantSynergies = this.synergies.filter(s => s.requiredItems && s.requiredItems.includes(itemId));
-                    
-                    for (let syn of relevantSynergies) {
-                        const fitsInSyn = this.selectedItems.every(selectedId => syn.requiredItems.includes(selectedId));
-                        
-                        if (fitsInSyn) {
-                            const notYetCompleted = !syn.requiredItems.every(reqId => this.selectedItems.includes(reqId));
-                            
-                            if (notYetCompleted) {
-                                if (syn.type && (syn.type.toLowerCase().includes('op') || syn.type.toLowerCase().includes('broken'))) {
-                                    return 'blue';
-                                }
-                                if (syn.type && syn.type.toLowerCase().includes('good')) {
-                                    return 'green';
-                                }
-                                if (syn.type && (syn.type.toLowerCase().includes('ruined') || syn.type.toLowerCase().includes('bad'))) {
-                                    return 'yellow';
-                                }
-                                return 'green';
-                            }
-                        }
-                    }
-                    return null;
-                },
+  /* light validation: every synergy must reference existing item ids */
+  byId = Object.fromEntries(ITEMS.map(i => [i.id, i]));
+  for(const s of SYNERGIES){
+    for(const id of [...s.items, ...s.conflicts]){
+      if(!byId[id]) console.warn(`synergies.json: unknown item id "${id}" in "${s.name}"`);
+    }
+  }
+}
 
-                get activeSynergies() {
-                    if (this.selectedItems.length === 0) return [];
-                    
-                    return this.synergies.filter(syn => {
-                        if (!syn.requiredItems || syn.requiredItems.length === 0) return false;
-                        return syn.requiredItems.every(reqId => this.selectedItems.includes(reqId));
-                    });
-                }
-            }
-        }
-    </script>
+/* ═══════════════ STATE ═══════════════ */
+
+const inv = new Set();
+let analysis = { active:[], partial:[], blocked:[], suggested:new Set(), breakers:new Set(), hints:{} };
+
+function analyze(){
+  const active=[], partial=[], blocked=[];
+  const suggested=new Set(), breakers=new Set();
+  const hints={}; // itemId -> { good:[synName], bad:[synName] }
+
+  const addHint = (id, kind, name) => {
+    hints[id] = hints[id] || { good:[], bad:[] };
+    hints[id][kind].push(name);
+  };
+
+  for(const s of SYNERGIES){
+    const have = s.items.filter(i => inv.has(i));
+    const missing = s.items.filter(i => !inv.has(i));
+    const conflictNow = s.conflicts.filter(c => inv.has(c));
+
+    if(have.length === s.items.length && conflictNow.length === 0){
+      active.push(s);
+      s.conflicts.forEach(c => { if(!inv.has(c)){ breakers.add(c); addHint(c,'bad',s.name); } });
+    }
+    else if(have.length > 0){
+      if(conflictNow.length > 0){
+        /* a conflict is present -> synergy is blocked, its missing pieces are NOT highlighted */
+        blocked.push({ syn:s, by:conflictNow });
+      } else {
+        partial.push({ syn:s, have, missing });
+        missing.forEach(m => { suggested.add(m); addHint(m,'good',s.name); });
+        s.conflicts.forEach(c => { if(!inv.has(c)){ breakers.add(c); addHint(c,'bad',s.name); } });
+      }
+    }
+  }
+
+  /* if an item both completes one synergy and breaks another, "completes" wins visually */
+  for(const id of suggested) breakers.delete(id);
+
+  analysis = { active, partial, blocked, suggested, breakers, hints };
+}
+
+/* ═══════════════ RENDER ═══════════════ */
+
+const grid      = document.getElementById('grid');
+const invBody   = document.getElementById('invBody');
+const invCount  = document.getElementById('invCount');
+const synBody   = document.getElementById('synBody');
+const counter   = document.getElementById('counter');
+const searchEl  = document.getElementById('searchInput');
+const tooltip   = document.getElementById('tooltip');
+
+function iconImg(id, cls, size){
+  return `<img class="${cls}" src="${byId[id].icon}" width="${size}" height="${size}" alt="" aria-hidden="true">`;
+}
+
+function buildGrid(){
+  grid.innerHTML = '';
+  for(const it of ITEMS){
+    const b = document.createElement('button');
+    b.className = 'item bevel'; b.type = 'button'; b.dataset.id = it.id;
+    b.setAttribute('role','listitem');
+    b.setAttribute('aria-pressed','false');
+    b.innerHTML = `
+      <span class="quality">#${it.gid}</span>
+      ${iconImg(it.id,'icon',64)}
+      <span class="pedestal" aria-hidden="true"></span>
+      <span class="name">${it.name}</span>`;
+    b.addEventListener('click', () => toggleItem(it.id));
+    b.addEventListener('mouseenter', () => showTip(it, b));
+    b.addEventListener('mousemove',  e => moveTip(e));
+    b.addEventListener('mouseleave', hideTip);
+    b.addEventListener('focus', () => showTip(it, b));
+    b.addEventListener('blur', hideTip);
+    grid.appendChild(b);
+  }
+}
+
+function refreshGrid(){
+  const q = searchEl.value.trim().toLowerCase();
+  let visible = 0;
+  const anySelected = inv.size > 0;
+
+  grid.querySelectorAll('.item').forEach(el => {
+    const id = el.dataset.id;
+    const it = byId[id];
+    const match = !q || it.name.toLowerCase().includes(q) || it.quote.toLowerCase().includes(q) || it.desc.toLowerCase().includes(q);
+    el.classList.toggle('hidden', !match);
+    if(match) visible++;
+
+    const owned     = inv.has(id);
+    const suggested = anySelected && analysis.suggested.has(id) && !owned;
+    const breaks    = anySelected && analysis.breakers.has(id) && !owned;
+    const dimmed    = anySelected && !owned && !suggested && !breaks;
+
+    el.classList.toggle('owned', owned);
+    el.classList.toggle('suggested', suggested);
+    el.classList.toggle('breaks', breaks);
+    el.classList.toggle('dimmed', dimmed);
+    el.setAttribute('aria-pressed', owned ? 'true' : 'false');
+  });
+
+  counter.textContent = `${visible}/${ITEMS.length} ITEMS`;
+}
+
+function refreshInventory(){
+  invCount.textContent = inv.size ? `${inv.size} item${inv.size>1?'s':''}` : '';
+  if(inv.size === 0){
+    invBody.innerHTML = `<p class="inv-empty">Inventory is empty. Click an item in the grid to add it to your run.</p>`;
+    return;
+  }
+  invBody.innerHTML = '';
+  const ul = document.createElement('ul');
+  ul.className = 'inv-list';
+  for(const id of inv){
+    const it = byId[id];
+    const li = document.createElement('li');
+    li.className = 'bevel-in';
+    li.innerHTML = `${iconImg(id,'icon',28)}<span class="nm">${it.name}</span>`;
+    const rm = document.createElement('button');
+    rm.textContent = 'DROP';
+    rm.setAttribute('aria-label', `Remove ${it.name} from inventory`);
+    rm.addEventListener('click', () => toggleItem(id));
+    li.appendChild(rm);
+    ul.appendChild(li);
+  }
+  invBody.appendChild(ul);
+
+  const clear = document.createElement('button');
+  clear.className = 'clear-btn';
+  clear.textContent = 'NEW RUN (CLEAR ALL)';
+  clear.addEventListener('click', () => { inv.clear(); update(); });
+  invBody.appendChild(clear);
+}
+
+function synItemsLine(s){
+  return s.items.map(i => `${iconImg(i,'',22)} ${byId[i].name}`).join(' <b>+</b> ');
+}
+
+function refreshSynergies(){
+  const { active, partial, blocked } = analysis;
+  synBody.innerHTML = '';
+
+  if(inv.size === 0){
+    synBody.innerHTML = `<p class="syn-empty">Combos will appear here. Start collecting items — the basement will hint at the rest.</p>`;
+    return;
+  }
+  if(!active.length && !partial.length && !blocked.length){
+    synBody.innerHTML = `<p class="syn-empty">Your current items don't lead to any known synergy yet. Try a different build direction.</p>`;
+    return;
+  }
+
+  for(const s of active){
+    const d = document.createElement('div');
+    d.className = 'syn-card bevel-in active';
+    d.innerHTML = `<span class="s-tag">ACTIVATED</span>
+      <div class="s-name">${s.name}</div>
+      <div class="s-items">${synItemsLine(s)}</div>
+      <div class="s-desc">${s.desc}</div>`;
+    synBody.appendChild(d);
+  }
+  for(const p of partial){
+    const s = p.syn;
+    const d = document.createElement('div');
+    d.className = 'syn-card bevel-in partial';
+    d.innerHTML = `<span class="s-tag">${p.have.length}/${s.items.length} COLLECTED</span>
+      <div class="s-name">${s.name}</div>
+      <div class="s-items">Missing: ${p.missing.map(i => `${iconImg(i,'',22)} ${byId[i].name}`).join(', ')}</div>
+      <div class="s-desc">${s.desc}</div>`;
+    synBody.appendChild(d);
+  }
+  for(const b of blocked){
+    const s = b.syn;
+    const d = document.createElement('div');
+    d.className = 'syn-card bevel-in blocked';
+    d.innerHTML = `<span class="s-tag">BLOCKED</span>
+      <div class="s-name">${s.name}</div>
+      <div class="s-items">${synItemsLine(s)}</div>
+      <div class="s-block">Ruined by: ${b.by.map(i => `${iconImg(i,'',22)} ${byId[i].name}`).join(', ')}</div>`;
+    synBody.appendChild(d);
+  }
+}
+
+/* ═══════════════ TOOLTIP ═══════════════ */
+
+let tipAnchor = null;
+
+function showTip(it, el){
+  tipAnchor = el;
+  const h = analysis.hints[it.id];
+  const owned = inv.has(it.id);
+  let hint = '';
+  if(!owned && inv.size > 0 && h){
+    if(analysis.suggested.has(it.id) && h.good.length)
+      hint = `<div class="t-hint good">&gt; Completes: ${h.good.join(', ')}</div>`;
+    else if(analysis.breakers.has(it.id) && h.bad.length)
+      hint = `<div class="t-hint bad">x Ruins: ${h.bad.join(', ')}</div>`;
+  }
+  if(owned) hint = `<div class="t-hint good">&gt; In your inventory</div>`;
+
+  tooltip.innerHTML = `
+    <div class="t-name">${it.name}</div>
+    ${it.quote ? `<div class="t-quote">"${it.quote}"</div>` : ''}
+    <div class="t-desc">${it.desc}</div>${hint}`;
+  const r = el.getBoundingClientRect();
+  placeTip(r.left + r.width/2, r.top);
+  tooltip.classList.add('show');
+}
+
+function moveTip(e){ placeTip(e.clientX, e.clientY); }
+
+function placeTip(x, y){
+  const pad = 16;
+  tooltip.style.left = '0px'; tooltip.style.top = '0px';
+  const tw = tooltip.offsetWidth, th = tooltip.offsetHeight;
+  let left = x + pad, top = y + pad;
+  if(left + tw > innerWidth - 8)  left = x - tw - pad;
+  if(top + th > innerHeight - 8)  top = y - th - pad;
+  tooltip.style.left = Math.max(8,left) + 'px';
+  tooltip.style.top  = Math.max(8,top) + 'px';
+}
+
+function hideTip(){ tooltip.classList.remove('show'); tipAnchor = null; }
+
+/* ═══════════════ ACTIONS ═══════════════ */
+
+function toggleItem(id){
+  inv.has(id) ? inv.delete(id) : inv.add(id);
+  update();
+  if(tipAnchor && tipAnchor.dataset.id) showTip(byId[tipAnchor.dataset.id], tipAnchor);
+}
+
+function update(){
+  analyze();
+  refreshGrid();
+  refreshInventory();
+  refreshSynergies();
+}
+
+searchEl.addEventListener('input', refreshGrid);
+
+/* ═══════════════ BOOT ═══════════════ */
+
+(async function init(){
+  try{
+    await loadData();
+    document.getElementById('app').hidden = false;
+    buildGrid();
+    update();
+  }catch(err){
+    console.error(err);
+    document.getElementById('loadError').hidden = false;
+  }
+})();
+</script>
 </body>
 </html>
