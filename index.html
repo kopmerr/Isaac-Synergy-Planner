@@ -128,15 +128,19 @@
     gap:14px;
   }
   .item{
-    position:relative; cursor:pointer; text-align:center;
-    padding:12px 6px;
-    aspect-ratio: 1 / 1; /* Робить кнопку квадратною */
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    aspect-ratio: 1 / 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font:inherit; color:var(--parchment);
-    transition:filter .1s;
+    padding: 8px;
+    gap: 4px;
+    font: inherit;
+    color: var(--parchment);
+    transition: filter .1s;
   }
   .item:hover{ filter:brightness(1.15); }
   .item:active{ transform:translateY(var(--px)); box-shadow:none; }
