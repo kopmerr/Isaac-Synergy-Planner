@@ -3,7 +3,7 @@
   "id": "thesadonion",
   "gid": 1,
   "name": "The Sad Onion",
-  "icon": "icons/collectibles_001_thesadonion.png",
+  "icon": "images/items/collectibles_001_thesadonion.png",
   "quote": "",
   "desc": ""
  },
@@ -11,7 +11,7 @@
   "id": "theinnereye",
   "gid": 2,
   "name": "The Inner Eye",
-  "icon": "icons/collectibles_002_theinnereye.png",
+  "icon": "images/items/collectibles_002_theinnereye.png",
   "quote": "Triple shot",
   "desc": "↓ x0.51 Fire rate multiplier · Isaac shoots 3 tears at once"
  },
@@ -19,7 +19,7 @@
   "id": "spoonbender",
   "gid": 3,
   "name": "Spoon Bender",
-  "icon": "icons/collectibles_003_spoonbender.png",
+  "icon": "images/items/collectibles_003_spoonbender.png",
   "quote": "Homing tears",
   "desc": ""
  },
@@ -27,7 +27,7 @@
   "id": "cricketshead",
   "gid": 4,
   "name": "Bombs are Key",
-  "icon": "icons/collectibles_004_cricketshead.png",
+  "icon": "images/items/collectibles_004_cricketshead.png",
   "quote": "",
   "desc": "Swaps Isaac's number of bombs and keys · Golden bombs and keys are also swapped"
  },
