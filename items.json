@@ -1,30 +1,5746 @@
 [
-    { "id": "brimstone", "name": "Brimstone", "iconUrl": "images/items/collectibles_118_brimstone.png", "icon": "🩸", "enabled": true },
-    { "id": "spoon_bender", "name": "Spoon Bender", "iconUrl": "images/items/collectibles_003_spoonbender.png", "icon": "🥄", "enabled": true },
-    { "id": "dr_fetus", "name": "Dr. Fetus", "iconUrl": "images/items/collectibles_052_drfetus.png", "icon": "💣", "enabled": false },
-    { "id": "ipecac", "name": "Ipecac", "iconUrl": "images/items/collectibles_149_ipecac.png", "icon": "🟢", "enabled": true },
-    { "id": "pyromaniac", "name": "Pyromaniac", "iconUrl": "images/items/collectibles_223_pyromaniac.png", "icon": "🔥", "enabled": true },
-    { "id": "soy_milk", "name": "Soy Milk", "iconUrl": "images/items/collectibles_330_soymilk.png", "icon": "🥛", "enabled": true },
-    { "id": "lump_of_coal", "name": "Lump of Coal", "iconUrl": "images/items/collectibles_132_alumpofcoal.png", "icon": "⬛", "enabled": true },
-    { "id": "tammy_head", "name": "Tammy's Head", "iconUrl": "images/items/collectibles_038_tammyshead.png", "icon": "🐱", "enabled": true },
-    { "id": "tiny_planet", "name": "Tiny Planet", "iconUrl": "images/items/collectibles_233_tinyplanet.png", "icon": "🪐", "enabled": true },
-    { "id": "lost_contact", "name": "Lost Contact", "iconUrl": "images/items/collectibles_213_lostcontact.png", "icon": "🛡️", "enabled": false },
-    { "id": "rock_bottom", "name": "Rock Bottom", "iconUrl": "images/items/collectibles_562_rockbottom.png", "icon": "🗿", "enabled": false },
-    { "id": "ludovico", "name": "Ludovico Technique", "iconUrl": "images/items/collectibles_329_theludovicotechnique.png", "icon": "🔵", "enabled": true },
-    { "id": "moms_knife", "name": "Mom's Knife", "iconUrl": "images/items/collectibles_114_momsknife.png", "icon": "🔪", "enabled": true },
-    { "id": "c_section", "name": "C-Section", "iconUrl": "images/items/collectibles_678_csection.png", "icon": "💉", "enabled": true },
-    { "id": "sacred_heart", "name": "Sacred Heart", "iconUrl": "images/items/collectibles_182_sacredheart.png", "icon": "💖", "enabled": true },
-    { "id": "tech_x", "name": "Tech X", "iconUrl": "images/items/collectibles_395_techx.png", "icon": "💫", "enabled": true },
-    { "id": "polyhemus", "name": "Polyhemus", "iconUrl": "images/items/collectibles_169_polyphemus.png", "icon": "👁️", "enabled": false },
-    { "id": "mutant_spider", "name": "Mutant Spider", "iconUrl": "images/items/collectibles_153_mutantspider.png", "icon": "🕷️", "enabled": false },
-    { "id": "death_certificate", "name": "Death Certificate", "iconUrl": "images/items/collectibles_628_deathcertificate.png", "icon": "📜", "enabled": false },
-    { "id": "spindown_dice", "name": "Spindown Dice", "iconUrl": "images/items/collectibles_723_spindowndice.png", "icon": "🎲", "enabled": false },
-    { "id": "ghost_pepper", "name": "Ghost Pepper", "iconUrl": "images/items/collectibles_495_ghostpepper.png", "icon": "🌶️", "enabled": false },
-    { "id": "curse_of_the_tower", "name": "Curse of the Tower", "iconUrl": "images/items/collectibles_371_curseofthetower.png", "icon": "🗼", "enabled": true },
-    { "id": "guppys_head", "name": "Guppy's Head", "iconUrl": "images/items/collectibles_145_guppyshead.png", "icon": "🐈", "enabled": false },
-    {"id":"myreflection","name":"My Reflection","iconUrl":"images/items/collectibles_005_myreflection.png","icon":"👀","enabled":true},
-    {"id":"adollar","name":"A Dollar","iconUrl":"images/items/collectibles_018_adollar.png","icon":"💲","enabled":true},
-    {"id":"moneyispower","name":"Money = Power","iconUrl":"images/items/collectibles_109_moneyispower.png","icon":"🤑","enabled":true},
-    {"id":"saturnus","name":"Saturnus","iconUrl":"images/items/collectibles_595_saturnus.png","icon":"🪐","enabled":true},
-    {"id":"spiritsword","name":"Spirit Sword","iconUrl":"images/items/collectibles_579_spiritsword.png","icon":"⚔","enabled":true}
+ {
+  "id": "thesadonion",
+  "gid": 1,
+  "name": "The Sad Onion",
+  "icon": "icons/collectibles_001_thesadonion.png",
+  "quote": "",
+  "desc": ""
+ },
+ {
+  "id": "theinnereye",
+  "gid": 2,
+  "name": "The Inner Eye",
+  "icon": "icons/collectibles_002_theinnereye.png",
+  "quote": "Triple shot",
+  "desc": "↓ x0.51 Fire rate multiplier · Isaac shoots 3 tears at once"
+ },
+ {
+  "id": "spoonbender",
+  "gid": 3,
+  "name": "Spoon Bender",
+  "icon": "icons/collectibles_003_spoonbender.png",
+  "quote": "Homing tears",
+  "desc": ""
+ },
+ {
+  "id": "cricketshead",
+  "gid": 4,
+  "name": "Bombs are Key",
+  "icon": "icons/collectibles_004_cricketshead.png",
+  "quote": "",
+  "desc": "Swaps Isaac's number of bombs and keys · Golden bombs and keys are also swapped"
+ },
+ {
+  "id": "myreflection",
+  "gid": 5,
+  "name": "My Reflection",
+  "icon": "icons/collectibles_005_myreflection.png",
+  "quote": "Boomerang tears",
+  "desc": "↑ +1.5 Damage · ↑ +1.5 Range · ↑ x2 Range multiplier · ↑ x1.6 Shot speed multiplier · ↓ -1 Luck · Tears get a boomerang effect"
+ },
+ {
+  "id": "numberone",
+  "gid": 6,
+  "name": "Number One",
+  "icon": "icons/collectibles_006_numberone.png",
+  "quote": "",
+  "desc": "↑ +1.5 Tears · ↓ -1.5 Range · ↓ x0.8 Range multiplier"
+ },
+ {
+  "id": "bloodofthemartyr",
+  "gid": 7,
+  "name": "Blood of the Martyr",
+  "icon": "icons/collectibles_007_bloodofthemartyr.png",
+  "quote": "",
+  "desc": ""
+ },
+ {
+  "id": "brotherbobby",
+  "gid": 8,
+  "name": "Brother Bobby",
+  "icon": "icons/collectibles_008_brotherbobby.png",
+  "quote": "Familiar (3.5 dmg / tear)",
+  "desc": ""
+ },
+ {
+  "id": "skatole",
+  "gid": 9,
+  "name": "Skatole",
+  "icon": "icons/collectibles_009_skatole.png",
+  "quote": "Flies won't attack you",
+  "desc": ""
+ },
+ {
+  "id": "haloofflies",
+  "gid": 10,
+  "name": "Wiggle Worm",
+  "icon": "icons/collectibles_010_haloofflies.png",
+  "quote": "Two non-damaging fly orbitals",
+  "desc": "↑ +0.4 Tears · Spectral tears · Isaac's tears move in waves"
+ },
+ {
+  "id": "1up",
+  "gid": 11,
+  "name": "Ring Worm",
+  "icon": "icons/collectibles_011_1up.png",
+  "quote": "+1 life",
+  "desc": "↑ +0.4 Tears · Spectral tears · Isaac's tears move in spirals with high speed"
+ },
+ {
+  "id": "magicmushroom",
+  "gid": 12,
+  "name": "Magic Mushroom",
+  "icon": "icons/collectibles_012_magicmushroom.png",
+  "quote": "Size up, full heal",
+  "desc": "↑ +1 Health · ↑ +0.3 Speed · ↑ +0.3 Damage · ↑ x1.5 Damage multiplier · ↑ +2.5 Range · Size up · Full health"
+ },
+ {
+  "id": "thevirus",
+  "gid": 13,
+  "name": "The Virus",
+  "icon": "icons/collectibles_013_thevirus.png",
+  "quote": "Poison touch",
+  "desc": "↑ +0.2 Speed · Touching enemies poisons them · Isaac deals 48 contact damage per second"
+ },
+ {
+  "id": "roidrage",
+  "gid": 14,
+  "name": "Roid Rage",
+  "icon": "icons/collectibles_014_roidrage.png",
+  "quote": "",
+  "desc": "↑ +0.3 Speed · ↑ +2.5 Range"
+ },
+ {
+  "id": "heart",
+  "gid": 15,
+  "name": "Lucky Rock",
+  "icon": "icons/collectibles_015_heart.png",
+  "quote": "Full heal",
+  "desc": "Destroying rocks has a 33% chance to spawn a coin"
+ },
+ {
+  "id": "rawliver",
+  "gid": 16,
+  "name": "Mom's Toenail",
+  "icon": "icons/collectibles_016_rawliver.png",
+  "quote": "Full heal",
+  "desc": "Mom's Foot stomps a random spot in the room every 20 seconds"
+ },
+ {
+  "id": "skeletonkey",
+  "gid": 17,
+  "name": "Skeleton Key",
+  "icon": "icons/collectibles_017_skeletonkey.png",
+  "quote": "+99 keys",
+  "desc": ""
+ },
+ {
+  "id": "adollar",
+  "gid": 18,
+  "name": "A Dollar",
+  "icon": "icons/collectibles_018_adollar.png",
+  "quote": "+99 cents",
+  "desc": "+100 Coins"
+ },
+ {
+  "id": "boom",
+  "gid": 19,
+  "name": "Boom!",
+  "icon": "icons/collectibles_019_boom.png",
+  "quote": "+10 bombs",
+  "desc": ""
+ },
+ {
+  "id": "transcendence",
+  "gid": 20,
+  "name": "XIX - The Sun",
+  "icon": "icons/collectibles_020_transcendence.png",
+  "quote": "Flight",
+  "desc": "Full health · Deals 100 damage to all enemies · Full mapping effect for the floor (except Super / Ultra Secret Room) · Removes Curse of Darkness"
+ },
+ {
+  "id": "thecompass",
+  "gid": 21,
+  "name": "XX - Judgement",
+  "icon": "icons/collectibles_021_thecompass.png",
+  "quote": "Reveals special rooms",
+  "desc": "Spawns a Beggar · 33% chance for it to be a Devil Beggar · 5% chance for it to be a Key Master, Bomb Bum, Battery Bum, or Rotten Beggar"
+ },
+ {
+  "id": "lunch",
+  "gid": 22,
+  "name": "Lunch",
+  "icon": "icons/collectibles_022_lunch.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Heals 1 heart"
+ },
+ {
+  "id": "dinner",
+  "gid": 23,
+  "name": "Dinner",
+  "icon": "icons/collectibles_023_dinner.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Heals 1 heart"
+ },
+ {
+  "id": "dessert",
+  "gid": 24,
+  "name": "Dessert",
+  "icon": "icons/collectibles_024_dessert.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Heals 1 heart"
+ },
+ {
+  "id": "breakfast",
+  "gid": 25,
+  "name": "Breakfast",
+  "icon": "icons/collectibles_025_breakfast.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Heals 1 heart"
+ },
+ {
+  "id": "rottenmeat",
+  "gid": 26,
+  "name": "Rotten Meat",
+  "icon": "icons/collectibles_026_rottenmeat.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Heals 1 heart"
+ },
+ {
+  "id": "woodenspoon",
+  "gid": 27,
+  "name": "Ace of Clubs",
+  "icon": "icons/collectibles_027_woodenspoon.png",
+  "quote": "",
+  "desc": "Turns all pickups, chests and non-boss enemies into random bombs"
+ },
+ {
+  "id": "thebelt",
+  "gid": 28,
+  "name": "Ace of Diamonds",
+  "icon": "icons/collectibles_028_thebelt.png",
+  "quote": "",
+  "desc": "Turns all pickups, chests and non-boss enemies into random coins"
+ },
+ {
+  "id": "momsunderwear",
+  "gid": 29,
+  "name": "Mom's Underwear",
+  "icon": "icons/collectibles_029_momsunderwear.png",
+  "quote": "",
+  "desc": "↑ +2.5 Range · Spawns 3-6 blue flies"
+ },
+ {
+  "id": "momsheels",
+  "gid": 30,
+  "name": "Mom's Heels",
+  "icon": "icons/collectibles_030_momsheels.png",
+  "quote": "",
+  "desc": "↑ +2.5 Range · Isaac deals 24 contact damage per second"
+ },
+ {
+  "id": "momslipstick",
+  "gid": 31,
+  "name": "Mom's Lipstick",
+  "icon": "icons/collectibles_031_momslipstick.png",
+  "quote": "",
+  "desc": "↑ +3.75 Range · Spawns 1 random heart"
+ },
+ {
+  "id": "wirecoathanger",
+  "gid": 32,
+  "name": "Liberty Cap",
+  "icon": "icons/collectibles_032_wirecoathanger.png",
+  "quote": "",
+  "desc": "25% chance for a random mushroom effect per room"
+ },
+ {
+  "id": "thebible",
+  "gid": 33,
+  "name": "Umbilical Cord",
+  "icon": "icons/collectibles_033_thebible.png",
+  "quote": "Temporary flight, instantly kills Mom / It Lives!",
+  "desc": "Having half a Red Heart or less grants Little Steven · Taking damage has a high chance to spawn a Gemini familiar for the room"
+ },
+ {
+  "id": "thebookofbelial",
+  "gid": 34,
+  "name": "Ehwaz",
+  "icon": "icons/collectibles_034_thebookofbelial.png",
+  "quote": "Temporary +2 dmg, +12.5% deal chance, x1.5 dmg with Blood of the Martyr",
+  "desc": "Spawns a trapdoor to the next floor · Spawns a crawlspace if used on a decorative floor tile (grass, small rocks, papers, gems, etc.)"
+ },
+ {
+  "id": "thenecronomicon",
+  "gid": 35,
+  "name": "The Necronomicon",
+  "icon": "icons/collectibles_035_thenecronomicon.png",
+  "quote": "Deals 40 dmg to the room",
+  "desc": ""
+ },
+ {
+  "id": "thepoop",
+  "gid": 36,
+  "name": "The Poop",
+  "icon": "icons/collectibles_036_thepoop.png",
+  "quote": "Makes a poop",
+  "desc": ""
+ },
+ {
+  "id": "mrboom",
+  "gid": 37,
+  "name": "Mr. Boom",
+  "icon": "icons/collectibles_037_mrboom.png",
+  "quote": "Makes a bomb (110 dmg)",
+  "desc": "Drops a large bomb below Isaac which deals 185 damage"
+ },
+ {
+  "id": "tammyshead",
+  "gid": 38,
+  "name": "Retro Vision",
+  "icon": "icons/collectibles_038_tammyshead.png",
+  "quote": "Shoots 10 tears (dmg + 25)",
+  "desc": "Pixelates the screen for 30 seconds"
+ },
+ {
+  "id": "momsbra",
+  "gid": 39,
+  "name": "Cancer",
+  "icon": "icons/collectibles_039_momsbra.png",
+  "quote": "Temporarily freezes enemies",
+  "desc": "↑ +1 Fire rate"
+ },
+ {
+  "id": "kamikaze",
+  "gid": 40,
+  "name": "Kamikaze!",
+  "icon": "icons/collectibles_040_kamikaze.png",
+  "quote": ".5 heart dmg to self, 40 dmg explosion",
+  "desc": "Causes a big explosion at Isaac's location · Deals 185 damage"
+ },
+ {
+  "id": "momspad",
+  "gid": 41,
+  "name": "Mom's Pad",
+  "icon": "icons/collectibles_041_momspad.png",
+  "quote": "Temporarily fears enemies",
+  "desc": "Fears all enemies in the room for 4 seconds · Spawns a blue fly"
+ },
+ {
+  "id": "bobsrottenhead",
+  "gid": 42,
+  "name": "Bob's Rotten Head",
+  "icon": "icons/collectibles_042_bobsrottenhead.png",
+  "quote": "Shoots a poison bomb (50 dmg + 6-8 / tick)",
+  "desc": "Using the item and firing in a direction throws the head · The head explodes where it lands and creates a poison cloud · Deals Isaac's damage + 185"
+ },
+ {
+  "id": "teleport",
+  "gid": 44,
+  "name": "Teleport",
+  "icon": "icons/collectibles_044_teleport.png",
+  "quote": "",
+  "desc": ""
+ },
+ {
+  "id": "yumheart",
+  "gid": 45,
+  "name": "Yum Heart",
+  "icon": "icons/collectibles_045_yumheart.png",
+  "quote": "Heals 1 heart",
+  "desc": ""
+ },
+ {
+  "id": "luckyfoot",
+  "gid": 46,
+  "name": "Lucky Foot",
+  "icon": "icons/collectibles_046_luckyfoot.png",
+  "quote": "Better gambling chances",
+  "desc": "↑ +1 Luck · Better chance to win while gambling · Increases room clearing drop chance · Turns bad pills into good ones"
+ },
+ {
+  "id": "doctorsremote",
+  "gid": 47,
+  "name": "Doctor's Remote",
+  "icon": "icons/collectibles_047_doctorsremote.png",
+  "quote": "Shoots a missile (20x dmg)",
+  "desc": ""
+ },
+ {
+  "id": "cupidsarrow",
+  "gid": 48,
+  "name": "A Missing Page",
+  "icon": "icons/collectibles_048_cupidsarrow.png",
+  "quote": "Piercing tears",
+  "desc": "Taking damage has a 5% chance to deal 80 damage to all enemies in the room · Black Hearts and Necronomicon-like effects deal double damage"
+ },
+ {
+  "id": "shoopdawhoop",
+  "gid": 49,
+  "name": "Shoop da Whoop!",
+  "icon": "icons/collectibles_049_shoopdawhoop.png",
+  "quote": "Shoots a blood laser (7x dmg)",
+  "desc": "The next shot is replaced with a beam · It deals 24x Isaac's damage over 0.83 seconds"
+ },
+ {
+  "id": "steven",
+  "gid": 50,
+  "name": "Burnt Penny",
+  "icon": "icons/collectibles_050_steven.png",
+  "quote": "",
+  "desc": "Picking up a coin has a 25% chance to spawn a bomb · Higher chance from nickels and dimes"
+ },
+ {
+  "id": "pentagram",
+  "gid": 51,
+  "name": "Flat Penny",
+  "icon": "icons/collectibles_051_pentagram.png",
+  "quote": "+20% deal chance",
+  "desc": "Picking up a coin has a 25% chance to spawn a key · Higher chance from nickels and dimes"
+ },
+ {
+  "id": "drfetus",
+  "gid": 52,
+  "name": "Dr. Fetus",
+  "icon": "icons/collectibles_052_drfetus.png",
+  "quote": "Bomb tears",
+  "desc": "↓ x0.4 Fire rate multiplier · Isaac shoots bombs instead of tears · Those bombs deal 10x Isaac's tear damage · If that results in over 60 damage, they instead deal 5x damage +30"
+ },
+ {
+  "id": "magneto",
+  "gid": 53,
+  "name": "Magneto",
+  "icon": "icons/collectibles_053_magneto.png",
+  "quote": "Attracts pickups",
+  "desc": "Pickups are attracted to Isaac · Opens chests from 2 tiles away, ignoring damage of Spike Chests"
+ },
+ {
+  "id": "treasuremap",
+  "gid": 54,
+  "name": "Treasure Map",
+  "icon": "icons/collectibles_054_treasuremap.png",
+  "quote": "Reveals the floor layout",
+  "desc": ""
+ },
+ {
+  "id": "momseye",
+  "gid": 55,
+  "name": "Mom's Eye",
+  "icon": "icons/collectibles_055_momseye.png",
+  "quote": "Chance to shoot a 2nd tear backwards",
+  "desc": "50% chance to shoot an extra tear backwards · 100% chance at 5 luck"
+ },
+ {
+  "id": "lemonmishap",
+  "gid": 56,
+  "name": "0 - The Fool?",
+  "icon": "icons/collectibles_056_lemonmishap.png",
+  "quote": "Makes a pool of pee",
+  "desc": "Drops all of Isaac's hearts but one and all of his pickups on the floor · Coins and bombs are dropped as The Quarter or Boom! if possible"
+ },
+ {
+  "id": "distantadmiration",
+  "gid": 57,
+  "name": "I - The Magician?",
+  "icon": "icons/collectibles_057_distantadmiration.png",
+  "quote": "Orbital (5 dmg / tick)",
+  "desc": "Grants an aura that repels enemies and projectiles for 60 seconds"
+ },
+ {
+  "id": "bookofshadows",
+  "gid": 58,
+  "name": "II - The High Priestess?",
+  "icon": "icons/collectibles_058_bookofshadows.png",
+  "quote": "Temporary invincibility",
+  "desc": "Mom's Foot tries to stomp Isaac for 60 seconds"
+ },
+ {
+  "id": "theladder",
+  "gid": 60,
+  "name": "IV - The Emperor?",
+  "icon": "icons/collectibles_060_theladder.png",
+  "quote": "Can cross gaps",
+  "desc": "Teleports Isaac to an extra Boss room that can be defeated for an item · The boss is chosen from two floors deeper than the current one"
+ },
+ {
+  "id": "charmofthevampire",
+  "gid": 62,
+  "name": "Charm of the Vampire",
+  "icon": "icons/collectibles_062_charmofthevampire.png",
+  "quote": "Heals half heart every 13 enemy deaths",
+  "desc": "↑ +0.3 Damage · Killing 13 enemies heals half a heart"
+ },
+ {
+  "id": "thebattery",
+  "gid": 63,
+  "name": "VII - The Chariot?",
+  "icon": "icons/collectibles_063_thebattery.png",
+  "quote": "Can double charge activated items",
+  "desc": "Receive for 10 seconds: · ↑ x4 Fire rate multiplier · Invincible but can't move"
+ },
+ {
+  "id": "steamsale",
+  "gid": 64,
+  "name": "VIII - Justice?",
+  "icon": "icons/collectibles_064_steamsale.png",
+  "quote": "All shop items are half price",
+  "desc": "Spawns 2-4 golden chests"
+ },
+ {
+  "id": "anarchistcookbook",
+  "gid": 65,
+  "name": "Tape Worm",
+  "icon": "icons/collectibles_065_anarchistcookbook.png",
+  "quote": "Spawns 6 troll bombs",
+  "desc": "↑ +3 Range"
+ },
+ {
+  "id": "thehourglass",
+  "gid": 66,
+  "name": "Lazy Worm",
+  "icon": "icons/collectibles_066_thehourglass.png",
+  "quote": "Temporarily slows enemies",
+  "desc": "↓ -0.5 Shot speed"
+ },
+ {
+  "id": "sistermaggy",
+  "gid": 67,
+  "name": "Sister Maggy",
+  "icon": "icons/collectibles_067_sistermaggy.png",
+  "quote": "Familiar (3.5 dmg / tear)",
+  "desc": "Shoots normal tears · Deals 6 damage per tear"
+ },
+ {
+  "id": "technology",
+  "gid": 68,
+  "name": "XII - The Hanged Man?",
+  "icon": "icons/collectibles_068_technology.png",
+  "quote": "Laser tears (piercing)",
+  "desc": "Receive for 30 seconds: · ↓ -0.1 Speed · Triple shot · Killed enemies drop coins"
+ },
+ {
+  "id": "chocolatemilk",
+  "gid": 69,
+  "name": "Chocolate Milk",
+  "icon": "icons/collectibles_069_chocolatemilk.png",
+  "quote": "Charge tears (max is 4x dmg and 2.5x delay)",
+  "desc": "Chargeable tears · Damage scales with charge time, up to 4x"
+ },
+ {
+  "id": "growthhormones",
+  "gid": 70,
+  "name": "Growth Hormones",
+  "icon": "icons/collectibles_070_growthhormones.png",
+  "quote": "",
+  "desc": "↑ +0.2 Speed · ↑ +1 Damage"
+ },
+ {
+  "id": "minimushroom",
+  "gid": 71,
+  "name": "Mini Mush",
+  "icon": "icons/collectibles_071_minimushroom.png",
+  "quote": "Size down",
+  "desc": "↑ +0.3 Speed · ↑ +2.5 Range · ↑ Size down"
+ },
+ {
+  "id": "rosary",
+  "gid": 72,
+  "name": "Rosary",
+  "icon": "icons/collectibles_072_rosary.png",
+  "quote": "Puts the bible into most item pools",
+  "desc": "↑ +0.5 Tears · +3 Soul Hearts · The Bible is added to all item pools"
+ },
+ {
+  "id": "cubeofmeat",
+  "gid": 73,
+  "name": "XVII - The Stars?",
+  "icon": "icons/collectibles_073_cubeofmeat.png",
+  "quote": "Orbital (7 dmg / tick)",
+  "desc": "Removes Isaac's oldest collected passive item (ignoring starting items) · Spawns 2 random items from the current room's item pool"
+ },
+ {
+  "id": "aquarter",
+  "gid": 74,
+  "name": "XVIII - The Moon?",
+  "icon": "icons/collectibles_074_aquarter.png",
+  "quote": "+25 cents",
+  "desc": "Teleports Isaac to the Ultra Secret Room · Pathway back will be made of red rooms"
+ },
+ {
+  "id": "phd",
+  "gid": 75,
+  "name": "XIX - The Sun?",
+  "icon": "icons/collectibles_075_phd.png",
+  "quote": "Bad stat pills become good, free pill",
+  "desc": "Receive for the floor: · ↑ +1.5 Damage · Flight and spectral tears · Converts heart containers into Bone Hearts (reverts) · Curse of Darkness"
+ },
+ {
+  "id": "xrayvision",
+  "gid": 76,
+  "name": "XX - Judgement?",
+  "icon": "icons/collectibles_076_xrayvision.png",
+  "quote": "Automatically opens secret and super secret rooms",
+  "desc": "Spawns a Restock Machine"
+ },
+ {
+  "id": "mylittleunicorn",
+  "gid": 77,
+  "name": "XXI - The World?",
+  "icon": "icons/collectibles_077_mylittleunicorn.png",
+  "quote": "Temporary invincibility, 40 contact dmg",
+  "desc": "Spawns a trapdoor to a crawlspace"
+ },
+ {
+  "id": "bookofrevelations",
+  "gid": 78,
+  "name": "Book of Revelations",
+  "icon": "icons/collectibles_078_bookofrevelations.png",
+  "quote": "+1 soul heart, changes floor boss to a horseman",
+  "desc": "+1 Soul Heart · +17.5% Devil/Angel Room chance while held · Using the item replaces the floor's boss with a horseman"
+ },
+ {
+  "id": "themark",
+  "gid": 79,
+  "name": "The Mark",
+  "icon": "icons/collectibles_079_themark.png",
+  "quote": "",
+  "desc": "↑ +1 Damage · ↑ +0.2 Speed · +1 Black Heart"
+ },
+ {
+  "id": "thepact",
+  "gid": 80,
+  "name": "The Pact",
+  "icon": "icons/collectibles_080_thepact.png",
+  "quote": "",
+  "desc": "↑ +0.7 Tears · ↑ +0.5 Damage · +2 Black Hearts"
+ },
+ {
+  "id": "deadcat",
+  "gid": 81,
+  "name": "Soul of Isaac",
+  "icon": "icons/collectibles_081_deadcat.png",
+  "quote": "+9 lives, sets heart containers to 1",
+  "desc": "Makes all item pedestals in the room cycle between two different items"
+ },
+ {
+  "id": "lordofthepit",
+  "gid": 82,
+  "name": "Soul of Magdalene",
+  "icon": "icons/collectibles_082_lordofthepit.png",
+  "quote": "Flying",
+  "desc": "Effect lasts for the room: · Enemies killed drop half Red Hearts that disappear after 2 seconds"
+ },
+ {
+  "id": "thenail",
+  "gid": 83,
+  "name": "The Nail",
+  "icon": "icons/collectibles_083_thenail.png",
+  "quote": "+1 soul heart, temporarily crush rocks",
+  "desc": "Upon use: · + Half Black Heart · Receive for the room: · ↑ +2 Damage · ↓ -0.18 Speed · Isaac deals 40 contact damage per second · Allows Isaac to destroy rocks by walking into them"
+ },
+ {
+  "id": "weneedtogodeeper",
+  "gid": 84,
+  "name": "We Need To Go Deeper!",
+  "icon": "icons/collectibles_084_weneedtogodeeper.png",
+  "quote": "Spawns a trapdoor (10% chance for crawlspace)",
+  "desc": "Opens a trapdoor to the next floor · Opens a crawlspace if used on a decorative floor tile (grass, small rocks, papers, gems, etc.)"
+ },
+ {
+  "id": "deckofcards",
+  "gid": 85,
+  "name": "Soul of ???",
+  "icon": "icons/collectibles_085_deckofcards.png",
+  "quote": "Spawns a random card",
+  "desc": "Causes 8 poison farts with brown creep, then quickly spawns 7 Butt Bombs · Standing on the creep grants: · ↑ +1.5 Fire rate · ↑ +1 Damage"
+ },
+ {
+  "id": "monstrostooth",
+  "gid": 86,
+  "name": "Soul of Eve",
+  "icon": "icons/collectibles_086_monstrostooth.png",
+  "quote": "Summons monstro (120 dmg)",
+  "desc": "14 Dead Bird familiars fly in and attack enemies for the room"
+ },
+ {
+  "id": "lokishorns",
+  "gid": 87,
+  "name": "Loki's Horns",
+  "icon": "icons/collectibles_087_lokishorns.png",
+  "quote": "Chance to shoot 4 tears instead of 1",
+  "desc": "25% chance to shoot in 4 directions · 100% chance at 15 luck"
+ },
+ {
+  "id": "littlechubby",
+  "gid": 88,
+  "name": "Soul of Azazel",
+  "icon": "icons/collectibles_088_littlechubby.png",
+  "quote": "Familiar (3.5 dmg / tick)",
+  "desc": "Fires a Mega Blast beam for 7.5 seconds"
+ },
+ {
+  "id": "spidersbite",
+  "gid": 89,
+  "name": "Soul of Lazarus",
+  "icon": "icons/collectibles_089_spidersbite.png",
+  "quote": "Chance to shoot slowing tears",
+  "desc": "Isaac dies and immediately revives at half a heart · This item is automatically used upon taking fatal damage (acts as an extra life)"
+ },
+ {
+  "id": "smallrock",
+  "gid": 90,
+  "name": "Brown Cap",
+  "icon": "icons/collectibles_090_smallrock.png",
+  "quote": "",
+  "desc": "Poop explodes for 100 damage when destroyed"
+ },
+ {
+  "id": "spelunkerhat",
+  "gid": 91,
+  "name": "Spelunker Hat",
+  "icon": "icons/collectibles_091_spelunkerhat.png",
+  "quote": "See adjacent special rooms on the map",
+  "desc": "Rooms on the map are revealed from further away · Can also reveal Secret and Super Secret Rooms · Prevents damage from falling projectiles"
+ },
+ {
+  "id": "superbandage",
+  "gid": 92,
+  "name": "Super Bandage",
+  "icon": "icons/collectibles_092_superbandage.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Heals 1 heart · +2 Soul Hearts"
+ },
+ {
+  "id": "thegamekid",
+  "gid": 93,
+  "name": "Soul of the Keeper",
+  "icon": "icons/collectibles_093_thegamekid.png",
+  "quote": "Temporary invincibility, 40 contact dmg",
+  "desc": "Spawns 1-25 random coins"
+ },
+ {
+  "id": "sackofpennies",
+  "gid": 94,
+  "name": "Soul of Apollyon",
+  "icon": "icons/collectibles_094_sackofpennies.png",
+  "quote": "Spawns a coin every 2 rooms cleared",
+  "desc": "Spawns 15 random locusts"
+ },
+ {
+  "id": "robobaby",
+  "gid": 95,
+  "name": "Soul of the Forgotten",
+  "icon": "icons/collectibles_095_robobaby.png",
+  "quote": "Familiar (3.5 dmg / laser)",
+  "desc": "Spawns The Forgotten as a secondary character for the room"
+ },
+ {
+  "id": "littlechad",
+  "gid": 96,
+  "name": "Ouroboros Worm",
+  "icon": "icons/collectibles_096_littlechad.png",
+  "quote": "Spawns a half heart every 2 rooms cleared",
+  "desc": "↑ +0.4 Tears · ↑ +1.5 Range · Spectral tears · 10% Chance for homing tears · 100% chance at 9 luck · Isaac's tears move quickly in a spiral pattern"
+ },
+ {
+  "id": "bookofsin",
+  "gid": 97,
+  "name": "Soul of Jacob and Esau",
+  "icon": "icons/collectibles_097_bookofsin.png",
+  "quote": "Spawns a random pickup",
+  "desc": "Spawns Esau as a secondary character for the room · He spawns with as many passive items as the player"
+ },
+ {
+  "id": "therelic",
+  "gid": 98,
+  "name": "The Relic",
+  "icon": "icons/collectibles_098_therelic.png",
+  "quote": "Spawns a soul heart every few rooms cleared",
+  "desc": "Spawns 1 Soul Heart every 7-8 rooms"
+ },
+ {
+  "id": "littlegish",
+  "gid": 99,
+  "name": "Little Gish",
+  "icon": "icons/collectibles_099_littlegish.png",
+  "quote": "Familiar (3.5 dmg / tear, chance to slow)",
+  "desc": ""
+ },
+ {
+  "id": "littlesteve",
+  "gid": 100,
+  "name": "Little Steven",
+  "icon": "icons/collectibles_100_littlesteve.png",
+  "quote": "Familiar (3.5 dmg / tear, homing tears)",
+  "desc": ""
+ },
+ {
+  "id": "thehalo",
+  "gid": 101,
+  "name": "The Halo",
+  "icon": "icons/collectibles_101_thehalo.png",
+  "quote": "",
+  "desc": "↑ +1 Health · ↑ +0.3 Speed · ↑ +0.2 Tears · ↑ +0.3 Damage · ↑ +1.5 Range · Heals 1 heart"
+ },
+ {
+  "id": "momsbottleofpills",
+  "gid": 102,
+  "name": "Mom's Bottle of Pills",
+  "icon": "icons/collectibles_102_momsbottleofpills.png",
+  "quote": "Spawns a random pill",
+  "desc": ""
+ },
+ {
+  "id": "thecommoncold",
+  "gid": 103,
+  "name": "The Common Cold",
+  "icon": "icons/collectibles_103_thecommoncold.png",
+  "quote": "Chance to shoot poison tears",
+  "desc": ""
+ },
+ {
+  "id": "theparasite",
+  "gid": 104,
+  "name": "The Parasite",
+  "icon": "icons/collectibles_104_theparasite.png",
+  "quote": "Tears split into 2 pieces, each does 1/4 dmg",
+  "desc": ""
+ },
+ {
+  "id": "dice",
+  "gid": 105,
+  "name": "The D6",
+  "icon": "icons/collectibles_105_dice.png",
+  "quote": "Rerolls pedestal items",
+  "desc": ""
+ },
+ {
+  "id": "mrmega",
+  "gid": 106,
+  "name": "Mr. Mega",
+  "icon": "icons/collectibles_106_mrmega.png",
+  "quote": "+5 bombs, bomb blast radius increased, bomb dmg increased from 50 to 110",
+  "desc": "↑ x1.85 Bomb damage · +5 Bombs"
+ },
+ {
+  "id": "pinkingshears",
+  "gid": 107,
+  "name": "The Pinking Shears",
+  "icon": "icons/collectibles_107_pinkingshears.png",
+  "quote": "Spawns a melee familiar (82.5 dmg / second)",
+  "desc": "Receive for the room: · Flight · Isaac's body separates from his head and attacks enemies with 23.5 contact damage per second"
+ },
+ {
+  "id": "thewafer",
+  "gid": 108,
+  "name": "The Wafer",
+  "icon": "icons/collectibles_108_thewafer.png",
+  "quote": "All dmg is reduced to half a heart",
+  "desc": ""
+ },
+ {
+  "id": "moneyispower",
+  "gid": 109,
+  "name": "Money = Power",
+  "icon": "icons/collectibles_109_moneyispower.png",
+  "quote": "+0.04 dmg per coin held",
+  "desc": ""
+ },
+ {
+  "id": "momscontacts",
+  "gid": 110,
+  "name": "Mom's Contacts",
+  "icon": "icons/collectibles_110_momscontacts.png",
+  "quote": "Chance to shoot freeze tears",
+  "desc": "↑ +1.5 Range · 20% chance to shoot petrifying tears · 50% chance at 20 luck"
+ },
+ {
+  "id": "thebean",
+  "gid": 111,
+  "name": "Bloody Crown",
+  "icon": "icons/collectibles_111_thebean.png",
+  "quote": "Poison fart (26 dmg)",
+  "desc": "Treasure Rooms appear in the Womb and Corpse"
+ },
+ {
+  "id": "guardianangel",
+  "gid": 112,
+  "name": "Guardian Angel",
+  "icon": "icons/collectibles_112_guardianangel.png",
+  "quote": "Orbital (7 dmg / tick)",
+  "desc": ""
+ },
+ {
+  "id": "demonbaby",
+  "gid": 113,
+  "name": "Demon Baby",
+  "icon": "icons/collectibles_113_demonbaby.png",
+  "quote": "Familiar (3 dmg / tear)",
+  "desc": ""
+ },
+ {
+  "id": "momsknife",
+  "gid": 114,
+  "name": "Mom's Knife",
+  "icon": "icons/collectibles_114_momsknife.png",
+  "quote": "Replaces tears with a knife",
+  "desc": "Isaac's tears are replaced by a throwable knife · The knife deals 2x Isaac's damage while held and caps at 6x damage at 1/3 charge · Charging further only increases throwing range · Damage reduces to 2x when returning to Isaac"
+ },
+ {
+  "id": "ouijaboard",
+  "gid": 115,
+  "name": "Ouija Board",
+  "icon": "icons/collectibles_115_ouijaboard.png",
+  "quote": "Spectral tears",
+  "desc": "↑ +0.5 Tears · Spectral tears"
+ },
+ {
+  "id": "9volt",
+  "gid": 116,
+  "name": "9 Volt",
+  "icon": "icons/collectibles_116_9volt.png",
+  "quote": "Quicker charge, fully charges current item on pickup",
+  "desc": ""
+ },
+ {
+  "id": "deadbird",
+  "gid": 117,
+  "name": "Dead Bird",
+  "icon": "icons/collectibles_117_deadbird.png",
+  "quote": "Spawns a bird familiar when hit (2 dmg / tick)",
+  "desc": ""
+ },
+ {
+  "id": "brimstone",
+  "gid": 118,
+  "name": "Brimstone",
+  "icon": "icons/collectibles_118_brimstone.png",
+  "quote": "Tears become blood laser, hits 12 or 13 times",
+  "desc": "↓ x0.33 Fire rate multiplier · Isaac's tears are replaced by a chargeable blood beam · It deals 9x Isaac's damage over 0.63 seconds"
+ },
+ {
+  "id": "bloodbag",
+  "gid": 119,
+  "name": "Stem Cell",
+  "icon": "icons/collectibles_119_bloodbag.png",
+  "quote": "",
+  "desc": "Entering a new floor heals half of Isaac's empty Red/Bone Hearts · Heals half a heart minimum"
+ },
+ {
+  "id": "oddmushroomthin",
+  "gid": 120,
+  "name": "Odd Mushroom (Thin)",
+  "icon": "icons/collectibles_120_oddmushroomthin.png",
+  "quote": "dmg * 0.9 - 0.4",
+  "desc": ""
+ },
+ {
+  "id": "oddmushroomlarge",
+  "gid": 121,
+  "name": "Odd Mushroom (Large)",
+  "icon": "icons/collectibles_121_oddmushroomlarge.png",
+  "quote": "",
+  "desc": "↑ +1 Health · ↑ +1 Damage · ↑ +1.5 Range · ↓ -0.2 Speed"
+ },
+ {
+  "id": "whoreofbabylon",
+  "gid": 122,
+  "name": "Whore of Babylon",
+  "icon": "icons/collectibles_122_whoreofbabylon.png",
+  "quote": "Only active if at a half red heart or less",
+  "desc": ""
+ },
+ {
+  "id": "monstermanual",
+  "gid": 123,
+  "name": "Monster Manual",
+  "icon": "icons/collectibles_123_monstermanual.png",
+  "quote": "Summons a random familiar",
+  "desc": "Spawns a random familiar for the floor"
+ },
+ {
+  "id": "deadseascrolls",
+  "gid": 124,
+  "name": "Dead Sea Scrolls",
+  "icon": "icons/collectibles_124_deadseascrolls.png",
+  "quote": "Performs a random effect",
+  "desc": ""
+ },
+ {
+  "id": "bobbybomb",
+  "gid": 125,
+  "name": "Bobby-Bomb",
+  "icon": "icons/collectibles_125_bobbybomb.png",
+  "quote": "+5 bombs, homing bombs",
+  "desc": ""
+ },
+ {
+  "id": "razorblade",
+  "gid": 126,
+  "name": "Razor Blade",
+  "icon": "icons/collectibles_126_razorblade.png",
+  "quote": "Deals 1 heart dmg to self, gives a temporary +1.2 dmg per use",
+  "desc": "↑ +1.2 Damage for the room · Deals 1 heart of damage to Isaac · After the first use in a room, deals half a heart instead · Removes Red Hearts first"
+ },
+ {
+  "id": "forgetmenow",
+  "gid": 127,
+  "name": "Forget Me Now",
+  "icon": "icons/collectibles_127_forgetmenow.png",
+  "quote": "Generates a new floor, single use",
+  "desc": ""
+ },
+ {
+  "id": "foreveralone",
+  "gid": 128,
+  "name": "Finger Bone",
+  "icon": "icons/collectibles_128_foreveralone.png",
+  "quote": "Orbital (2 dmg / tick)",
+  "desc": "Taking damage has a 4% chance to grant a Bone Heart"
+ },
+ {
+  "id": "bucketoflard",
+  "gid": 129,
+  "name": "Bucket of Lard",
+  "icon": "icons/collectibles_129_bucketoflard.png",
+  "quote": "",
+  "desc": "↑ +2 Health · ↓ -0.2 Speed"
+ },
+ {
+  "id": "apony",
+  "gid": 130,
+  "name": "Chewed Pen",
+  "icon": "icons/collectibles_130_apony.png",
+  "quote": "flying, minimum speed 1.5",
+  "desc": "10% chance to shoot slowing tears · 100% chance at 18 luck"
+ },
+ {
+  "id": "bombbag",
+  "gid": 131,
+  "name": "Blessed Penny",
+  "icon": "icons/collectibles_131_bombbag.png",
+  "quote": "Spawns a bomb every few rooms cleared",
+  "desc": "Picking up a coin has a 17% chance to spawn a half Soul Heart · Higher chance from nickels and dimes"
+ },
+ {
+  "id": "alumpofcoal",
+  "gid": 132,
+  "name": "Broken Syringe",
+  "icon": "icons/collectibles_132_alumpofcoal.png",
+  "quote": "+dmg based on tear distance",
+  "desc": "25% chance to get a random syringe effect each room"
+ },
+ {
+  "id": "guppyspaw",
+  "gid": 133,
+  "name": "Short Fuse",
+  "icon": "icons/collectibles_133_guppyspaw.png",
+  "quote": "-1 heart container and +3 soul hearts",
+  "desc": "Isaac's bombs explode faster"
+ },
+ {
+  "id": "guppystail",
+  "gid": 134,
+  "name": "Gigante Bean",
+  "icon": "icons/collectibles_134_guppystail.png",
+  "quote": "Increased chance to find chests",
+  "desc": "Increases fart size"
+ },
+ {
+  "id": "ivbag",
+  "gid": 135,
+  "name": "A Lighter",
+  "icon": "icons/collectibles_135_ivbag.png",
+  "quote": "Spawns coins and deals dmg to self",
+  "desc": "Entering a room has a 20% chance to burn random enemies"
+ },
+ {
+  "id": "bestfriend",
+  "gid": 136,
+  "name": "Broken Padlock",
+  "icon": "icons/collectibles_136_bestfriend.png",
+  "quote": "Spawns a decoy (110 dmg explosion)",
+  "desc": "Doors, key blocks and golden chests can be opened with explosions · Explosions can also open the \"Strange Door\" in \"Depths II\""
+ },
+ {
+  "id": "remotedetonator",
+  "gid": 137,
+  "name": "Myosotis",
+  "icon": "icons/collectibles_137_remotedetonator.png",
+  "quote": "+5 bombs, manually detonate bombs",
+  "desc": "Entering a new floor spawns up to 4 uncollected pickups from the previous floor in the starting room"
+ },
+ {
+  "id": "stigmata",
+  "gid": 138,
+  "name": "Stigmata",
+  "icon": "icons/collectibles_138_stigmata.png",
+  "quote": "",
+  "desc": "↑ +1 Health · ↑ +0.3 Damage · Heals 1 heart"
+ },
+ {
+  "id": "momspurse",
+  "gid": 139,
+  "name": "Mom's Purse",
+  "icon": "icons/collectibles_139_momspurse.png",
+  "quote": "Can carry 2 trinkets instead of 1",
+  "desc": "Spawns 1 random trinket · Isaac can hold 2 trinkets"
+ },
+ {
+  "id": "bobscurse",
+  "gid": 140,
+  "name": "Bob's Curse",
+  "icon": "icons/collectibles_140_bobscurse.png",
+  "quote": "+5 bombs, bombs deal poison dmg",
+  "desc": "+5 Bombs · Isaac's bombs create a cloud of poison · Poison immunity"
+ },
+ {
+  "id": "pageantboy",
+  "gid": 141,
+  "name": "Forgotten Lullaby",
+  "icon": "icons/collectibles_141_pageantboy.png",
+  "quote": "Spawns 7 coins",
+  "desc": "2x Fire rate for familiars"
+ },
+ {
+  "id": "scapular",
+  "gid": 142,
+  "name": "Scapular",
+  "icon": "icons/collectibles_142_scapular.png",
+  "quote": "+1 soul heart if hit to half a red heart (once per room)",
+  "desc": "Isaac gains 1 Soul Heart when damaged down to half a heart · Can only happen once per room · Exiting and re-entering the room allows the effect to trigger again · Doesn't trigger from health donations"
+ },
+ {
+  "id": "speedball",
+  "gid": 143,
+  "name": "Old Capacitor",
+  "icon": "icons/collectibles_143_speedball.png",
+  "quote": "",
+  "desc": "Prevents active item from charging by clearing a room · Clearing a room has a 20% chance to spawn a battery · 33% chance at 5 luck"
+ },
+ {
+  "id": "bumfriend",
+  "gid": 144,
+  "name": "Brain Worm",
+  "icon": "icons/collectibles_144_bumfriend.png",
+  "quote": "Turns coins into other pickups",
+  "desc": "Tears turn 90 degrees to target enemies that they may have missed"
+ },
+ {
+  "id": "guppyshead",
+  "gid": 145,
+  "name": "Perfection",
+  "icon": "icons/collectibles_145_guppyshead.png",
+  "quote": "Spawn 2-4 blue flies",
+  "desc": "↑ +10 Luck · Taking damage destroys the trinket"
+ },
+ {
+  "id": "prayercard",
+  "gid": 146,
+  "name": "Devil's Crown",
+  "icon": "icons/collectibles_146_prayercard.png",
+  "quote": "Gives an eternal heart",
+  "desc": "Treasure Room items are replaced with devil deals"
+ },
+ {
+  "id": "notchedaxe",
+  "gid": 147,
+  "name": "Notched Axe",
+  "icon": "icons/collectibles_147_notchedaxe.png",
+  "quote": "Breaks rocks and secret doors",
+  "desc": "Using the item makes Isaac hold the axe · Holding the axe allows Isaac to break rocks, secret room entrances and damage enemies · Landing a hit with the axe reduces its charge · Entering a new floor fully recharges the axe"
+ },
+ {
+  "id": "infestation",
+  "gid": 148,
+  "name": "Infestation",
+  "icon": "icons/collectibles_148_infestation.png",
+  "quote": "Spawns blue flies when hit",
+  "desc": "Taking damage spawns 2-6 blue flies"
+ },
+ {
+  "id": "ipecac",
+  "gid": 149,
+  "name": "Ipecac",
+  "icon": "icons/collectibles_149_ipecac.png",
+  "quote": "Explosive tears, +40 dmg",
+  "desc": "↑ +40 Damage · ↓ x0.33 Fire rate multiplier · ↓ x0.8 Range multiplier · ↓ x0.8 Shot speed multiplier · Isaac's tears are fired in an arc · The tears explode and poison enemies where they land"
+ },
+ {
+  "id": "toughlove",
+  "gid": 150,
+  "name": "Blue Key",
+  "icon": "icons/collectibles_150_toughlove.png",
+  "quote": "Chance to shoot teeth tears (3.2x dmg)",
+  "desc": "Locked doors can be opened for free, but Isaac has to clear a room from the Hush floor before accessing the room behind them"
+ },
+ {
+  "id": "themulligan",
+  "gid": 151,
+  "name": "Flat File",
+  "icon": "icons/collectibles_151_themulligan.png",
+  "quote": "1/6 chance for blue fly on tear hit (effectively x1.33 dmg)",
+  "desc": "Retracts most spikes, rendering them harmless · Also affects Curse Room doors, mimics and any spike obstacle"
+ },
+ {
+  "id": "technology2",
+  "gid": 152,
+  "name": "Technology 2",
+  "icon": "icons/collectibles_152_technology2.png",
+  "quote": "Laser tears (piercing)",
+  "desc": "↓ x0.67 Fire rate multiplier · Replaces Isaac's right eye tears with a continuous laser · The laser deals 2x Isaac's damage per second"
+ },
+ {
+  "id": "mutantspider",
+  "gid": 153,
+  "name": "Mutant Spider",
+  "icon": "icons/collectibles_153_mutantspider.png",
+  "quote": "Quad shot",
+  "desc": "↓ x0.42 Fire rate multiplier · Isaac shoots 4 tears at once"
+ },
+ {
+  "id": "chemicalpeel",
+  "gid": 154,
+  "name": "Dice Bag",
+  "icon": "icons/collectibles_154_chemicalpeel.png",
+  "quote": "+2 flat dmg every 2nd shot",
+  "desc": "50% chance per new room to grant a single use die consumable item · The die disappears when leaving · The die does not take up a pill/card slot"
+ },
+ {
+  "id": "thepeeper",
+  "gid": 155,
+  "name": "The Peeper",
+  "icon": "icons/collectibles_155_thepeeper.png",
+  "quote": "Familiar (8 dmg / tick)",
+  "desc": "↑ x1.35 Damage multiplier for the left eye · Floats around the room · Deals 17.1 contact damage per second"
+ },
+ {
+  "id": "habit",
+  "gid": 156,
+  "name": "Mother's Kiss",
+  "icon": "icons/collectibles_156_habit.png",
+  "quote": "Recharge one tick of when hit",
+  "desc": "+1 Heart container while held"
+ },
+ {
+  "id": "bloodylust",
+  "gid": 157,
+  "name": "Torn Card",
+  "icon": "icons/collectibles_157_bloodylust.png",
+  "quote": "+dmg when hit (only for the current floor, max +6.5 dmg at 6 hits)",
+  "desc": "Every 15 shots, Isaac shoots an Ipecac + My Reflection tear with a very high range value"
+ },
+ {
+  "id": "crystalball",
+  "gid": 158,
+  "name": "Crystal Ball",
+  "icon": "icons/collectibles_158_crystalball.png",
+  "quote": "Reveals the floor, spawns a card / rune / soul heart",
+  "desc": "Spawns a Soul Heart, rune or card · Full mapping effect for the floor (except Super/Ultra Secret Room) · While held: · +15% Planetarium chance · +100% if a Treasure Room was skipped"
+ },
+ {
+  "id": "spiritofthenight",
+  "gid": 159,
+  "name": "Gilded Key",
+  "icon": "icons/collectibles_159_spiritofthenight.png",
+  "quote": "Flight, spectral tears",
+  "desc": "+1 Key on pickup · Replaces all chests (except Old/Mega) with golden chests · Golden chests can contain extra cards, pills or trinkets"
+ },
+ {
+  "id": "crackthesky",
+  "gid": 160,
+  "name": "Lucky Sack",
+  "icon": "icons/collectibles_160_crackthesky.png",
+  "quote": "Creates 5 beams (20 dmg)",
+  "desc": "Entering a new floor spawns a sack"
+ },
+ {
+  "id": "ankh",
+  "gid": 161,
+  "name": "Wicked Crown",
+  "icon": "icons/collectibles_161_ankh.png",
+  "quote": "+1 life (will respawn as Blue Baby)",
+  "desc": "Spawns a Treasure Room and Shop in Sheol"
+ },
+ {
+  "id": "celticcross",
+  "gid": 162,
+  "name": "Azazel's Stump",
+  "icon": "icons/collectibles_162_celticcross.png",
+  "quote": "Chance for shield when hit (based on luck)",
+  "desc": "Clearing a room has a 33% chance to turn the player into Azazel · Effect lasts until clearing and leaving another room"
+ },
+ {
+  "id": "ghostbaby",
+  "gid": 163,
+  "name": "Dingle Berry",
+  "icon": "icons/collectibles_163_ghostbaby.png",
+  "quote": "Familiar (3.5 dmg / tear)",
+  "desc": "All Dip (small poop) enemies are friendly · Clearing a room spawns 1 random Dip"
+ },
+ {
+  "id": "bluecandle",
+  "gid": 164,
+  "name": "Ring Cap",
+  "icon": "icons/collectibles_164_bluecandle.png",
+  "quote": "Shoots a flame (approx. 115 dmg)",
+  "desc": "Spawns 1 extra bomb for each bomb placed"
+ },
+ {
+  "id": "catoninetails",
+  "gid": 165,
+  "name": "Nuh Uh!",
+  "icon": "icons/collectibles_165_catoninetails.png",
+  "quote": "",
+  "desc": "On Womb and beyond, replaces all coin and key spawns with a bomb, heart, pill, card, trinket, battery, or enemy fly"
+ },
+ {
+  "id": "d20",
+  "gid": 166,
+  "name": "Modeling Clay",
+  "icon": "icons/collectibles_166_d20.png",
+  "quote": "Rerolls pickups",
+  "desc": "50% chance to grant the effect of a random passive item each room"
+ },
+ {
+  "id": "harlequinbaby",
+  "gid": 167,
+  "name": "Polished Bone",
+  "icon": "icons/collectibles_167_harlequinbaby.png",
+  "quote": "Familiar (4 dmg / tear)",
+  "desc": "Clearing a room has a 25% chance to spawn a friendly Bony"
+ },
+ {
+  "id": "epicfetus",
+  "gid": 168,
+  "name": "Hollow Heart",
+  "icon": "icons/collectibles_168_epicfetus.png",
+  "quote": "Replaces tears with missiles (20x dmg)",
+  "desc": "Entering a new floor grants +1 Bone Heart"
+ },
+ {
+  "id": "polyphemus",
+  "gid": 169,
+  "name": "Polyphemus",
+  "icon": "icons/collectibles_169_polyphemus.png",
+  "quote": "Excess damage pierces",
+  "desc": "↑ +4 Damage · ↑ x2 Damage multiplier · ↓ x0.42 Fire rate multiplier · Tears pierce killed enemies if there is leftover damage"
+ },
+ {
+  "id": "daddylonglegs",
+  "gid": 170,
+  "name": "Crystal Key",
+  "icon": "icons/collectibles_170_daddylonglegs.png",
+  "quote": "Familiar (40 dmg / stomp)",
+  "desc": "Clearing a room has a 33% chance to create a Red Key room · Lower chance to occur when in a red room"
+ },
+ {
+  "id": "spiderbutt",
+  "gid": 171,
+  "name": "Spider Butt",
+  "icon": "icons/collectibles_171_spiderbutt.png",
+  "quote": "Temporarily slows enemies and deals 10 dmg",
+  "desc": "Slows down enemies for 4 seconds · Deals 10 damage to all enemies · Enemies killed by the item spawn blue spiders"
+ },
+ {
+  "id": "sacrificialdagger",
+  "gid": 172,
+  "name": "Sacrificial Dagger",
+  "icon": "icons/collectibles_172_sacrificialdagger.png",
+  "quote": "Orbital (15 dmg / tick)",
+  "desc": "Orbital · Blocks enemy shots · Deals 112.5 contact damage per second"
+ },
+ {
+  "id": "mitre",
+  "gid": 173,
+  "name": "Mitre",
+  "icon": "icons/collectibles_173_mitre.png",
+  "quote": "Better chance of finding soul hearts",
+  "desc": "33% chance that Red Hearts spawn as Soul Hearts instead"
+ },
+ {
+  "id": "rainbowbaby",
+  "gid": 174,
+  "name": "Number Magnet",
+  "icon": "icons/collectibles_174_rainbowbaby.png",
+  "quote": "Familiar (shoots random tears)",
+  "desc": "+10% Devil Room chance · Prevents Krampus from appearing in Devil Rooms · Devil Rooms are special variants with more deals, Black Hearts and enemies"
+ },
+ {
+  "id": "dadskey",
+  "gid": 175,
+  "name": "Strange Key",
+  "icon": "icons/collectibles_175_dadskey.png",
+  "quote": "Opens all doors (except for deals)",
+  "desc": "Opens the door to the Hush floor regardless of the timer · Using Pandora's Box consumes the key and spawns 6 items from random pools"
+ },
+ {
+  "id": "stemcells",
+  "gid": 176,
+  "name": "Stem Cells",
+  "icon": "icons/collectibles_176_stemcells.png",
+  "quote": "",
+  "desc": "↑ +1 Health · ↑ +0.16 Shot speed · Heals 1 heart"
+ },
+ {
+  "id": "portableslot",
+  "gid": 177,
+  "name": "Temporary Tattoo",
+  "icon": "icons/collectibles_177_portableslot.png",
+  "quote": "Acts like a Slot Machine",
+  "desc": "Clearing a Challenge Room spawns a chest · Clearing a Boss Challenge Room spawns an item"
+ },
+ {
+  "id": "holywater",
+  "gid": 178,
+  "name": "Holy Water",
+  "icon": "icons/collectibles_178_holywater.png",
+  "quote": "Creates a pool when hit (8 dmg / tick)",
+  "desc": "Launches itself in the direction Isaac shoots · Breaks and deals 7 damage upon hitting an enemy · Leaves a pool of petrifying + damaging creep"
+ },
+ {
+  "id": "fate",
+  "gid": 179,
+  "name": "RC Remote",
+  "icon": "icons/collectibles_179_fate.png",
+  "quote": "Flight, eternal heart",
+  "desc": "Familiars mimic Isaac's movement · Hold the drop button () to keep the familiars in place"
+ },
+ {
+  "id": "blackbean",
+  "gid": 180,
+  "name": "The Black Bean",
+  "icon": "icons/collectibles_180_blackbean.png",
+  "quote": "Farts when hit (26 dmg)",
+  "desc": "Isaac farts multiple times when damaged · The farts leave poison clouds and deflects projectiles"
+ },
+ {
+  "id": "whitepony",
+  "gid": 181,
+  "name": "Expansion Pack",
+  "icon": "icons/collectibles_181_whitepony.png",
+  "quote": "Flying, minimum speed 1.5",
+  "desc": "Using an active item triggers the effect of an additional 1-2 charge active item"
+ },
+ {
+  "id": "sacredheart",
+  "gid": 182,
+  "name": "Sacred Heart",
+  "icon": "icons/collectibles_182_sacredheart.png",
+  "quote": "+1 flat dmg, full heal",
+  "desc": "↑ +1 Health · ↑ x2.3 Damage multiplier · ↑ +1 Damage · ↓ -0.4 Tears · ↓ -0.25 Shot speed · Full health · Homing tears"
+ },
+ {
+  "id": "toothpicks",
+  "gid": 183,
+  "name": "The Twins",
+  "icon": "icons/collectibles_183_toothpicks.png",
+  "quote": "",
+  "desc": "50% chance to duplicate a familiar each room · Grants Brother Bobby or Sister Maggy if Isaac has no familiars"
+ },
+ {
+  "id": "holygrail",
+  "gid": 184,
+  "name": "Holy Grail",
+  "icon": "icons/collectibles_184_holygrail.png",
+  "quote": "flight",
+  "desc": "↑ +1 Health · Heals 1 heart · Flight"
+ },
+ {
+  "id": "deaddove",
+  "gid": 185,
+  "name": "Cricket Leg",
+  "icon": "icons/collectibles_185_deaddove.png",
+  "quote": "Flight, spectral tears",
+  "desc": "Killing an enemy has a 17% chance to spawn a random locust"
+ },
+ {
+  "id": "bloodrights",
+  "gid": 186,
+  "name": "Blood Rights",
+  "icon": "icons/collectibles_186_bloodrights.png",
+  "quote": "Deals 1 heart dmg to self, deals 40 dmg to all enemies",
+  "desc": "Deals 40 damage to every enemy · Deals 1 heart of damage to Isaac · After the first use in a room, deals half a heart instead · Removes Red Hearts first"
+ },
+ {
+  "id": "guppyshairball",
+  "gid": 187,
+  "name": "Broken Glasses",
+  "icon": "icons/collectibles_187_guppyshairball.png",
+  "quote": "Familiar (3 dmg / tick)",
+  "desc": "50% chance of adding an extra blind item in Treasure Rooms · 50% chance to reveal the blind item in alt path Treasure Rooms"
+ },
+ {
+  "id": "abel",
+  "gid": 188,
+  "name": "Ice Cube",
+  "icon": "icons/collectibles_188_abel.png",
+  "quote": "Familiar (3.5 dmg / tear)",
+  "desc": "Entering a room has a 20% chance to petrify random enemies · Killing a petrified enemy freezes it"
+ },
+ {
+  "id": "smbsuperfan",
+  "gid": 189,
+  "name": "SMB Super Fan",
+  "icon": "icons/collectibles_189_smbsuperfan.png",
+  "quote": "full heal",
+  "desc": "↑ +0.2 Tears · ↑ +0.3 Damage · ↑ +0.2 Speed · ↑ +2.5 Range · ↑ +1 Health · Full health"
+ },
+ {
+  "id": "pyro",
+  "gid": 190,
+  "name": "Pyro",
+  "icon": "icons/collectibles_190_pyro.png",
+  "quote": "+99 bombs",
+  "desc": ""
+ },
+ {
+  "id": "3dollarbill",
+  "gid": 191,
+  "name": "3 Dollar Bill",
+  "icon": "icons/collectibles_191_3dollarbill.png",
+  "quote": "Random tear effects that change every 3 seconds",
+  "desc": ""
+ },
+ {
+  "id": "telepathyfordummies",
+  "gid": 192,
+  "name": "Telepathy for Dummies",
+  "icon": "icons/collectibles_192_telepathyfordummies.png",
+  "quote": "Temporary homing tears",
+  "desc": "Receive for the room: · ↑ +3 Range · Homing tears"
+ },
+ {
+  "id": "meat",
+  "gid": 193,
+  "name": "MEAT!",
+  "icon": "icons/collectibles_193_meat.png",
+  "quote": "",
+  "desc": "↑ +0.3 Damage · ↑ +1 Health · Heals 1 heart"
+ },
+ {
+  "id": "magic8ball",
+  "gid": 194,
+  "name": "Magic 8 Ball",
+  "icon": "icons/collectibles_194_magic8ball.png",
+  "quote": "Spawns a random card on pickup",
+  "desc": "↑ +0.16 Shot speed · Spawns 1 card · +15% Planetarium chance"
+ },
+ {
+  "id": "momscoinpurse",
+  "gid": 195,
+  "name": "Mom's Coin Purse",
+  "icon": "icons/collectibles_195_momscoinpurse.png",
+  "quote": "Spawns 4 random pills on pickup",
+  "desc": ""
+ },
+ {
+  "id": "squeezy",
+  "gid": 196,
+  "name": "Mr. Squeezy",
+  "icon": "icons/collectibles_196_squeezy.png",
+  "quote": "Spawns 2 soul hearts on pickup",
+  "desc": ""
+ },
+ {
+  "id": "jesusjuice",
+  "gid": 197,
+  "name": "Jesus Juice",
+  "icon": "icons/collectibles_197_jesusjuice.png",
+  "quote": "",
+  "desc": "↑ +0.5 Damage · ↑ +1.5 Range"
+ },
+ {
+  "id": "box",
+  "gid": 198,
+  "name": "Box",
+  "icon": "icons/collectibles_198_box.png",
+  "quote": "Spawns 1 coin, 1 key, 1 bomb, 1 heart, 1 card, 1 pill, and 1 trinket on pickup",
+  "desc": ""
+ },
+ {
+  "id": "momskey",
+  "gid": 199,
+  "name": "Mom's Key",
+  "icon": "icons/collectibles_199_momskey.png",
+  "quote": "More pickups from chests, spawns 2 keys on pickup",
+  "desc": ""
+ },
+ {
+  "id": "momseyeshadow",
+  "gid": 200,
+  "name": "Mom's Eyeshadow",
+  "icon": "icons/collectibles_200_momseyeshadow.png",
+  "quote": "Chance to shoot charm tears",
+  "desc": ""
+ },
+ {
+  "id": "ironbar",
+  "gid": 201,
+  "name": "Iron Bar",
+  "icon": "icons/collectibles_201_ironbar.png",
+  "quote": "Chance to shoot confusion tears",
+  "desc": ""
+ },
+ {
+  "id": "midastouch",
+  "gid": 202,
+  "name": "Midas Touch",
+  "icon": "icons/collectibles_202_midastouch.png",
+  "quote": "Contact dmg equal to number of cents held",
+  "desc": ""
+ },
+ {
+  "id": "humblingbundle",
+  "gid": 203,
+  "name": "Humbleing Bundle",
+  "icon": "icons/collectibles_203_humblingbundle.png",
+  "quote": "Doubles coin, key, bomb, and heart pickups",
+  "desc": "Pickups have a 50% chance to be doubled"
+ },
+ {
+  "id": "fannypack",
+  "gid": 204,
+  "name": "Fanny Pack",
+  "icon": "icons/collectibles_204_fannypack.png",
+  "quote": "Chance to spawn a coin, bomb, or key when hit",
+  "desc": ""
+ },
+ {
+  "id": "sharpplug",
+  "gid": 205,
+  "name": "Sharp Plug",
+  "icon": "icons/collectibles_205_sharpplug.png",
+  "quote": "Deals 2 heart dmg to self, fully recharges item (only when at 0 charge)",
+  "desc": "Using an uncharged active item fully recharges it at the cost of half a heart per missing charge · Removes Red Hearts first"
+ },
+ {
+  "id": "guillotine",
+  "gid": 206,
+  "name": "Guillotine",
+  "icon": "icons/collectibles_206_guillotine.png",
+  "quote": "Orbital (7 dmg / tick)",
+  "desc": "↑ +0.5 Fire rate · ↑ +1 Damage · Isaac's head becomes an orbital that shoots, doesn't take damage and deals 56 contact damage per second"
+ },
+ {
+  "id": "ballofbandages",
+  "gid": 207,
+  "name": "Ball of Bandages",
+  "icon": "icons/collectibles_207_ballofbandages.png",
+  "quote": "Orbital (7 dmg / tick)",
+  "desc": ""
+ },
+ {
+  "id": "championbelt",
+  "gid": 208,
+  "name": "Champion Belt",
+  "icon": "icons/collectibles_208_championbelt.png",
+  "quote": "Greater chance of champion enemies",
+  "desc": ""
+ },
+ {
+  "id": "buttbombs",
+  "gid": 209,
+  "name": "Butt Bombs",
+  "icon": "icons/collectibles_209_buttbombs.png",
+  "quote": "+5 bombs, bombs confuse all enemies, bombs deal 10 dmg to all enemies",
+  "desc": ""
+ },
+ {
+  "id": "gnawedleaf",
+  "gid": 210,
+  "name": "Gnawed Leaf",
+  "icon": "icons/collectibles_210_gnawedleaf.png",
+  "quote": "Turn invincible by standing still",
+  "desc": ""
+ },
+ {
+  "id": "spiderbaby",
+  "gid": 211,
+  "name": "Spiderbaby",
+  "icon": "icons/collectibles_211_spiderbaby.png",
+  "quote": "Spawns 1-2 blue spiders when hit",
+  "desc": "Taking damage spawns 3-5 blue spiders"
+ },
+ {
+  "id": "guppyscollar",
+  "gid": 212,
+  "name": "Guppy's Collar",
+  "icon": "icons/collectibles_212_guppyscollar.png",
+  "quote": "50% chance to respawn with 1/2 soul heart",
+  "desc": ""
+ },
+ {
+  "id": "lostcontact",
+  "gid": 213,
+  "name": "Lost Contact",
+  "icon": "icons/collectibles_213_lostcontact.png",
+  "quote": "Tears can hit enemy tears",
+  "desc": ""
+ },
+ {
+  "id": "anemic",
+  "gid": 214,
+  "name": "Anemic",
+  "icon": "icons/collectibles_214_anemic.png",
+  "quote": "Makes a trail of creep when hit",
+  "desc": "↑ +1.5 Range · When taking damage Isaac leaves a trail of blood creep for the room · The creep deals 20 damage per second"
+ },
+ {
+  "id": "goathead",
+  "gid": 215,
+  "name": "Goat Head",
+  "icon": "icons/collectibles_215_goathead.png",
+  "quote": "Devil/Angel Rooms are always open",
+  "desc": ""
+ },
+ {
+  "id": "ceremonialrobes",
+  "gid": 216,
+  "name": "Ceremonial Robes",
+  "icon": "icons/collectibles_216_ceremonialrobes.png",
+  "quote": "",
+  "desc": ""
+ },
+ {
+  "id": "momswig",
+  "gid": 217,
+  "name": "Mom's Wig",
+  "icon": "icons/collectibles_217_momswig.png",
+  "quote": "Chance to spawn blue spiders when shooting",
+  "desc": ""
+ },
+ {
+  "id": "placenta",
+  "gid": 218,
+  "name": "Placenta",
+  "icon": "icons/collectibles_218_placenta.png",
+  "quote": "Chance to heal half a heart every minute",
+  "desc": "↑ +1 Health · Heals 1 heart · 50% chance to heal half a heart every minute"
+ },
+ {
+  "id": "oldbandage",
+  "gid": 219,
+  "name": "Old Bandage",
+  "icon": "icons/collectibles_219_oldbandage.png",
+  "quote": "Chance to drop a red heart on hit",
+  "desc": "↑ +1 Empty heart container · Taking damage has a 20% chance to spawn a Red Heart"
+ },
+ {
+  "id": "sadbombs",
+  "gid": 220,
+  "name": "Sad Bombs",
+  "icon": "icons/collectibles_220_sadbombs.png",
+  "quote": "+5 bombs, bombs shoot out 8 tears",
+  "desc": ""
+ },
+ {
+  "id": "rubbercement",
+  "gid": 221,
+  "name": "Rubber Cement",
+  "icon": "icons/collectibles_221_rubbercement.png",
+  "quote": "Bouncy tears (tears bounce off rocks/walls)",
+  "desc": ""
+ },
+ {
+  "id": "antigravity",
+  "gid": 222,
+  "name": "Anti-Gravity",
+  "icon": "icons/collectibles_222_antigravity.png",
+  "quote": "Hovering tears",
+  "desc": "↑ +1 Fire rate · Holding the fire buttons causes tears to hover in mid-air · Releasing the fire buttons shoots them in the direction they were fired"
+ },
+ {
+  "id": "pyromaniac",
+  "gid": 223,
+  "name": "Pyromaniac",
+  "icon": "icons/collectibles_223_pyromaniac.png",
+  "quote": "+5 bombs, explosions heal 1 red heart",
+  "desc": "+5 Bombs · Immunity to explosions and fire · Getting hit by explosions heals half a heart"
+ },
+ {
+  "id": "cricketsbody",
+  "gid": 224,
+  "name": "Cricket's Body",
+  "icon": "icons/collectibles_224_cricketsbody.png",
+  "quote": "Shots split into 4 pieces, each deals 1/2 dmg",
+  "desc": "↑ +0.5 Fire rate · ↓ x0.8 Range multiplier · Tears split in 4 on hit · Split tears deal half damage"
+ },
+ {
+  "id": "gimpy",
+  "gid": 225,
+  "name": "Gimpy",
+  "icon": "icons/collectibles_225_gimpy.png",
+  "quote": "Chance to spawn soul/black hearts on hit, chance for enemies to drop half a red heart",
+  "desc": "Taking damage has a 8% chance to spawn a Soul Heart · +2% chance per luck · Enemies have a chance to drop a half Red Heart on death"
+ },
+ {
+  "id": "blacklotus",
+  "gid": 226,
+  "name": "Black Lotus",
+  "icon": "icons/collectibles_226_blacklotus.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Heals 1 heart · +1 Soul Heart · +1 Black Heart"
+ },
+ {
+  "id": "piggybank",
+  "gid": 227,
+  "name": "Piggy Bank",
+  "icon": "icons/collectibles_227_piggybank.png",
+  "quote": "+3 cents, 1-2 pennies spawn on hit",
+  "desc": ""
+ },
+ {
+  "id": "momsperfume",
+  "gid": 228,
+  "name": "Mom's Perfume",
+  "icon": "icons/collectibles_228_momsperfume.png",
+  "quote": "Chance to shoot fear tears",
+  "desc": "↑ +0.5 Fire rate (Flat bonus, ignores tears cap) · 15% chance to shoot fear tears"
+ },
+ {
+  "id": "monstroslung",
+  "gid": 229,
+  "name": "Monstro's Lung",
+  "icon": "icons/collectibles_229_monstroslung.png",
+  "quote": "Charged tear spray",
+  "desc": "↓ x0.23 Fire rate multiplier · Tears are charged and released in a shotgun style attack"
+ },
+ {
+  "id": "abaddon",
+  "gid": 230,
+  "name": "Abaddon",
+  "icon": "icons/collectibles_230_abaddon.png",
+  "quote": "Removes all red hearts, chance to shoot fear tears",
+  "desc": "↑ +0.2 Speed · ↑ +1.5 Damage · Converts all heart containers into Black Hearts · +2 Black Hearts · 15% chance to shoot fear tears"
+ },
+ {
+  "id": "balloftar",
+  "gid": 231,
+  "name": "Ball of Tar",
+  "icon": "icons/collectibles_231_balloftar.png",
+  "quote": "Chance to shoot slowing tears, makes a trail of slowing creep",
+  "desc": ""
+ },
+ {
+  "id": "stopwatch",
+  "gid": 232,
+  "name": "Stop Watch",
+  "icon": "icons/collectibles_232_stopwatch.png",
+  "quote": "Slows enemies when hit",
+  "desc": "↑ +0.3 Speed · Enemies are permanently slowed down to 80% of their attack and movement speed"
+ },
+ {
+  "id": "tinyplanet",
+  "gid": 233,
+  "name": "Tiny Planet",
+  "icon": "icons/collectibles_233_tinyplanet.png",
+  "quote": "Orbiting tears",
+  "desc": "↑ +6.5 Range · Spectral tears · Isaac's tears orbit around him"
+ },
+ {
+  "id": "infestation2",
+  "gid": 234,
+  "name": "Infestation 2",
+  "icon": "icons/collectibles_234_infestation2.png",
+  "quote": "Spawns a blue spider on enemy death",
+  "desc": ""
+ },
+ {
+  "id": "ecoli",
+  "gid": 236,
+  "name": "E. Coli",
+  "icon": "icons/collectibles_236_ecoli.png",
+  "quote": "Enemies turn to poop on touch",
+  "desc": ""
+ },
+ {
+  "id": "deathstouch",
+  "gid": 237,
+  "name": "Death's Touch",
+  "icon": "icons/collectibles_237_deathstouch.png",
+  "quote": "Scythe tears (piercing)",
+  "desc": ""
+ },
+ {
+  "id": "keypiece1",
+  "gid": 238,
+  "name": "Key Piece #1",
+  "icon": "icons/collectibles_238_keypiece1.png",
+  "quote": "Both key pieces together unlock the door to Mega Satan",
+  "desc": ""
+ },
+ {
+  "id": "keypiece2",
+  "gid": 239,
+  "name": "Key Piece #2",
+  "icon": "icons/collectibles_239_keypiece2.png",
+  "quote": "Both key pieces together unlock the door to Mega Satan",
+  "desc": ""
+ },
+ {
+  "id": "experimentaltreatment",
+  "gid": 240,
+  "name": "Experimental Treatment",
+  "icon": "icons/collectibles_240_experimentaltreatment.png",
+  "quote": "Randomly increases or decreases each stats",
+  "desc": ""
+ },
+ {
+  "id": "contractfrombelow",
+  "gid": 241,
+  "name": "Contract From Below",
+  "icon": "icons/collectibles_241_contractfrombelow.png",
+  "quote": "Doubles pickups, increased chance of Double Trouble boss fights",
+  "desc": ""
+ },
+ {
+  "id": "infamy",
+  "gid": 242,
+  "name": "Infamy",
+  "icon": "icons/collectibles_242_infamy.png",
+  "quote": "Chance to block a projectile (from any direction)",
+  "desc": ""
+ },
+ {
+  "id": "trinityshield",
+  "gid": 243,
+  "name": "Trinity Shield",
+  "icon": "icons/collectibles_243_trinityshield.png",
+  "quote": "Blocks all projectiles from the front",
+  "desc": ""
+ },
+ {
+  "id": "techpointfive",
+  "gid": 244,
+  "name": "Tech.5",
+  "icon": "icons/collectibles_244_techpointfive.png",
+  "quote": "Chance to shoot an additional laser (scales with dmg, ignores tear rate)",
+  "desc": ""
+ },
+ {
+  "id": "2020",
+  "gid": 245,
+  "name": "20/20",
+  "icon": "icons/collectibles_245_2020.png",
+  "quote": "Double shot",
+  "desc": "↓ x0.8 Damage multiplier · Isaac shoots 2 tears at once"
+ },
+ {
+  "id": "bluemap",
+  "gid": 246,
+  "name": "Blue Map",
+  "icon": "icons/collectibles_246_bluemap.png",
+  "quote": "Reveals Secret and Super Secret Rooms",
+  "desc": ""
+ },
+ {
+  "id": "bffs",
+  "gid": 247,
+  "name": "BFFS!",
+  "icon": "icons/collectibles_247_bffs.png",
+  "quote": "Familiars do 2x dmg",
+  "desc": ""
+ },
+ {
+  "id": "hivemind",
+  "gid": 248,
+  "name": "Hive Mind",
+  "icon": "icons/collectibles_248_hivemind.png",
+  "quote": "Blue spiders and flies do 2x dmg",
+  "desc": "Blue spiders and flies deal double damage · Spider and fly familiars become stronger"
+ },
+ {
+  "id": "theresoptions",
+  "gid": 249,
+  "name": "There's Options",
+  "icon": "icons/collectibles_249_theresoptions.png",
+  "quote": "Choice of 2 items after each boss",
+  "desc": ""
+ },
+ {
+  "id": "bogobombs",
+  "gid": 250,
+  "name": "Bogo Bombs",
+  "icon": "icons/collectibles_250_bogobombs.png",
+  "quote": "Doubles bomb pickups",
+  "desc": ""
+ },
+ {
+  "id": "starterdeck",
+  "gid": 251,
+  "name": "Starter Deck",
+  "icon": "icons/collectibles_251_starterdeck.png",
+  "quote": "Pills become cards, can carry 2 cards instead of 1",
+  "desc": ""
+ },
+ {
+  "id": "littlebaggy",
+  "gid": 252,
+  "name": "Little Baggy",
+  "icon": "icons/collectibles_252_littlebaggy.png",
+  "quote": "Cards become pills, can carry 2 pills instead of 1",
+  "desc": ""
+ },
+ {
+  "id": "magicscab",
+  "gid": 253,
+  "name": "Magic Scab",
+  "icon": "icons/collectibles_253_magicscab.png",
+  "quote": "",
+  "desc": "↑ +1 Health · ↑ +1 Luck · Heals 1 heart"
+ },
+ {
+  "id": "bloodclot",
+  "gid": 254,
+  "name": "Blood Clot",
+  "icon": "icons/collectibles_254_bloodclot.png",
+  "quote": "+1 flat dmg and +5 range for every 2nd shot",
+  "desc": "↑ +1 Damage for the left eye · ↑ +2.75 Range for the left eye"
+ },
+ {
+  "id": "screw",
+  "gid": 255,
+  "name": "Screw",
+  "icon": "icons/collectibles_255_screw.png",
+  "quote": "",
+  "desc": ""
+ },
+ {
+  "id": "hotbombs",
+  "gid": 256,
+  "name": "Hot Bombs",
+  "icon": "icons/collectibles_256_hotbombs.png",
+  "quote": "5 bombs, leaves fires that do 22 dmg",
+  "desc": "+5 Bombs · Isaac's bombs deal contact damage · Isaac's bombs leave a flame where they explode · Fire immunity (except projectiles)"
+ },
+ {
+  "id": "firemind",
+  "gid": 257,
+  "name": "Fire Mind",
+  "icon": "icons/collectibles_257_firemind.png",
+  "quote": "Burns enemies, chance to shoot exploding tears (2x dmg + 22)",
+  "desc": ""
+ },
+ {
+  "id": "missingno",
+  "gid": 258,
+  "name": "Missing No.",
+  "icon": "icons/collectibles_258_missingno.png",
+  "quote": "Rerolls your items on pickup and on the start of every floor",
+  "desc": ""
+ },
+ {
+  "id": "darkmatter",
+  "gid": 259,
+  "name": "Dark Matter",
+  "icon": "icons/collectibles_259_darkmatter.png",
+  "quote": "Chance to shoot fear tears",
+  "desc": ""
+ },
+ {
+  "id": "blackcandle",
+  "gid": 260,
+  "name": "Black Candle",
+  "icon": "icons/collectibles_260_blackcandle.png",
+  "quote": "Removes all floor curses, +25% deal chance",
+  "desc": ""
+ },
+ {
+  "id": "proptosis",
+  "gid": 261,
+  "name": "Proptosis",
+  "icon": "icons/collectibles_261_proptosis.png",
+  "quote": "Between x2 and x1.3 dmg based on range",
+  "desc": "↑ +0.5 Damage · ↓ Tears deal less damage the longer they are airborne · Tears deal 3x damage at point blank range and no damage after 0.8 seconds"
+ },
+ {
+  "id": "missingpage2",
+  "gid": 262,
+  "name": "Missing Page 2",
+  "icon": "icons/collectibles_262_missingpage2.png",
+  "quote": "Deals 40 dmg to enemies when hit if at 1 heart or lower",
+  "desc": "+1 Black Heart · Taking damage down to 1 heart damages all enemies in the room · Black Hearts and Necronomicon-like effects deal double damage"
+ },
+ {
+  "id": "blankrune",
+  "gid": 263,
+  "name": "Clear Rune",
+  "icon": "icons/collectibles_263_blankrune.png",
+  "quote": "",
+  "desc": "Spawns 1 rune on pickup · Triggers the effect of the rune Isaac holds without using it"
+ },
+ {
+  "id": "smartfly",
+  "gid": 264,
+  "name": "Smart Fly",
+  "icon": "icons/collectibles_264_smartfly.png",
+  "quote": "Spawns a fly familiar when hit (1.5 dmg / tick)",
+  "desc": "Orbital · Attacks enemies when Isaac takes damage · Deals 6.5 contact damage per second"
+ },
+ {
+  "id": "drybaby",
+  "gid": 265,
+  "name": "Dry Baby",
+  "icon": "icons/collectibles_265_drybaby.png",
+  "quote": "Blocks projectiles, chance to deal 40 dmg to the room on block",
+  "desc": ""
+ },
+ {
+  "id": "juicysack",
+  "gid": 266,
+  "name": "Juicy Sack",
+  "icon": "icons/collectibles_266_juicysack.png",
+  "quote": "Spawns 1-2 blue spiders every room cleared, makes a trail of slowing creep",
+  "desc": ""
+ },
+ {
+  "id": "robobaby2",
+  "gid": 267,
+  "name": "Robo-Baby 2.0",
+  "icon": "icons/collectibles_267_robobaby2.png",
+  "quote": "Familiar (3.5 dmg / laser)",
+  "desc": ""
+ },
+ {
+  "id": "rottenbaby",
+  "gid": 268,
+  "name": "Rotten Baby",
+  "icon": "icons/collectibles_268_rottenbaby.png",
+  "quote": "Familiar (shoots blue flies)",
+  "desc": ""
+ },
+ {
+  "id": "headlessbaby",
+  "gid": 269,
+  "name": "Headless Baby",
+  "icon": "icons/collectibles_269_headlessbaby.png",
+  "quote": "Makes a trail of creep",
+  "desc": ""
+ },
+ {
+  "id": "leech",
+  "gid": 270,
+  "name": "Leech",
+  "icon": "icons/collectibles_270_leech.png",
+  "quote": "Familiar (1.5 dmg / tick)",
+  "desc": ""
+ },
+ {
+  "id": "mysterysack",
+  "gid": 271,
+  "name": "Mystery Sack",
+  "icon": "icons/collectibles_271_mysterysack.png",
+  "quote": "Spawns hearts, coins, bombs, or keys every few rooms cleared",
+  "desc": ""
+ },
+ {
+  "id": "bff",
+  "gid": 272,
+  "name": "BBF",
+  "icon": "icons/collectibles_272_bff.png",
+  "quote": "Familiar (70 dmg explosion)",
+  "desc": "Friendly exploding fly · The explosion deals 100 damage · The explosion can hurt Isaac"
+ },
+ {
+  "id": "bobsbrain",
+  "gid": 273,
+  "name": "Bob's Brain",
+  "icon": "icons/collectibles_273_bobsbrain.png",
+  "quote": "Familiar (60 dmg explosion + poison dmg)",
+  "desc": "Dashes in the direction Isaac is shooting · Explodes when it hits an enemy · The explosion deals 100 damage and poisons enemies · The explosion can hurt Isaac"
+ },
+ {
+  "id": "bestbud",
+  "gid": 274,
+  "name": "Best Bud",
+  "icon": "icons/collectibles_274_bestbud.png",
+  "quote": "Spawns a fly orbital when hit (5 dmg / tick)",
+  "desc": "Taking damage spawns one midrange orbital for the room · Deals 150 contact damage per second"
+ },
+ {
+  "id": "lilbrimstone",
+  "gid": 275,
+  "name": "Lil Brimstone",
+  "icon": "icons/collectibles_275_lilbrimstone.png",
+  "quote": "Familiar (31.5 dmg / blood laser)",
+  "desc": "Familiar that charges and shoots a blood beam · It deals 24 damage over 0.63 seconds"
+ },
+ {
+  "id": "isaacsheart",
+  "gid": 276,
+  "name": "Isaac's Heart",
+  "icon": "icons/collectibles_276_isaacsheart.png",
+  "quote": "Invincibility (but heart familiar takes dmg)",
+  "desc": "Isaac becomes invincible · Spawns a heart familiar that follows Isaac · The heart charges up when Isaac fires and releases a burst of tears when he stops · If the heart familiar gets hit, Isaac takes damage"
+ },
+ {
+  "id": "lilhaunt",
+  "gid": 277,
+  "name": "Lil' Haunt",
+  "icon": "icons/collectibles_277_lilhaunt.png",
+  "quote": "Familiar (2 dmg / tick, chance to fear)",
+  "desc": ""
+ },
+ {
+  "id": "darkbum",
+  "gid": 278,
+  "name": "Dark Bum",
+  "icon": "icons/collectibles_278_darkbum.png",
+  "quote": "Converts 1.5 red heart pickups to a soul heart or spider",
+  "desc": "Picks up nearby Red Hearts · Spawns a Black Heart, rune, card, pill, or spider for every 1.5 hearts picked up"
+ },
+ {
+  "id": "bigfan",
+  "gid": 279,
+  "name": "Big Fan",
+  "icon": "icons/collectibles_279_bigfan.png",
+  "quote": "Orbital (2 dmg / tick)",
+  "desc": ""
+ },
+ {
+  "id": "sissylonglegs",
+  "gid": 280,
+  "name": "Sissy Longlegs",
+  "icon": "icons/collectibles_280_sissylonglegs.png",
+  "quote": "Spawns blue spiders",
+  "desc": "Randomly spawns blue spiders in hostile rooms · Charms enemies it comes in contact with"
+ },
+ {
+  "id": "punchingbag",
+  "gid": 281,
+  "name": "Punching Bag",
+  "icon": "icons/collectibles_281_punchingbag.png",
+  "quote": "Familiar (decoy)",
+  "desc": ""
+ },
+ {
+  "id": "howtojump",
+  "gid": 282,
+  "name": "How To Jump",
+  "icon": "icons/collectibles_282_howtojump.png",
+  "quote": "Can jump over obstacles",
+  "desc": ""
+ },
+ {
+  "id": "d100",
+  "gid": 283,
+  "name": "D100",
+  "icon": "icons/collectibles_283_d100.png",
+  "quote": "Rerolls current items and items + pickups in the room",
+  "desc": "Duplicates 1 pickup in the room · Rerolls Isaac's speed, tears, damage, range and passive items · Rerolls all pedestal items, pickups and rocks in the room · Restarts the room, respawns all enemies and devolves them"
+ },
+ {
+  "id": "d4",
+  "gid": 284,
+  "name": "D4",
+  "icon": "icons/collectibles_284_d4.png",
+  "quote": "Rerolls current items",
+  "desc": ""
+ },
+ {
+  "id": "d10",
+  "gid": 285,
+  "name": "D10",
+  "icon": "icons/collectibles_285_d10.png",
+  "quote": "Rerolls enemies in the room",
+  "desc": "Devolves all enemies in the room · For instance, all Red Flies become Black Flies"
+ },
+ {
+  "id": "blankcard",
+  "gid": 286,
+  "name": "Blank Card",
+  "icon": "icons/collectibles_286_blankcard.png",
+  "quote": "Mimics the effect of the currently held card or rune",
+  "desc": "Triggers the effect of the card Isaac holds without using it"
+ },
+ {
+  "id": "bookofsecrets",
+  "gid": 287,
+  "name": "Book of Secrets",
+  "icon": "icons/collectibles_287_bookofsecrets.png",
+  "quote": "Randomly get Treasure Map, Compass, or Blue Map for the floor",
+  "desc": "Highlights tinted and crawlspace rocks in the room · Receive one of these effects for the floor: · Treasure Map · Compass · Blue Map · Only grants effects not already active · If all effects are active, grants X-Ray Vision"
+ },
+ {
+  "id": "boxofspiders",
+  "gid": 288,
+  "name": "Box of Spiders",
+  "icon": "icons/collectibles_288_boxofspiders.png",
+  "quote": "Spawns 2-4 blue spiders",
+  "desc": "Spawns 4-8 blue spiders"
+ },
+ {
+  "id": "redcandle",
+  "gid": 289,
+  "name": "Red Candle",
+  "icon": "icons/collectibles_289_redcandle.png",
+  "quote": "Shoots a flame (up to 125 dmg)",
+  "desc": "Throws a red flame · It deals contact damage, blocks enemy tears, and disappears when it has dealt damage or blocked shots 4 times or after 10 seconds"
+ },
+ {
+  "id": "thejar",
+  "gid": 290,
+  "name": "The Jar",
+  "icon": "icons/collectibles_290_thejar.png",
+  "quote": "Stores red hearts for later",
+  "desc": ""
+ },
+ {
+  "id": "flush",
+  "gid": 291,
+  "name": "Flush!",
+  "icon": "icons/collectibles_291_flush.png",
+  "quote": "Non-boss enemies turn to poop, instantly kills Dingle",
+  "desc": "Turns all non-boss enemies into poop · Instantly kills poop enemies and bosses · Extinguishes fire places and fills the room with water · Turns lava pits into walkable ground"
+ },
+ {
+  "id": "satanicbible",
+  "gid": 292,
+  "name": "Satanic Bible",
+  "icon": "icons/collectibles_292_satanicbible.png",
+  "quote": "+1 black heart",
+  "desc": "+1 Black Heart · Using the item before a boss fight makes the boss reward a devil deal · Purchasing these devil deals has the same consequences as those in Devil Rooms · Does not affect item pedestals in The Void floor"
+ },
+ {
+  "id": "headofkrampus",
+  "gid": 293,
+  "name": "Head of Krampus",
+  "icon": "icons/collectibles_293_headofkrampus.png",
+  "quote": "Create 4 blood lasers (approx. 451 dmg / laser)",
+  "desc": "Shoot a 4-way blood beam · They each deal 200 damage over 1.33 seconds"
+ },
+ {
+  "id": "butterbean",
+  "gid": 294,
+  "name": "Butter Bean",
+  "icon": "icons/collectibles_294_butterbean.png",
+  "quote": "Knocks back enemies",
+  "desc": "Knocks back nearby enemies and projectiles · Enemies pushed into obstacles take 10 damage"
+ },
+ {
+  "id": "magicfingers",
+  "gid": 295,
+  "name": "Magic Fingers",
+  "icon": "icons/collectibles_295_magicfingers.png",
+  "quote": "Deals 2x dmg to the room, takes 1 coin per use",
+  "desc": "Deals 2x Isaac's damage + 10 to all enemies in the room · Costs 1 coin"
+ },
+ {
+  "id": "converter",
+  "gid": 296,
+  "name": "Converter",
+  "icon": "icons/collectibles_296_converter.png",
+  "quote": "+1 heart container, -2 soul/black hearts",
+  "desc": "Converts 1 Soul or Black Heart into 1 heart container"
+ },
+ {
+  "id": "bluebox",
+  "gid": 297,
+  "name": "Pandora's Box",
+  "icon": "icons/collectibles_297_bluebox.png",
+  "quote": "B1: 2soul, B2: 2bomb+2key, C1: boss, C2: boss+2soul, D1: 4soul, D2: 20coin, W1: 2boss, W2: Bible, Sheol: devil+black, Cath: angel+white, DR: coin, Chest: coin",
+  "desc": "Spawns rewards based on floor: · B1: 2; B2: 2 + 2 · C1: Boss item; C2: C1 + 2 · D1: 4; D2: 20 · W1: 2 Boss items · W2: The Bible · ???/Void: Nothing · Sheol: Devil item + 1 · Cathe: Angel item + 1 · Dark Room: Unlocks Moving Box · Chest: 1 · Home: Red Key"
+ },
+ {
+  "id": "unicornstump",
+  "gid": 298,
+  "name": "Unicorn Stump",
+  "icon": "icons/collectibles_298_unicornstump.png",
+  "quote": "Temporary invincibility",
+  "desc": ""
+ },
+ {
+  "id": "taurus",
+  "gid": 299,
+  "name": "Taurus",
+  "icon": "icons/collectibles_299_taurus.png",
+  "quote": "Speed increases until you unicorn",
+  "desc": ""
+ },
+ {
+  "id": "aries",
+  "gid": 300,
+  "name": "Aries",
+  "icon": "icons/collectibles_300_aries.png",
+  "quote": "18 contact dmg if moving fast enough",
+  "desc": "↑ +0.25 Speed · Moving above 0.85 Speed makes Isaac immune to contact damage and deals 25 damage to enemies"
+ },
+ {
+  "id": "cancer",
+  "gid": 301,
+  "name": "Cancer",
+  "icon": "icons/collectibles_301_cancer.png",
+  "quote": "All dmg is reduced to half a heart (after getting hit in the room)",
+  "desc": ""
+ },
+ {
+  "id": "leo",
+  "gid": 302,
+  "name": "Leo",
+  "icon": "icons/collectibles_302_leo.png",
+  "quote": "Crush rocks",
+  "desc": ""
+ },
+ {
+  "id": "virgo",
+  "gid": 303,
+  "name": "Virgo",
+  "icon": "icons/collectibles_303_virgo.png",
+  "quote": "Chance of shield when hit, bad stat pills become good",
+  "desc": ""
+ },
+ {
+  "id": "libra",
+  "gid": 304,
+  "name": "Libra",
+  "icon": "icons/collectibles_304_libra.png",
+  "quote": "Evens out stats, +6 bombs, +6 keys, +6 cents",
+  "desc": ""
+ },
+ {
+  "id": "scorpio",
+  "gid": 305,
+  "name": "Scorpio",
+  "icon": "icons/collectibles_305_scorpio.png",
+  "quote": "Chance to shoot poison tears",
+  "desc": ""
+ },
+ {
+  "id": "sagittarius",
+  "gid": 306,
+  "name": "Sagittarius",
+  "icon": "icons/collectibles_306_sagittarius.png",
+  "quote": "Piercing tears",
+  "desc": ""
+ },
+ {
+  "id": "capricorn",
+  "gid": 307,
+  "name": "Capricorn",
+  "icon": "icons/collectibles_307_capricorn.png",
+  "quote": "+1 coin, +1 bomb, +1 key",
+  "desc": "↑ +1 Health · ↑ +0.1 Speed · ↑ +0.5 Fire rate · ↑ +0.5 Damage · ↑ +0.75 Range · +1 coin, bomb and key · Heals 1 heart"
+ },
+ {
+  "id": "aquarius",
+  "gid": 308,
+  "name": "Aquarius",
+  "icon": "icons/collectibles_308_aquarius.png",
+  "quote": "Makes a trail of creep",
+  "desc": "Isaac leaves a trail of creep · The creep deals 666% of Isaac's damage per second and inherits his tear effects"
+ },
+ {
+  "id": "pisces",
+  "gid": 309,
+  "name": "Pisces",
+  "icon": "icons/collectibles_309_pisces.png",
+  "quote": "Knockback tears",
+  "desc": "↑ +0.5 Fire rate · ↑ +0.12 Tear size · Increases tear knockback"
+ },
+ {
+  "id": "evesmascara",
+  "gid": 310,
+  "name": "Eve's Mascara",
+  "icon": "icons/collectibles_310_evesmascara.png",
+  "quote": "",
+  "desc": "↑ x2 Damage multiplier · ↓ x0.66 Tears multiplier · ↓ -0.5 Shot speed"
+ },
+ {
+  "id": "judasshadow",
+  "gid": 311,
+  "name": "Judas' Shadow",
+  "icon": "icons/collectibles_311_judasshadow.png",
+  "quote": "+1 life (will respawn as Dark Judas with a 2.0 dmg multiplier)",
+  "desc": ""
+ },
+ {
+  "id": "maggysbow",
+  "gid": 312,
+  "name": "Maggy's Bow",
+  "icon": "icons/collectibles_312_maggysbow.png",
+  "quote": "Red heart pickups count for double",
+  "desc": "↑ +1 Health · Heals 1 heart · All Red Hearts heal double their value"
+ },
+ {
+  "id": "holymantle",
+  "gid": 313,
+  "name": "Holy Mantle",
+  "icon": "icons/collectibles_313_holymantle.png",
+  "quote": "1-hit shield for every room",
+  "desc": ""
+ },
+ {
+  "id": "thunderthighs",
+  "gid": 314,
+  "name": "Thunder Thighs",
+  "icon": "icons/collectibles_314_thunderthighs.png",
+  "quote": "Crush rocks",
+  "desc": "↑ +1 Health · ↓ -0.4 Speed · Heals 1 heart · Isaac can destroy rocks by walking into them"
+ },
+ {
+  "id": "strangeattractor",
+  "gid": 315,
+  "name": "Strange Attractor",
+  "icon": "icons/collectibles_315_strangeattractor.png",
+  "quote": "Tears attract enemies and pickups",
+  "desc": "Isaac's tears attract enemies, pickups and trinkets · The attraction effect is much stronger at the end of the tears' path"
+ },
+ {
+  "id": "cursedeye",
+  "gid": 316,
+  "name": "Cursed Eye",
+  "icon": "icons/collectibles_316_cursedeye.png",
+  "quote": "Charge shots, random teleport if hit while charging",
+  "desc": "Charged wave of 5 tears · Taking damage while partially charged teleports Isaac to a random room"
+ },
+ {
+  "id": "mysteriousliquid",
+  "gid": 317,
+  "name": "Mysterious Liquid",
+  "icon": "icons/collectibles_317_mysteriousliquid.png",
+  "quote": "Tears generate creep",
+  "desc": ""
+ },
+ {
+  "id": "gemini",
+  "gid": 318,
+  "name": "Gemini",
+  "icon": "icons/collectibles_318_gemini.png",
+  "quote": "Familiar (3 dmg / tick)",
+  "desc": ""
+ },
+ {
+  "id": "cainseye",
+  "gid": 319,
+  "name": "Cain's Other Eye",
+  "icon": "icons/collectibles_319_cainseye.png",
+  "quote": "Familiar (3.5 dmg / tear)",
+  "desc": "Shoots tears in random directions with the same effects as Isaac · Deals 75% of Isaac's damage"
+ },
+ {
+  "id": "bluebabysonlyfriend",
+  "gid": 320,
+  "name": "???'s Only Friend",
+  "icon": "icons/collectibles_320_bluebabysonlyfriend.png",
+  "quote": "Familiar (2.5 dmg / tick)",
+  "desc": "Controllable fly · Deals 15 contact damage per second"
+ },
+ {
+  "id": "samsonschains",
+  "gid": 321,
+  "name": "Samson's Chains",
+  "icon": "icons/collectibles_321_samsonschains.png",
+  "quote": "5 dmg / tick, crushes rocks",
+  "desc": ""
+ },
+ {
+  "id": "mongobaby",
+  "gid": 322,
+  "name": "Mongo Baby",
+  "icon": "icons/collectibles_322_mongobaby.png",
+  "quote": "Familiar (copies other familiars or 3.5 dmg / tear)",
+  "desc": "Mimics your baby familiars' tears · If you have none, shoots normal 3.5 damage tears"
+ },
+ {
+  "id": "isaacstears",
+  "gid": 323,
+  "name": "Isaac's Tears",
+  "icon": "icons/collectibles_323_isaacstears.png",
+  "quote": "Fires 8 tears",
+  "desc": "Shoots 8 tears in all directions · The tears copy Isaac's tear effects, plus 5 damage · Recharges by shooting tears"
+ },
+ {
+  "id": "undefined",
+  "gid": 324,
+  "name": "Undefined",
+  "icon": "icons/collectibles_324_undefined.png",
+  "quote": "Randomly teleport to Treasure, Secret, Super Secret, I AM ERROR, or Black Market",
+  "desc": ""
+ },
+ {
+  "id": "scissors",
+  "gid": 325,
+  "name": "Scissors",
+  "icon": "icons/collectibles_325_scissors.png",
+  "quote": "Spawns a shooting head familiar",
+  "desc": "Isaac's head turns into a stationary familiar for the room · The body is controlled separately and gushes blood tears in the direction Isaac is shooting"
+ },
+ {
+  "id": "breathoflife",
+  "gid": 326,
+  "name": "Breath of Life",
+  "icon": "icons/collectibles_326_breathoflife.png",
+  "quote": "Invincibility when charge bar hits zero",
+  "desc": "Holding down the USE button empties the charge bar · Isaac is temporarily invincible when the charge bar is empty · Isaac summons light beams on contact with enemies when invincible · If damage is blocked with perfect timing, shoot a 4-way holy beam and gain a brief shield · Holding it for too long deals damage to Isaac"
+ },
+ {
+  "id": "thepolaroid",
+  "gid": 327,
+  "name": "The Polaroid",
+  "icon": "icons/collectibles_327_thepolaroid.png",
+  "quote": "Temporary shield when hit at 1/2 heart, can enter The Chest",
+  "desc": ""
+ },
+ {
+  "id": "thenegative",
+  "gid": 328,
+  "name": "The Negative",
+  "icon": "icons/collectibles_328_thenegative.png",
+  "quote": "Damage enemies when hit at 1/2 heart, can enter the Dark Room",
+  "desc": "↑ +1 Damage · Taking damage at half a Red Heart or none damages all enemies in the room"
+ },
+ {
+  "id": "theludovicotechnique",
+  "gid": 329,
+  "name": "The Ludovico Technique",
+  "icon": "icons/collectibles_329_theludovicotechnique.png",
+  "quote": "Remote control tears",
+  "desc": ""
+ },
+ {
+  "id": "soymilk",
+  "gid": 330,
+  "name": "Soy Milk",
+  "icon": "icons/collectibles_330_soymilk.png",
+  "quote": "",
+  "desc": "↑ x5.5 Fire rate multiplier · ↓ x0.2 Damage multiplier · ↓ -0.3 Tear size · Drastically reduces knockback"
+ },
+ {
+  "id": "godhead",
+  "gid": 331,
+  "name": "Godhead",
+  "icon": "icons/collectibles_331_godhead.png",
+  "quote": "Damaging aura around tears",
+  "desc": "↑ +0.5 Damage · ↓ -0.3 Tears · ↓ -0.3 Shot speed · Homing tears · Tears gain an aura that deals 60 damage per second"
+ },
+ {
+  "id": "lazarusrags",
+  "gid": 332,
+  "name": "Lazarus' Rags",
+  "icon": "icons/collectibles_332_lazarusrags.png",
+  "quote": "+1 life (will respawn as Lazarus II)",
+  "desc": ""
+ },
+ {
+  "id": "mind",
+  "gid": 333,
+  "name": "The Mind",
+  "icon": "icons/collectibles_333_mind.png",
+  "quote": "Treasure Map + Compass + Blue Map",
+  "desc": ""
+ },
+ {
+  "id": "body",
+  "gid": 334,
+  "name": "The Body",
+  "icon": "icons/collectibles_334_body.png",
+  "quote": "+3 heart containers",
+  "desc": ""
+ },
+ {
+  "id": "soul",
+  "gid": 335,
+  "name": "The Soul",
+  "icon": "icons/collectibles_335_soul.png",
+  "quote": "Enemy projectiles are repulsed",
+  "desc": ""
+ },
+ {
+  "id": "deadonion",
+  "gid": 336,
+  "name": "Dead Onion",
+  "icon": "icons/collectibles_336_deadonion.png",
+  "quote": "Piercing and spectral tears",
+  "desc": "↑ +0.22 Tear size · ↓ -1.5 Range · ↓ -0.4 Shot speed · Piercing + spectral tears"
+ },
+ {
+  "id": "brokenwatch",
+  "gid": 337,
+  "name": "Broken Watch",
+  "icon": "icons/collectibles_337_brokenwatch.png",
+  "quote": "Chance to slow down or speed up enemies",
+  "desc": ""
+ },
+ {
+  "id": "boomerang",
+  "gid": 338,
+  "name": "Boomerang",
+  "icon": "icons/collectibles_338_boomerang.png",
+  "quote": "2x dmg",
+  "desc": ""
+ },
+ {
+  "id": "safetypin",
+  "gid": 339,
+  "name": "Safety Pin",
+  "icon": "icons/collectibles_339_safetypin.png",
+  "quote": "",
+  "desc": "↑ +2.5 Range · ↑ +0.16 Shot speed · +1 Black Heart"
+ },
+ {
+  "id": "caffeinepill",
+  "gid": 340,
+  "name": "Caffeine Pill",
+  "icon": "icons/collectibles_340_caffeinepill.png",
+  "quote": "Size down, grants a pill",
+  "desc": ""
+ },
+ {
+  "id": "tornphoto",
+  "gid": 341,
+  "name": "Torn Photo",
+  "icon": "icons/collectibles_341_tornphoto.png",
+  "quote": "",
+  "desc": ""
+ },
+ {
+  "id": "bluecap",
+  "gid": 342,
+  "name": "Blue Cap",
+  "icon": "icons/collectibles_342_bluecap.png",
+  "quote": "",
+  "desc": "↑ +1 Health · ↑ +0.7 Tears · ↓ -0.16 Shot speed · Heals 1 heart"
+ },
+ {
+  "id": "latchkey",
+  "gid": 343,
+  "name": "Latch Key",
+  "icon": "icons/collectibles_343_latchkey.png",
+  "quote": "+2 keys",
+  "desc": ""
+ },
+ {
+  "id": "matchbook",
+  "gid": 344,
+  "name": "Match Book",
+  "icon": "icons/collectibles_344_matchbook.png",
+  "quote": "+3 bombs",
+  "desc": "+1 Black Heart · Spawns 3 bombs · Spawns Match Stick"
+ },
+ {
+  "id": "synthoil",
+  "gid": 345,
+  "name": "Synthoil",
+  "icon": "icons/collectibles_345_synthoil.png",
+  "quote": "",
+  "desc": "↑ +1 Damage · ↑ +2.5 Range"
+ },
+ {
+  "id": "asnack",
+  "gid": 346,
+  "name": "A Snack",
+  "icon": "icons/collectibles_346_asnack.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Heals 1 heart"
+ },
+ {
+  "id": "diplopia",
+  "gid": 347,
+  "name": "Diplopia",
+  "icon": "icons/collectibles_347_diplopia.png",
+  "quote": "One-shot duplicates pedestals and pickups",
+  "desc": ""
+ },
+ {
+  "id": "placebo",
+  "gid": 348,
+  "name": "Placebo",
+  "icon": "icons/collectibles_348_placebo.png",
+  "quote": "Mimics the effect of the currently held pill",
+  "desc": ""
+ },
+ {
+  "id": "woodennickel",
+  "gid": 349,
+  "name": "Wooden Nickel",
+  "icon": "icons/collectibles_349_woodennickel.png",
+  "quote": "50% chance to drop a coin",
+  "desc": "59% chance to spawn a random coin"
+ },
+ {
+  "id": "toxicshock",
+  "gid": 350,
+  "name": "Toxic Shock",
+  "icon": "icons/collectibles_350_toxicshock.png",
+  "quote": "Deals 2x dmg to enemies at the start of each room",
+  "desc": ""
+ },
+ {
+  "id": "megabean",
+  "gid": 351,
+  "name": "Mega Bean",
+  "icon": "icons/collectibles_351_megabean.png",
+  "quote": "Big damaging fart with spike wave",
+  "desc": ""
+ },
+ {
+  "id": "glasscannon",
+  "gid": 352,
+  "name": "Glass Cannon",
+  "icon": "icons/collectibles_352_glasscannon.png",
+  "quote": "Reduces red hearts to .5, shoots a big shot",
+  "desc": "Shoots a large piercing spectral tear that does 10x Isaac's damage +10 damage · While held, taking damage: · ↓ Removes an extra 2 hearts of health · ↓ Breaks the cannon for a few rooms · ↑ +1.5 Range and leaves a blood trail for the room · The extra damage can't kill Isaac · Self-damage does not trigger the effect"
+ },
+ {
+  "id": "bomberboy",
+  "gid": 353,
+  "name": "Bomber Boy",
+  "icon": "icons/collectibles_353_bomberboy.png",
+  "quote": "+5 bombs, bombs explode in a plus shape",
+  "desc": "+5 Bombs · Bombs explode in a cross-shaped pattern · ↓ x0.75 Bomb damage"
+ },
+ {
+  "id": "crackjacks",
+  "gid": 354,
+  "name": "Crack Jacks",
+  "icon": "icons/collectibles_354_crackjacks.png",
+  "quote": "Spawns a random trinket on pickup",
+  "desc": "↑ +1 Health · Heals 1 heart · Spawns a trinket"
+ },
+ {
+  "id": "momspearls",
+  "gid": 355,
+  "name": "Mom's Pearls",
+  "icon": "icons/collectibles_355_momspearls.png",
+  "quote": "",
+  "desc": "↑ +2.5 Range · ↑ +1 Luck · +1 Soul Heart"
+ },
+ {
+  "id": "carbattery",
+  "gid": 356,
+  "name": "Car Battery",
+  "icon": "icons/collectibles_356_carbattery.png",
+  "quote": "Active items trigger twice when used",
+  "desc": ""
+ },
+ {
+  "id": "pandorasbox",
+  "gid": 357,
+  "name": "Box of Friends",
+  "icon": "icons/collectibles_357_pandorasbox.png",
+  "quote": "Temporarily duplicates each familiar",
+  "desc": ""
+ },
+ {
+  "id": "thewiz",
+  "gid": 358,
+  "name": "The Wiz",
+  "icon": "icons/collectibles_358_thewiz.png",
+  "quote": "Diagonal double shot tears, spectral tears",
+  "desc": ""
+ },
+ {
+  "id": "8inchnails",
+  "gid": 359,
+  "name": "8 Inch Nails",
+  "icon": "icons/collectibles_359_8inchnails.png",
+  "quote": "Nail tears",
+  "desc": ""
+ },
+ {
+  "id": "incubus",
+  "gid": 360,
+  "name": "Incubus",
+  "icon": "icons/collectibles_360_incubus.png",
+  "quote": "Familiar (copies your tears)",
+  "desc": "Shoots tears with the same effects as Isaac · Deals 75% of Isaac's damage"
+ },
+ {
+  "id": "fatesreward",
+  "gid": 361,
+  "name": "Fate's Reward",
+  "icon": "icons/collectibles_361_fatesreward.png",
+  "quote": "Familiar (copies your tears with a slow shooting frequency)",
+  "desc": ""
+ },
+ {
+  "id": "lilchest",
+  "gid": 362,
+  "name": "Lil Chest",
+  "icon": "icons/collectibles_362_lilchest.png",
+  "quote": "Spawns pickups and trinkets every few rooms cleared",
+  "desc": ""
+ },
+ {
+  "id": "swornprotector",
+  "gid": 363,
+  "name": "Sworn Protector",
+  "icon": "icons/collectibles_363_swornprotector.png",
+  "quote": "Orbital (7 dmg / tick)",
+  "desc": ""
+ },
+ {
+  "id": "friendzone",
+  "gid": 364,
+  "name": "Friend Zone",
+  "icon": "icons/collectibles_364_friendzone.png",
+  "quote": "Orbital (3 dmg / tick)",
+  "desc": ""
+ },
+ {
+  "id": "lostfly",
+  "gid": 365,
+  "name": "Lost Fly",
+  "icon": "icons/collectibles_365_lostfly.png",
+  "quote": "Familiar that hugs walls (7 dmg / tick)",
+  "desc": "Moves along walls/obstacles in the room · Deals 30 contact damage per second · Nearby enemies target the fly"
+ },
+ {
+  "id": "scatterbombs",
+  "gid": 366,
+  "name": "Scatter Bombs",
+  "icon": "icons/collectibles_366_scatterbombs.png",
+  "quote": "+5 bombs, bombs split into four after exploding",
+  "desc": "+5 Bombs · Isaac's bombs scatter into 4-5 tiny bombs"
+ },
+ {
+  "id": "stickybombs",
+  "gid": 367,
+  "name": "Sticky Bombs",
+  "icon": "icons/collectibles_367_stickybombs.png",
+  "quote": "+5 bombs, bombs stick to enemies, spawns 4 spiders if bombs kill an enemy",
+  "desc": "+5 Bombs · Isaac's bombs stick to enemies and leave white slowing creep · Killing an enemy with a bomb spawns blue spiders"
+ },
+ {
+  "id": "epiphora",
+  "gid": 368,
+  "name": "Epiphora",
+  "icon": "icons/collectibles_368_epiphora.png",
+  "quote": "Faster tear rate when shooting in one direction, up to 2x rate after 10 seconds",
+  "desc": "↑ Shooting in one direction gradually increases fire rate up to 200% and decreases accuracy"
+ },
+ {
+  "id": "continuum",
+  "gid": 369,
+  "name": "Continuum",
+  "icon": "icons/collectibles_369_continuum.png",
+  "quote": "Tears wrap around the screen, spectral tears",
+  "desc": "↑ +3 Range · Spectral tears · Tears can travel through one side of the screen and come out the other side"
+ },
+ {
+  "id": "mrdolly",
+  "gid": 370,
+  "name": "Mr. Dolly",
+  "icon": "icons/collectibles_370_mrdolly.png",
+  "quote": "",
+  "desc": "↑ +0.7 Tears · ↑ +2.5 Range · Spawns 3 random hearts"
+ },
+ {
+  "id": "curseofthetower",
+  "gid": 371,
+  "name": "Curse of the Tower",
+  "icon": "icons/collectibles_371_curseofthetower.png",
+  "quote": "Spawns 6 troll bombs when hit",
+  "desc": ""
+ },
+ {
+  "id": "chargedbaby",
+  "gid": 372,
+  "name": "Charged Baby",
+  "icon": "icons/collectibles_372_chargedbaby.png",
+  "quote": "Occasionally spawns a Little Battery, adds a charge, or freezes all enemies",
+  "desc": ""
+ },
+ {
+  "id": "deadeye",
+  "gid": 373,
+  "name": "Dead Eye",
+  "icon": "icons/collectibles_373_deadeye.png",
+  "quote": "Dmg increases when you hit enemies (up to 2x), every miss has a chance to reset",
+  "desc": ""
+ },
+ {
+  "id": "holylight",
+  "gid": 374,
+  "name": "Holy Light",
+  "icon": "icons/collectibles_374_holylight.png",
+  "quote": "Chance to shoot tears that spawn beams of light (3x dmg)",
+  "desc": "10% chance to shoot holy tears, which spawn a beam of light on hit · 50% chance at 9 luck · The beams deals 3x Isaac's damage"
+ },
+ {
+  "id": "hosthat",
+  "gid": 375,
+  "name": "Host Hat",
+  "icon": "icons/collectibles_375_hosthat.png",
+  "quote": "Explosion immunity, chance to deflect enemy projectiles",
+  "desc": "Grants immunity to explosions and falling projectiles · 20% chance to reflect enemy shots"
+ },
+ {
+  "id": "restock",
+  "gid": 376,
+  "name": "Restock",
+  "icon": "icons/collectibles_376_restock.png",
+  "quote": "Stores get more items when you buy things (like in Greed Mode)",
+  "desc": "Buying an item from a Shop restocks it instantly · Restocked items increase in price each time"
+ },
+ {
+  "id": "burstingsack",
+  "gid": 377,
+  "name": "Bursting Sack",
+  "icon": "icons/collectibles_377_burstingsack.png",
+  "quote": "Immunity to contact damage from spiders",
+  "desc": ""
+ },
+ {
+  "id": "numbertwo",
+  "gid": 378,
+  "name": "Number 2",
+  "icon": "icons/collectibles_378_numbertwo.png",
+  "quote": "Spawns a butt bomb after 3 seconds of uninterrupted firing",
+  "desc": ""
+ },
+ {
+  "id": "pupuladuplex",
+  "gid": 379,
+  "name": "Pupula Duplex",
+  "icon": "icons/collectibles_379_pupuladuplex.png",
+  "quote": "Wide tears, spectral tears",
+  "desc": ""
+ },
+ {
+  "id": "paytoplay",
+  "gid": 380,
+  "name": "Pay To Play",
+  "icon": "icons/collectibles_380_paytoplay.png",
+  "quote": "+5 coins, doors that take keys take coins instead",
+  "desc": "+5 Coins · Locked blocks, doors and chests must be opened with coins instead of keys"
+ },
+ {
+  "id": "edensblessing",
+  "gid": 381,
+  "name": "Eden's Blessing",
+  "icon": "icons/collectibles_381_edensblessing.png",
+  "quote": "Extra random item at the start of the next run",
+  "desc": ""
+ },
+ {
+  "id": "friendlyball",
+  "gid": 382,
+  "name": "Friendly Ball",
+  "icon": "icons/collectibles_382_friendlyball.png",
+  "quote": "Captures an enemy",
+  "desc": "Can be thrown at enemies to capture them · Using the item after capturing an enemy spawns the capture as a friendly companion · Walking over the ball after a capture instantly recharges the item"
+ },
+ {
+  "id": "teardetonator",
+  "gid": 383,
+  "name": "Tear Detonator",
+  "icon": "icons/collectibles_383_teardetonator.png",
+  "quote": "Makes your on-screen tears split",
+  "desc": ""
+ },
+ {
+  "id": "lilgurdy",
+  "gid": 384,
+  "name": "Lil Gurdy",
+  "icon": "icons/collectibles_384_lilgurdy.png",
+  "quote": "Familiar (charge to fire)",
+  "desc": "Launches and bounces around the room with speed based on charge amount · Deals 5-20 contact damage per hit depending on speed"
+ },
+ {
+  "id": "bumbo",
+  "gid": 385,
+  "name": "Bumbo",
+  "icon": "icons/collectibles_385_bumbo.png",
+  "quote": "Familiar, eats coins to level up, can shoot and attack enemies",
+  "desc": ""
+ },
+ {
+  "id": "d12",
+  "gid": 386,
+  "name": "D12",
+  "icon": "icons/collectibles_386_d12.png",
+  "quote": "Rerolls obstacles (rocks, etc.)",
+  "desc": "Rerolls any obstacle into another random obstacle (e.g. poop, pots, TNT, red poop, stone blocks etc.) · Small chance to reroll obstacles into buttons, killswitches, crawlspaces or trapdoors"
+ },
+ {
+  "id": "censer",
+  "gid": 387,
+  "name": "Censer",
+  "icon": "icons/collectibles_387_censer.png",
+  "quote": "Aura slows enemies",
+  "desc": ""
+ },
+ {
+  "id": "keybum",
+  "gid": 388,
+  "name": "Key Bum",
+  "icon": "icons/collectibles_388_keybum.png",
+  "quote": "Turns keys into chests",
+  "desc": ""
+ },
+ {
+  "id": "runebag",
+  "gid": 389,
+  "name": "Rune Bag",
+  "icon": "icons/collectibles_389_runebag.png",
+  "quote": "Spawns a rune every few rooms cleared",
+  "desc": "Spawns a random rune or Soul Stone every 7-8 rooms"
+ },
+ {
+  "id": "seraphim",
+  "gid": 390,
+  "name": "Seraphim",
+  "icon": "icons/collectibles_390_seraphim.png",
+  "quote": "Familiar (Sacred Heart tears)",
+  "desc": ""
+ },
+ {
+  "id": "betrayal",
+  "gid": 391,
+  "name": "Betrayal",
+  "icon": "icons/collectibles_391_betrayal.png",
+  "quote": "Charms all enemies when hit",
+  "desc": "Enemies can hit each other with their projectiles, and start infighting"
+ },
+ {
+  "id": "zodiac",
+  "gid": 392,
+  "name": "Zodiac",
+  "icon": "icons/collectibles_392_zodiac.png",
+  "quote": "Random zodiac item each floor",
+  "desc": ""
+ },
+ {
+  "id": "serpentskiss",
+  "gid": 393,
+  "name": "Serpent's Kiss",
+  "icon": "icons/collectibles_393_serpentskiss.png",
+  "quote": "Change to shoot a poison tears, poison touch, poisoned enemies drop black hearts",
+  "desc": "15% chance to shoot poison tears · Poison enemies on contact · Enemies killed by contact poison have a 20% chance to drop a Black Heart on death"
+ },
+ {
+  "id": "marked",
+  "gid": 394,
+  "name": "Marked",
+  "icon": "icons/collectibles_394_marked.png",
+  "quote": "Directed tears",
+  "desc": "↑ +0.7 Tears · ↑ +3 Range · Isaac automatically shoots tears at a movable red target on the ground · Familiars shoot towards the target too · You can stop shooting and reset the target's location by pressing the drop button ()"
+ },
+ {
+  "id": "techx",
+  "gid": 395,
+  "name": "Tech X",
+  "icon": "icons/collectibles_395_techx.png",
+  "quote": "Charged laser ring tears",
+  "desc": "Isaac's tears are replaced by a chargeable laser ring · Ring size and damage increases up to 100% with charge time"
+ },
+ {
+  "id": "ventriclerazor",
+  "gid": 396,
+  "name": "Ventricle Razor",
+  "icon": "icons/collectibles_396_ventriclerazor.png",
+  "quote": "Creates portals for faster backtracking",
+  "desc": ""
+ },
+ {
+  "id": "tractorbeam",
+  "gid": 397,
+  "name": "Tractor Beam",
+  "icon": "icons/collectibles_397_tractorbeam.png",
+  "quote": "Tears stay directly ahead of the player",
+  "desc": "↑ +1 Fire rate · ↑ +2.5 Range · ↑ +0.16 Shot speed · Isaac's tears always travel along a beam of light in front of him"
+ },
+ {
+  "id": "godsflesh",
+  "gid": 398,
+  "name": "God's Flesh",
+  "icon": "icons/collectibles_398_godsflesh.png",
+  "quote": "Chance to shoot shrinking tears, making them squishable",
+  "desc": ""
+ },
+ {
+  "id": "mawofthevoid",
+  "gid": 399,
+  "name": "Maw of the Void",
+  "icon": "icons/collectibles_399_mawofthevoid.png",
+  "quote": "3 second charge for a black blood laser ring attack (which has 5% chance to drop a black heart per enemy killed)",
+  "desc": "Firing tears for 2.35 seconds and releasing the fire button creates a black brimstone ring around Isaac · It deals 30x Isaac's damage over 2 seconds"
+ },
+ {
+  "id": "spearofdestiny",
+  "gid": 400,
+  "name": "Spear of Destiny",
+  "icon": "icons/collectibles_400_spearofdestiny.png",
+  "quote": "Stationary weapon (scales with damage)",
+  "desc": ""
+ },
+ {
+  "id": "explosivo",
+  "gid": 401,
+  "name": "Explosivo",
+  "icon": "icons/collectibles_401_explosivo.png",
+  "quote": "Chance to shoot sticky tears that will eventually explode",
+  "desc": "25% chance to shoot sticky tears · Sticky tears grow and explode after a few seconds, dealing Isaac's damage +60"
+ },
+ {
+  "id": "chaos",
+  "gid": 402,
+  "name": "Chaos",
+  "icon": "icons/collectibles_402_chaos.png",
+  "quote": "All item pools are combined",
+  "desc": ""
+ },
+ {
+  "id": "spidermod",
+  "gid": 403,
+  "name": "Spider Mod",
+  "icon": "icons/collectibles_403_spidermod.png",
+  "quote": "Enemies have health bars, shows damage dealt, inflicts random status effects to enemies, spawns batteries and blue spiders every few rooms cleared",
+  "desc": ""
+ },
+ {
+  "id": "fartbaby",
+  "gid": 404,
+  "name": "Farting Baby",
+  "icon": "icons/collectibles_404_fartbaby.png",
+  "quote": "Familiar that blocks shots, 10% chance to poison/knockback/charm per block",
+  "desc": "Blocks projectiles · When hit, 10% chance to fart and charm, poison or knockback enemies · The farts deal 5-6 damage"
+ },
+ {
+  "id": "gbbug",
+  "gid": 405,
+  "name": "GB Bug",
+  "icon": "icons/collectibles_405_gbbug.png",
+  "quote": "Familiar that travels around the room, inflict random status effects to enemies that it touches",
+  "desc": "Throwable (double-tap shoot) · Rerolls enemies and pickups it comes in contact with"
+ },
+ {
+  "id": "d8",
+  "gid": 406,
+  "name": "D8",
+  "icon": "icons/collectibles_406_d8.png",
+  "quote": "Rerolls your stats",
+  "desc": ""
+ },
+ {
+  "id": "purity",
+  "gid": 407,
+  "name": "Purity",
+  "icon": "icons/collectibles_407_purity.png",
+  "quote": "Grants a random aura, red = 4 dmg, blue = -4 delay, orange = 7.5 range, yellow = 0.5 speed",
+  "desc": "↑ Boosts one of Isaac's stats depending on the color of the aura · Taking damage removes the effect, and grants a new effect in the next room · Yellow = ↑ +0.5 Speed · Blue = ↑ +2 Fire rate · Red = ↑ +4 Damage · Orange = ↑ +3 Range"
+ },
+ {
+  "id": "athame",
+  "gid": 408,
+  "name": "Athame",
+  "icon": "icons/collectibles_408_athame.png",
+  "quote": "Black blood laser ring when hit (which has 15% chance to drop a black heart per enemy killed)",
+  "desc": "25% chance for a black brimstone ring to spawn around killed enemies · It deals 30x Isaac's damage over 2 seconds · +2.5% chance per luck"
+ },
+ {
+  "id": "emptyvessel",
+  "gid": 409,
+  "name": "Empty Vessel",
+  "icon": "icons/collectibles_409_emptyvessel.png",
+  "quote": "Does nothing if 1+ red heart containers, flight, procs a shield every minute",
+  "desc": ""
+ },
+ {
+  "id": "evileye",
+  "gid": 410,
+  "name": "Evil Eye",
+  "icon": "icons/collectibles_410_evileye.png",
+  "quote": "Chance to shoot eye tears (that shoot tears as they travel)",
+  "desc": ""
+ },
+ {
+  "id": "lustyblood",
+  "gid": 411,
+  "name": "Lusty Blood",
+  "icon": "icons/collectibles_411_lustyblood.png",
+  "quote": "+0.5 dmg for the current room per enemy killed (max is 5 dmg)",
+  "desc": ""
+ },
+ {
+  "id": "cambionconception",
+  "gid": 412,
+  "name": "Cambion Conception",
+  "icon": "icons/collectibles_412_cambionconception.png",
+  "quote": "Chance to gain evil familiars when hit",
+  "desc": ""
+ },
+ {
+  "id": "immaculateconception",
+  "gid": 413,
+  "name": "Immaculate Conception",
+  "icon": "icons/collectibles_413_immaculateconception.png",
+  "quote": "Gain a holy familiar and soul heart after each 15 heart pickups",
+  "desc": ""
+ },
+ {
+  "id": "moreoptions",
+  "gid": 414,
+  "name": "More Options",
+  "icon": "icons/collectibles_414_moreoptions.png",
+  "quote": "Choice of 2 items in each Treasure Room",
+  "desc": ""
+ },
+ {
+  "id": "crownoflight",
+  "gid": 415,
+  "name": "Crown Of Light",
+  "icon": "icons/collectibles_415_crownoflight.png",
+  "quote": "2x dmg when you have no empty red hearts",
+  "desc": "+2 Soul Hearts · If Isaac has no damaged heart containers: · ↑ x2 Damage multiplier · ↓ -0.3 Shot speed · Taking any damage removes the effect for the room"
+ },
+ {
+  "id": "deeppockets",
+  "gid": 416,
+  "name": "Deep Pockets",
+  "icon": "icons/collectibles_416_deeppockets.png",
+  "quote": "Can carry 2 cards/pills instead of 1",
+  "desc": "If clearing a room would yield no reward, spawns 1-3 coins · Increases the coin cap to 999"
+ },
+ {
+  "id": "succubus",
+  "gid": 417,
+  "name": "Succubus",
+  "icon": "icons/collectibles_417_succubus.png",
+  "quote": "Familiar, aura damages enemies, 1.5x dmg when standing in aura",
+  "desc": "Bounces around the room surrounded by a damaging aura that deals 7.5-10 damage per second · ↑ x1.5 Damage multiplier while standing in the aura"
+ },
+ {
+  "id": "fruitcake",
+  "gid": 418,
+  "name": "Fruit Cake",
+  "icon": "icons/collectibles_418_fruitcake.png",
+  "quote": "Random tear effects that change constantly",
+  "desc": ""
+ },
+ {
+  "id": "teleport20",
+  "gid": 419,
+  "name": "Teleport 2.0",
+  "icon": "icons/collectibles_419_teleport20.png",
+  "quote": "Teleports to an unexplored room (incuding Devil Room or I AM ERROR Room)",
+  "desc": "Teleports Isaac to a room that has not been cleared yet · Hierarchy: >>>>>>>> >>>>>>>"
+ },
+ {
+  "id": "blackpowder",
+  "gid": 420,
+  "name": "Black Powder",
+  "icon": "icons/collectibles_420_blackpowder.png",
+  "quote": "Walking in a circle makes a pentagram that does 10 dmg/tick",
+  "desc": ""
+ },
+ {
+  "id": "kidneybean",
+  "gid": 421,
+  "name": "Kidney Bean",
+  "icon": "icons/collectibles_421_kidneybean.png",
+  "quote": "Charms enemies",
+  "desc": "Charms all enemies in close range"
+ },
+ {
+  "id": "glowinghourglass",
+  "gid": 422,
+  "name": "Glowing Hourglass",
+  "icon": "icons/collectibles_422_glowinghourglass.png",
+  "quote": "Rewinds the game state to the previous room",
+  "desc": "Brings Isaac back to the previous room and reverses all actions done in the room the item was used in · The rewind can be used three times per floor · Acts as The Hourglass when out of rewinds, which slows enemies down for 8 seconds"
+ },
+ {
+  "id": "circleofprotection",
+  "gid": 423,
+  "name": "Circle of Protection",
+  "icon": "icons/collectibles_423_circleofprotection.png",
+  "quote": "White ring damages enemies and has a chance to reflect projectiles",
+  "desc": ""
+ },
+ {
+  "id": "sackhead",
+  "gid": 424,
+  "name": "Sack Head",
+  "icon": "icons/collectibles_424_sackhead.png",
+  "quote": "Pickups have a 33% chance to be replaced by a Sack, spawns a Sack on pickup",
+  "desc": ""
+ },
+ {
+  "id": "nightlight",
+  "gid": 425,
+  "name": "Night Light",
+  "icon": "icons/collectibles_425_nightlight.png",
+  "quote": "Light cone slows enemies and projectiles",
+  "desc": ""
+ },
+ {
+  "id": "obsessedfan",
+  "gid": 426,
+  "name": "Obsessed Fan",
+  "icon": "icons/collectibles_426_obsessedfan.png",
+  "quote": "Familiar, copies your movement, does contact damage",
+  "desc": "Mimics Isaac's movement on a 0.66 second delay · Deals 30 contact damage per second"
+ },
+ {
+  "id": "minecrafter",
+  "gid": 427,
+  "name": "Mine Crafter",
+  "icon": "icons/collectibles_427_minecrafter.png",
+  "quote": "Spawns a TNT barrel",
+  "desc": ""
+ },
+ {
+  "id": "pjs",
+  "gid": 428,
+  "name": "PJs",
+  "icon": "icons/collectibles_428_pjs.png",
+  "quote": "Full heal",
+  "desc": ""
+ },
+ {
+  "id": "headofthekeeper",
+  "gid": 429,
+  "name": "Head of the Keeper",
+  "icon": "icons/collectibles_429_headofthekeeper.png",
+  "quote": "Coin tears (chance to spawn coins upon hitting an enemy)",
+  "desc": ""
+ },
+ {
+  "id": "papafly",
+  "gid": 430,
+  "name": "Papa Fly",
+  "icon": "icons/collectibles_430_papafly.png",
+  "quote": "Familiar, copies your movement, shoots at enemies",
+  "desc": "Mimics Isaac's movement on a 0.66 second delay · Shoots tears at nearby enemies that deal Isaac's damage"
+ },
+ {
+  "id": "multidimensionalbaby",
+  "gid": 431,
+  "name": "Multidimensional Baby",
+  "icon": "icons/collectibles_431_multidimensionalbaby.png",
+  "quote": "Familiar, tears that pass through it get 2x dmg",
+  "desc": "Mimics Isaac's movement on a 0.66 second delay · Tears that pass through it are doubled and gain a range + shot speed boost"
+ },
+ {
+  "id": "glitterbombs",
+  "gid": 432,
+  "name": "Glitter Bombs",
+  "icon": "icons/collectibles_432_glitterbombs.png",
+  "quote": "+5 bombs, bombs have a chance to drop pickups after exploding",
+  "desc": "+5 Bombs · Bombs have a 63% chance to drop a random pickup and a 15% chance to charm enemies when they explode · The pickup spawn chance goes down by 1% for each spawn this floor"
+ },
+ {
+  "id": "myshadow",
+  "gid": 433,
+  "name": "My Shadow",
+  "icon": "icons/collectibles_433_myshadow.png",
+  "quote": "Spawns a friendly Charger when hit",
+  "desc": "A small shadow follows Isaac · When an enemy touches the shadow a friendly black charger spawns for the room · The charger deals 8.7 damage per hit"
+ },
+ {
+  "id": "jarofflies",
+  "gid": 434,
+  "name": "Jar of Flies",
+  "icon": "icons/collectibles_434_jarofflies.png",
+  "quote": "Creates flies when you kill enemies (max 20)",
+  "desc": ""
+ },
+ {
+  "id": "lilloki",
+  "gid": 435,
+  "name": "Lil Loki",
+  "icon": "icons/collectibles_435_lilloki.png",
+  "quote": "Familiar, shoots cross tears",
+  "desc": ""
+ },
+ {
+  "id": "milk",
+  "gid": 436,
+  "name": "Milk!",
+  "icon": "icons/collectibles_436_milk.png",
+  "quote": "Familiar, -2 tear delay when hit",
+  "desc": ""
+ },
+ {
+  "id": "d7",
+  "gid": 437,
+  "name": "D7",
+  "icon": "icons/collectibles_437_d7.png",
+  "quote": "Respawns the current room",
+  "desc": "Restarts a room and respawns all enemies · Can be used to get multiple room clear rewards from a single room"
+ },
+ {
+  "id": "binky",
+  "gid": 438,
+  "name": "Binky",
+  "icon": "icons/collectibles_438_binky.png",
+  "quote": "",
+  "desc": ""
+ },
+ {
+  "id": "momsbox",
+  "gid": 439,
+  "name": "Mom's Box",
+  "icon": "icons/collectibles_439_momsbox.png",
+  "quote": "Spawns a random trinket, doubles trinket effects while held",
+  "desc": ""
+ },
+ {
+  "id": "kidneystone",
+  "gid": 440,
+  "name": "Kidney Stone",
+  "icon": "icons/collectibles_440_kidneystone.png",
+  "quote": "Grants extra charge attack every 25 seconds",
+  "desc": "Isaac occasionally stops firing and charges an attack that releases a burst of tears and a kidney stone"
+ },
+ {
+  "id": "megasatansbreath",
+  "gid": 441,
+  "name": "Mega Blast",
+  "icon": "icons/collectibles_441_megasatansbreath.png",
+  "quote": "Huge blood laser for 15 seconds, lasts across rooms and floors",
+  "desc": ""
+ },
+ {
+  "id": "darkprincescrown",
+  "gid": 442,
+  "name": "Dark Prince's Crown",
+  "icon": "icons/collectibles_442_darkprincescrown.png",
+  "quote": "+1.5 range, +0.7 tears, and 0.2 shot speed when at exactly 1 red heart",
+  "desc": "While at 1 full Red Heart: · ↑ +2 Fire rate · ↑ +1.5 Range · ↑ +0.2 Shot speed"
+ },
+ {
+  "id": "apple",
+  "gid": 443,
+  "name": "Apple!",
+  "icon": "icons/collectibles_443_apple.png",
+  "quote": "Chance to shoot razor blade tears (4x dmg)",
+  "desc": ""
+ },
+ {
+  "id": "leadpencil",
+  "gid": 444,
+  "name": "Lead Pencil",
+  "icon": "icons/collectibles_444_leadpencil.png",
+  "quote": "Fires a Monstro's Lung shot every 15 tears",
+  "desc": "Isaac shoots a cluster of tears every 15 tears"
+ },
+ {
+  "id": "dogtooth",
+  "gid": 445,
+  "name": "Dog Tooth",
+  "icon": "icons/collectibles_445_dogtooth.png",
+  "quote": "Wolf howls when there is an adjacent Secret Room / Super Secret Room / Crawlspace",
+  "desc": ""
+ },
+ {
+  "id": "deadtooth",
+  "gid": 446,
+  "name": "Dead Tooth",
+  "icon": "icons/collectibles_446_deadtooth.png",
+  "quote": "Poisonous aura",
+  "desc": ""
+ },
+ {
+  "id": "lingerbean",
+  "gid": 447,
+  "name": "Linger Bean",
+  "icon": "icons/collectibles_447_lingerbean.png",
+  "quote": "Spawns a poop cloud every 7.5 seconds (scales with dmg, 5 ticks / second)",
+  "desc": ""
+ },
+ {
+  "id": "shardofglass",
+  "gid": 448,
+  "name": "Shard of Glass",
+  "icon": "icons/collectibles_448_shardofglass.png",
+  "quote": "Chance to drop a red heart when hit, +5 range and makes a red creep trail when hit",
+  "desc": "Upon taking damage: · 25% chance to spawn a Red Heart · Isaac bleeds, spewing tears in the direction he is shooting · The bleeding does half a Red Heart of damage every 20 seconds · The bleeding stops if a Red Heart is healed, all Red Hearts are empty, or the next damage would kill Isaac"
+ },
+ {
+  "id": "metalplate",
+  "gid": 449,
+  "name": "Metal Plate",
+  "icon": "icons/collectibles_449_metalplate.png",
+  "quote": "Chance to deflect enemy projectiles",
+  "desc": ""
+ },
+ {
+  "id": "eyeofgreed",
+  "gid": 450,
+  "name": "Eye of Greed",
+  "icon": "icons/collectibles_450_eyeofgreed.png",
+  "quote": "Shoots an extra coin tear every 20 tears (has Midas Touch effect)",
+  "desc": "Every 20 tears, Isaac shoots a coin tear that deals x1.5 +10 damage · Enemies hit with the coin get petrified and turn into gold · Killing a gold enemy drops 1-3 coins · Firing a coin tear costs 1 coin"
+ },
+ {
+  "id": "tarotcloth",
+  "gid": 451,
+  "name": "Tarot Cloth",
+  "icon": "icons/collectibles_451_tarotcloth.png",
+  "quote": "Doubles the effect of cards, spawns a random card/rune on pickup",
+  "desc": "Spawns a card · Tarot card effects are doubled or enhanced"
+ },
+ {
+  "id": "varicoseveins",
+  "gid": 452,
+  "name": "Varicose Veins",
+  "icon": "icons/collectibles_452_varicoseveins.png",
+  "quote": "Shoots 10 tears (dmg + 25) when hit",
+  "desc": ""
+ },
+ {
+  "id": "compoundfracture",
+  "gid": 453,
+  "name": "Compound Fracture",
+  "icon": "icons/collectibles_453_compoundfracture.png",
+  "quote": "Tears split into 2 bone shards, each does 1/2 dmg",
+  "desc": "↑ +1.5 Range · Tears shatter into 1-3 bone shards upon hitting anything"
+ },
+ {
+  "id": "polydactyly",
+  "gid": 454,
+  "name": "Polydactyly",
+  "icon": "icons/collectibles_454_polydactyly.png",
+  "quote": "Can carry 2 cards/pills instead of 1, spawns 1 card/pill on pickup",
+  "desc": ""
+ },
+ {
+  "id": "dadslostcoin",
+  "gid": 455,
+  "name": "Dad's Lost Coin",
+  "icon": "icons/collectibles_455_dadslostcoin.png",
+  "quote": "Spawns a lucky penny on pickup",
+  "desc": "↑ +2.5 Range · Spawns a Lucky Penny"
+ },
+ {
+  "id": "moldybread",
+  "gid": 456,
+  "name": "Midnight Snack",
+  "icon": "icons/collectibles_456_moldybread.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Heals 1 heart"
+ },
+ {
+  "id": "conehead",
+  "gid": 457,
+  "name": "Cone Head",
+  "icon": "icons/collectibles_457_conehead.png",
+  "quote": "Chance to not take damage when hit",
+  "desc": ""
+ },
+ {
+  "id": "bellybutton",
+  "gid": 458,
+  "name": "Belly Button",
+  "icon": "icons/collectibles_458_bellybutton.png",
+  "quote": "Can carry 2 trinkets instead of 1, spawns random trinket on pickup",
+  "desc": ""
+ },
+ {
+  "id": "sinusinfection",
+  "gid": 459,
+  "name": "Sinus Infection",
+  "icon": "icons/collectibles_459_sinusinfection.png",
+  "quote": "Chance to shoot booger tears (dmg over time for 60 seconds)",
+  "desc": "20% chance to shoot a sticky booger · Boogers deal Isaac's damage once a second and stick for 10 seconds · Not affected by luck"
+ },
+ {
+  "id": "glaucoma",
+  "gid": 460,
+  "name": "Glaucoma",
+  "icon": "icons/collectibles_460_glaucoma.png",
+  "quote": "Chance to shoot concussive tears",
+  "desc": ""
+ },
+ {
+  "id": "parasitoid",
+  "gid": 461,
+  "name": "Parasitoid",
+  "icon": "icons/collectibles_461_parasitoid.png",
+  "quote": "Chance to fire an egg tear (spawns creep + blue fly/spider)",
+  "desc": ""
+ },
+ {
+  "id": "eyeofbelial",
+  "gid": 462,
+  "name": "Eye of Belial",
+  "icon": "icons/collectibles_462_eyeofbelial.png",
+  "quote": "Piercing, after a tear hits it gets 2x dmg + homing",
+  "desc": "↑ +1.5 Range · Piercing tears · Hitting an enemy makes the tear homing and doubles its damage"
+ },
+ {
+  "id": "sulfuricacid",
+  "gid": 463,
+  "name": "Sulfuric Acid",
+  "icon": "icons/collectibles_463_sulfuricacid.png",
+  "quote": "Chance to fire a sulfuric tear (breaks rocks / open doors)",
+  "desc": ""
+ },
+ {
+  "id": "glyphofbalance",
+  "gid": 464,
+  "name": "Glyph of Balance",
+  "icon": "icons/collectibles_464_glyphofbalance.png",
+  "quote": "Modifies drops from champion enemies based on certain conditions",
+  "desc": "+2 Soul Hearts · Room clear rewards and champion enemy drops become whatever pickup Isaac needs the most"
+ },
+ {
+  "id": "analogstick",
+  "gid": 465,
+  "name": "Analog Stick",
+  "icon": "icons/collectibles_465_analogstick.png",
+  "quote": "Allows shooting tears diagonally",
+  "desc": ""
+ },
+ {
+  "id": "contagion",
+  "gid": 466,
+  "name": "Contagion",
+  "icon": "icons/collectibles_466_contagion.png",
+  "quote": "The first enemy killed in a room will explode and poison nearby enemies",
+  "desc": ""
+ },
+ {
+  "id": "finger",
+  "gid": 467,
+  "name": "Finger!",
+  "icon": "icons/collectibles_467_finger.png",
+  "quote": "Damages enemies in the direction it is pointed in",
+  "desc": ""
+ },
+ {
+  "id": "shade",
+  "gid": 468,
+  "name": "Shade",
+  "icon": "icons/collectibles_468_shade.png",
+  "quote": "Familiar, copies your movement, does contact damage",
+  "desc": "Follows Isaac's movement on a 0.66 second delay · Deals 75 contact damage per second · After it deals 666 damage, it is absorbed by Isaac, increasing his contact damage and spawning friendly Chargers"
+ },
+ {
+  "id": "depression",
+  "gid": 469,
+  "name": "Depression",
+  "icon": "icons/collectibles_469_depression.png",
+  "quote": "Familiar, leaves blue creep, chance to spawn beam of light when touching enemies",
+  "desc": ""
+ },
+ {
+  "id": "hushy",
+  "gid": 470,
+  "name": "Hushy",
+  "icon": "icons/collectibles_470_hushy.png",
+  "quote": "Familiar, moves when not shooting, deals contact dmg (2 dmg / tick)",
+  "desc": ""
+ },
+ {
+  "id": "lilmonstro",
+  "gid": 471,
+  "name": "Lil Monstro",
+  "icon": "icons/collectibles_471_lilmonstro.png",
+  "quote": "Familiar, shoots base dmg Monstro's Lung",
+  "desc": ""
+ },
+ {
+  "id": "kingbaby",
+  "gid": 472,
+  "name": "King Baby",
+  "icon": "icons/collectibles_472_kingbaby.png",
+  "quote": "Familiar, all other familiars follow it",
+  "desc": "Other familiars follow it and automatically shoot at enemies · Stops moving when Isaac shoots · Teleports back to Isaac when he stops shooting"
+ },
+ {
+  "id": "bigchubby",
+  "gid": 473,
+  "name": "Big Chubby",
+  "icon": "icons/collectibles_473_bigchubby.png",
+  "quote": "Familiar (2.7 dmg / tick)",
+  "desc": ""
+ },
+ {
+  "id": "brokenglasscannon",
+  "gid": 474,
+  "name": "Broken Glass Cannon",
+  "icon": "icons/collectibles_474_brokenglasscannon.png",
+  "quote": "Chance to spawn a tonsil familiar when hit",
+  "desc": "Using the item turns it back into Glass Cannon"
+ },
+ {
+  "id": "planc",
+  "gid": 475,
+  "name": "Plan C",
+  "icon": "icons/collectibles_475_planc.png",
+  "quote": "Kills everything in the room, kills you after 3 seconds, single use",
+  "desc": ""
+ },
+ {
+  "id": "d1",
+  "gid": 476,
+  "name": "D1",
+  "icon": "icons/collectibles_476_d1.png",
+  "quote": "Duplicates a random pickup in the room",
+  "desc": "Duplicates a random pickup in the room · Duplicated pickups may not be identical to the original"
+ },
+ {
+  "id": "void",
+  "gid": 477,
+  "name": "Void",
+  "icon": "icons/collectibles_477_void.png",
+  "quote": "Consumes pedestal items in the room, passive items give random stat-ups, active items adds the effect to Void",
+  "desc": "Consumes all pedestal items in the room · Active items: Their effects activate with every future use of Void · ↑ Passive items grant two random stat ups"
+ },
+ {
+  "id": "pause",
+  "gid": 478,
+  "name": "Pause",
+  "icon": "icons/collectibles_478_pause.png",
+  "quote": "Freezes all enemies in the room until you shoot",
+  "desc": ""
+ },
+ {
+  "id": "smelter",
+  "gid": 479,
+  "name": "Smelter",
+  "icon": "icons/collectibles_479_smelter.png",
+  "quote": "Consumes held trinkets to make their effects permanent",
+  "desc": ""
+ },
+ {
+  "id": "compost",
+  "gid": 480,
+  "name": "Compost",
+  "icon": "icons/collectibles_480_compost.png",
+  "quote": "Converts pickups in the room to blue flies/spiders",
+  "desc": ""
+ },
+ {
+  "id": "dataminer",
+  "gid": 481,
+  "name": "Dataminer",
+  "icon": "icons/collectibles_481_dataminer.png",
+  "quote": "Temporary random stat changes + random tear effects, distorts graphics",
+  "desc": ""
+ },
+ {
+  "id": "clicker",
+  "gid": 482,
+  "name": "Clicker",
+  "icon": "icons/collectibles_482_clicker.png",
+  "quote": "Rerolls the current character, removes the last item that was picked up",
+  "desc": ""
+ },
+ {
+  "id": "mamamega",
+  "gid": 483,
+  "name": "Mama Mega!",
+  "icon": "icons/collectibles_483_mamamega.png",
+  "quote": "200 dmg to every room, opens all secret doors, single use",
+  "desc": ""
+ },
+ {
+  "id": "waitwhat",
+  "gid": 484,
+  "name": "Wait What?",
+  "icon": "icons/collectibles_484_waitwhat.png",
+  "quote": "Spawns a wave of rocks that hurts enemies (acts as an explosion)",
+  "desc": ""
+ },
+ {
+  "id": "crookedpenny",
+  "gid": 485,
+  "name": "Crooked Penny",
+  "icon": "icons/collectibles_485_crookedpenny.png",
+  "quote": "50/50 chance to either double all pickups / pedestal items or destroy them",
+  "desc": ""
+ },
+ {
+  "id": "dullrazor",
+  "gid": 486,
+  "name": "Dull Razor",
+  "icon": "icons/collectibles_486_dullrazor.png",
+  "quote": "\"Hurts\" the player without doing damage",
+  "desc": ""
+ },
+ {
+  "id": "potatopeeler",
+  "gid": 487,
+  "name": "Potato Peeler",
+  "icon": "icons/collectibles_487_potatopeeler.png",
+  "quote": "-1 red heart, +0.2 dmg, gain a Cube of Meat",
+  "desc": "Removes 1 heart container for: · ↑ +0.2 Damage · A Cube of Meat · Receive for the room: · ↑ +1.5 Range · Leave a trail of blood creep"
+ },
+ {
+  "id": "metronome",
+  "gid": 488,
+  "name": "Metronome",
+  "icon": "icons/collectibles_488_metronome.png",
+  "quote": "Temporary random item effect",
+  "desc": ""
+ },
+ {
+  "id": "dinfinity",
+  "gid": 489,
+  "name": "D Infinity",
+  "icon": "icons/collectibles_489_dinfinity.png",
+  "quote": "Gives random dice on pickup, morphs to another dice on use",
+  "desc": "Can be made to act as any die item (except Spindown Dice) with the drop button () · Charge time varies based on the last die used and updates with every use"
+ },
+ {
+  "id": "edenssoul",
+  "gid": 490,
+  "name": "Eden's Soul",
+  "icon": "icons/collectibles_490_edenssoul.png",
+  "quote": "Spawns two item pedestals, starts with 0 charges, single use",
+  "desc": ""
+ },
+ {
+  "id": "acidbaby",
+  "gid": 491,
+  "name": "Acid Baby",
+  "icon": "icons/collectibles_491_acidbaby.png",
+  "quote": "Spawns a pill every few rooms cleared",
+  "desc": "Spawns a random pill every 7 rooms · Using a pill poisons all enemies in the room"
+ },
+ {
+  "id": "yolisten",
+  "gid": 492,
+  "name": "YO LISTEN!",
+  "icon": "icons/collectibles_492_yolisten.png",
+  "quote": "Familiar, travels to Secret Rooms / Super Secret Rooms / tinted rocks / crawlspaces",
+  "desc": ""
+ },
+ {
+  "id": "adderline",
+  "gid": 493,
+  "name": "Adrenaline",
+  "icon": "icons/collectibles_493_adderline.png",
+  "quote": "+0.2 dmg for every empty red heart container",
+  "desc": "↑ Damage up for every empty heart container · The more empty heart containers, the bigger the bonus for each new one"
+ },
+ {
+  "id": "jacobsladder",
+  "gid": 494,
+  "name": "Jacob's Ladder",
+  "icon": "icons/collectibles_494_jacobsladder.png",
+  "quote": "Lightning tears (1-2 sparks in a random direction, each does 1/2 dmg)",
+  "desc": "Tears spawn a spark of electricity on impact · Sparks deal half of Isaac's damage · Sparks can arc to up to 4 other enemies"
+ },
+ {
+  "id": "ghostpepper",
+  "gid": 495,
+  "name": "Ghost Pepper",
+  "icon": "icons/collectibles_495_ghostpepper.png",
+  "quote": "Chance to shoot a fire (up to 125 dmg)",
+  "desc": "8% chance to shoot a blue fire that blocks enemy shots and deals contact damage · 50% chance at 10 luck · Fires shrink and disappear after 2 seconds"
+ },
+ {
+  "id": "euthanasia",
+  "gid": 496,
+  "name": "Euthanasia",
+  "icon": "icons/collectibles_496_euthanasia.png",
+  "quote": "Chance to shoot needle tears (3x dmg, if enemy is killed, explodes into more needles)",
+  "desc": "3.33% chance to shoot a needle · 25% chance at 13 luck · Needles kill normal enemies instantly, bursting them into 10 tears · Needles deal 3x Isaac's damage against bosses"
+ },
+ {
+  "id": "camoundies",
+  "gid": 497,
+  "name": "Camo Undies",
+  "icon": "icons/collectibles_497_camoundies.png",
+  "quote": "Invisible to enemies in each room until you shoot",
+  "desc": "Entering a room camouflages Isaac and confuses all enemies until a tear is shot · ↑ +0.5 Speed while cloaked · Uncloaking deals damage around Isaac and grants a very brief fire rate and damage up"
+ },
+ {
+  "id": "duality",
+  "gid": 498,
+  "name": "Duality",
+  "icon": "icons/collectibles_498_duality.png",
+  "quote": "Choice between Devil or Angel Rooms every time you earn a deal",
+  "desc": ""
+ },
+ {
+  "id": "eucharist",
+  "gid": 499,
+  "name": "Eucharist",
+  "icon": "icons/collectibles_499_eucharist.png",
+  "quote": "Angel Rooms appear whenever possible",
+  "desc": ""
+ },
+ {
+  "id": "sackofsacks",
+  "gid": 500,
+  "name": "Sack of Sacks",
+  "icon": "icons/collectibles_500_sackofsacks.png",
+  "quote": "Spawns a sack every few rooms cleared",
+  "desc": "Spawns a sack every 7-8 rooms"
+ },
+ {
+  "id": "greedsgullet",
+  "gid": 501,
+  "name": "Greed's Gullet",
+  "icon": "icons/collectibles_501_greedsgullet.png",
+  "quote": "Gives an extra heart container for every 25 coins held",
+  "desc": "+1 Heart container for every 25 coins Isaac has"
+ },
+ {
+  "id": "largezit",
+  "gid": 502,
+  "name": "Large Zit",
+  "icon": "icons/collectibles_502_largezit.png",
+  "quote": "Chance to shoot creep tears (2x dmg, makes a trail of white creep), shoots creep tear in random direction on hit",
+  "desc": ""
+ },
+ {
+  "id": "littlehorn",
+  "gid": 503,
+  "name": "Little Horn",
+  "icon": "icons/collectibles_503_littlehorn.png",
+  "quote": "Chance to shoot void tears (piercing, instantly kills non-boss enemies)",
+  "desc": "5% chance to shoot a tear that summons a Big Horn hand · 20% chance at 15 luck · The hand instantly kills enemies and deals 36 damage to bosses · Isaac deals 7 contact damage per second"
+ },
+ {
+  "id": "brownnugget",
+  "gid": 504,
+  "name": "Brown Nugget",
+  "icon": "icons/collectibles_504_brownnugget.png",
+  "quote": "Spawns a fly turret (2 dmg / shot)",
+  "desc": "Spawns a fly that shoots at enemies · Each shot deals 3.5 damage"
+ },
+ {
+  "id": "pokego",
+  "gid": 505,
+  "name": "Poke Go",
+  "icon": "icons/collectibles_505_pokego.png",
+  "quote": "Chance to spawn a random familiar each room",
+  "desc": ""
+ },
+ {
+  "id": "backstabber",
+  "gid": 506,
+  "name": "Backstabber",
+  "icon": "icons/collectibles_506_backstabber.png",
+  "quote": "Shooting a non-bleeding enemy in the back does x2 dmg and adds bleed effect (kills after 50 seconds of slow damage)",
+  "desc": "Hitting an enemy in the back deals double damage and causes bleeding, which makes enemies leave creep and take damage when they move"
+ },
+ {
+  "id": "sharpstraw",
+  "gid": 507,
+  "name": "Sharp Straw",
+  "icon": "icons/collectibles_507_sharpstraw.png",
+  "quote": "Deals damage to all enemies in the room (1x dmg + 10% of enemy's max HP), enemies killed have a chance to drop a red/soul heart",
+  "desc": "Deals Isaac's damage + 10% of the enemy's max health to all enemies · Dealing damage with the Straw have a 15% chance to spawn half hearts"
+ },
+ {
+  "id": "momsrazor",
+  "gid": 508,
+  "name": "Mom's Razor",
+  "icon": "icons/collectibles_508_momsrazor.png",
+  "quote": "Orbital (non-blocking), deals 20% dmg / tick, adds bleed effect (kills after 50s of slow damage)",
+  "desc": "Orbital that causes bleeding, which makes enemies take damage when they move · Deals 1.5x Isaac's damage per second"
+ },
+ {
+  "id": "bloodshoteye",
+  "gid": 509,
+  "name": "Bloodshot Eye",
+  "icon": "icons/collectibles_509_bloodshoteye.png",
+  "quote": "Orbital, 2 dmg / tick, shoots every 2 seconds (3.5 dmg / tear)",
+  "desc": "Orbital that shoots a tear every 0.33 seconds to nearby enemies · Deals 3.5 damage per tear · Deals 20 contact damage per second"
+ },
+ {
+  "id": "delirious",
+  "gid": 510,
+  "name": "Delirious",
+  "icon": "icons/collectibles_510_delirious.png",
+  "quote": "Spawns random charmed boss for current room",
+  "desc": ""
+ },
+ {
+  "id": "angryfly",
+  "gid": 511,
+  "name": "Angry Fly",
+  "icon": "icons/collectibles_511_angryfly.png",
+  "quote": "Familiar, orbits around enemies, 2 dmg / tick",
+  "desc": ""
+ },
+ {
+  "id": "blackhole",
+  "gid": 512,
+  "name": "Black Hole",
+  "icon": "icons/collectibles_512_blackhole.png",
+  "quote": "Spawns a black hole that sucks all enemies into it and deals damage for 6 seconds",
+  "desc": ""
+ },
+ {
+  "id": "bozo",
+  "gid": 513,
+  "name": "Bozo",
+  "icon": "icons/collectibles_513_bozo.png",
+  "quote": "Chance for all enemies to become charmed/feared, chance to spawn rainbow poop on hit",
+  "desc": ""
+ },
+ {
+  "id": "brokenmodem",
+  "gid": 514,
+  "name": "Broken Modem",
+  "icon": "icons/collectibles_514_brokenmodem.png",
+  "quote": "Chance for all enemies and enemy projectiles to become frozen (based on luck)",
+  "desc": "Causes some enemies and projectiles to briefly pause at random intervals · Paused projectiles disappear · 25% chance to double room clear rewards"
+ },
+ {
+  "id": "mysterygift",
+  "gid": 515,
+  "name": "Mystery Gift",
+  "icon": "icons/collectibles_515_mysterygift.png",
+  "quote": "Spawns a pedestal item, single use",
+  "desc": ""
+ },
+ {
+  "id": "sprinkler",
+  "gid": 516,
+  "name": "Sprinkler",
+  "icon": "icons/collectibles_516_sprinkler.png",
+  "quote": "Spawns a Sprinkler that shoots tears in a circular rotation",
+  "desc": ""
+ },
+ {
+  "id": "fastbombs",
+  "gid": 517,
+  "name": "Fast Bombs",
+  "icon": "icons/collectibles_517_fastbombs.png",
+  "quote": "+7 bombs, can rapidly drop bombs",
+  "desc": "+7 Bombs · Removes the delay between bomb placements · Bombs don't deal knockback to each other"
+ },
+ {
+  "id": "buddybox",
+  "gid": 518,
+  "name": "Buddy in a Box",
+  "icon": "icons/collectibles_518_buddybox.png",
+  "quote": "Familiar, random co-op baby (changes per floor)",
+  "desc": ""
+ },
+ {
+  "id": "lildelirium",
+  "gid": 519,
+  "name": "Lil Delirium",
+  "icon": "icons/collectibles_519_lildelirium.png",
+  "quote": "Familiar, transforms into a random familiar every 10 seconds",
+  "desc": ""
+ },
+ {
+  "id": "jumpercable",
+  "gid": 520,
+  "name": "Jumper Cables",
+  "icon": "icons/collectibles_520_jumpercable.png",
+  "quote": "+1 charge per 15 enemies killed",
+  "desc": ""
+ },
+ {
+  "id": "cerealcutout",
+  "gid": 521,
+  "name": "Coupon",
+  "icon": "icons/collectibles_521_cerealcutout.png",
+  "quote": "Makes one random item in a shop free",
+  "desc": ""
+ },
+ {
+  "id": "telekinesis",
+  "gid": 522,
+  "name": "Telekinesis",
+  "icon": "icons/collectibles_522_telekinesis.png",
+  "quote": "Freezes and then reflects enemy tears",
+  "desc": "Stops all enemy projectiles that come close to Isaac for 3 seconds and throws them away from him afterwards · Pushes close enemies away during the effect"
+ },
+ {
+  "id": "movingbox",
+  "gid": 523,
+  "name": "Moving Box",
+  "icon": "icons/collectibles_523_movingbox.png",
+  "quote": "Stores all pickups / pedestals in the room, then spawns them when used again",
+  "desc": "Stores up to 10 pickups and items from the current room · Using the item again drops everything back on the floor · Allows Isaac to move things between rooms"
+ },
+ {
+  "id": "technologyzero",
+  "gid": 524,
+  "name": "Technology Zero",
+  "icon": "icons/collectibles_524_technologyzero.png",
+  "quote": "Electric tears (tears are connected by electricity that deals 1x dmg / tick)",
+  "desc": "Isaac's tears are connected with beams of electricity · Electricity deals 4.5x Isaac's damage per second"
+ },
+ {
+  "id": "leprosy",
+  "gid": 525,
+  "name": "Leprosy",
+  "icon": "icons/collectibles_525_leprosy.png",
+  "quote": "Spawns temporary orbitals on hit (7 dmg / tick)",
+  "desc": "Taking damage spawns a projectile blocking orbital · Caps at 3 orbitals · They deal 30 contact damage per second · Orbitals are destroyed if they take too much damage"
+ },
+ {
+  "id": "7seals",
+  "gid": 526,
+  "name": "7 Seals",
+  "icon": "icons/collectibles_526_7seals.png",
+  "quote": "Familiar, transforms into a random horseman every 10 seconds (all deal contact damage and spawn locusts)",
+  "desc": ""
+ },
+ {
+  "id": "pop",
+  "gid": 529,
+  "name": "Pop!",
+  "icon": "icons/collectibles_529_pop.png",
+  "quote": "Eyeball tears (tears are not affected by range and can bounce off of each other)",
+  "desc": ""
+ },
+ {
+  "id": "deathslist",
+  "gid": 530,
+  "name": "Death's List",
+  "icon": "icons/collectibles_530_deathslist.png",
+  "quote": "Grants random rewards for killing enemies in order",
+  "desc": ""
+ },
+ {
+  "id": "haemolacria",
+  "gid": 531,
+  "name": "Haemolacria",
+  "icon": "icons/collectibles_531_haemolacria.png",
+  "quote": "Blood tears (arcing tears that explode into many smaller tears that deal 50-80% dmg)",
+  "desc": "↑ +1 Damage · ↑ x1.5 Damage multiplier · ↓ x0.33 Fire rate multiplier · ↓ x0.8 Range multiplier · Isaac's tears fly in an arc and burst into smaller tears on impact"
+ },
+ {
+  "id": "lachryphagy",
+  "gid": 532,
+  "name": "Lachryphagy",
+  "icon": "icons/collectibles_532_lachryphagy.png",
+  "quote": "Hungry tears (tears that don't hit enemies combine and eventually split)",
+  "desc": "Isaac's tears progressively slow down, stop, then explode into 5-8 smaller tears · Tears can merge and become bigger"
+ },
+ {
+  "id": "trisagion",
+  "gid": 533,
+  "name": "Trisagion",
+  "icon": "icons/collectibles_533_trisagion.png",
+  "quote": "Light tears (piercing)",
+  "desc": ""
+ },
+ {
+  "id": "schoolbag",
+  "gid": 534,
+  "name": "Schoolbag",
+  "icon": "icons/collectibles_534_schoolbag.png",
+  "quote": "Can carry 2 active items instead of 1",
+  "desc": ""
+ },
+ {
+  "id": "blanket",
+  "gid": 535,
+  "name": "Blanket",
+  "icon": "icons/collectibles_535_blanket.png",
+  "quote": "1-hit shield when entering a Boss Room",
+  "desc": ""
+ },
+ {
+  "id": "sacrificialaltar",
+  "gid": 536,
+  "name": "Sacrificial Altar",
+  "icon": "icons/collectibles_536_sacrificialaltar.png",
+  "quote": "Sacrifice up to 2 familiars, spawns a passive Devil Room item for each one, single use",
+  "desc": ""
+ },
+ {
+  "id": "lilspewer",
+  "gid": 537,
+  "name": "Lil Spewer",
+  "icon": "icons/collectibles_537_lilspewer.png",
+  "quote": "Familiar, charged attack that spawns creep, changes form on pill use, spawns a random pill on pickup",
+  "desc": ""
+ },
+ {
+  "id": "marbles",
+  "gid": 538,
+  "name": "Marbles",
+  "icon": "icons/collectibles_538_marbles.png",
+  "quote": "Chance to smelt a trinket on hit, spawns 3 random trinkets on pickup",
+  "desc": ""
+ },
+ {
+  "id": "mysteryegg",
+  "gid": 539,
+  "name": "Mystery Egg",
+  "icon": "icons/collectibles_539_mysteryegg.png",
+  "quote": "Familiar, spawns a charmed enemy on hit",
+  "desc": ""
+ },
+ {
+  "id": "flatstone",
+  "gid": 540,
+  "name": "Flat Stone",
+  "icon": "icons/collectibles_540_flatstone.png",
+  "quote": "Bouncing tears (tears bounce on the ground, 0.25x splash dmg)",
+  "desc": ""
+ },
+ {
+  "id": "marrow",
+  "gid": 541,
+  "name": "Marrow",
+  "icon": "icons/collectibles_541_marrow.png",
+  "quote": "+1 bone heart, spawns 3 red hearts on pickup",
+  "desc": ""
+ },
+ {
+  "id": "slippedrib",
+  "gid": 542,
+  "name": "Slipped Rib",
+  "icon": "icons/collectibles_542_slippedrib.png",
+  "quote": "Orbital, reflects enemy projectiles, does no contact damage",
+  "desc": ""
+ },
+ {
+  "id": "hallowedground",
+  "gid": 543,
+  "name": "Hallowed Ground",
+  "icon": "icons/collectibles_543_hallowedground.png",
+  "quote": "Familiar, spawns a white poop on hit (makes an aura that halves tear delay + chance to block damage)",
+  "desc": "Taking damage spawns a white poop · While inside the poop's aura: · ↑ x2.5 Fire rate multiplier · ↑ x1.2 Damage multiplier · Homing tears · 50% chance to block damage"
+ },
+ {
+  "id": "pointyrib",
+  "gid": 544,
+  "name": "Pointy Rib",
+  "icon": "icons/collectibles_544_pointyrib.png",
+  "quote": "Familiar, bobs back and forth (1x contact dmg)",
+  "desc": ""
+ },
+ {
+  "id": "bookofthedead",
+  "gid": 545,
+  "name": "Book of the Dead",
+  "icon": "icons/collectibles_545_bookofthedead.png",
+  "quote": "Converts killed enemies into temporary orbitals or charmed Bonies",
+  "desc": ""
+ },
+ {
+  "id": "dadsring",
+  "gid": 546,
+  "name": "Dad's Ring",
+  "icon": "icons/collectibles_546_dadsring.png",
+  "quote": "Yellow ring freezes enemies",
+  "desc": ""
+ },
+ {
+  "id": "divorcepapers",
+  "gid": 547,
+  "name": "Divorce Papers",
+  "icon": "icons/collectibles_547_divorcepapers.png",
+  "quote": "+1 bone heart, spawns Mysterious Paper on pickup",
+  "desc": ""
+ },
+ {
+  "id": "jawbone",
+  "gid": 548,
+  "name": "Jaw Bone",
+  "icon": "icons/collectibles_548_jawbone.png",
+  "quote": "Familiar, can grab pickups like a Boomerang",
+  "desc": ""
+ },
+ {
+  "id": "brittlebones",
+  "gid": 549,
+  "name": "Brittle Bones",
+  "icon": "icons/collectibles_549_brittlebones.png",
+  "quote": "Removes all red hearts, +6 bone hearts, big bone spash when bone heart is lost",
+  "desc": "Replaces all of Isaac's Red Heart containers with 6 empty Bone Hearts · Upon losing a Bone Heart: · ↑ +0.4 Fire rate · Shoots 10 bone tears in all directions"
+ },
+ {
+  "id": "shovelpiece1",
+  "gid": 550,
+  "name": "Broken Shovel",
+  "icon": "icons/collectibles_550_shovelpiece1.png",
+  "quote": "Used in the Booster Pack #5 quest",
+  "desc": ""
+ },
+ {
+  "id": "shovelpiece2",
+  "gid": 551,
+  "name": "Broken Shovel",
+  "icon": "icons/collectibles_551_shovelpiece2.png",
+  "quote": "Used in the Booster Pack #5 quest",
+  "desc": ""
+ },
+ {
+  "id": "momsshovel",
+  "gid": 552,
+  "name": "Mom's Shovel",
+  "icon": "icons/collectibles_552_momsshovel.png",
+  "quote": "Used in the Booster Pack #5 quest",
+  "desc": "Spawns a trapdoor to the next floor · Spawns a crawlspace if used on a decorative floor tile (grass, small rocks, papers, gems, etc.) · Use the shovel on the mound of dirt in the \"Dark Room\""
+ },
+ {
+  "id": "mucormycosis",
+  "gid": 553,
+  "name": "Mucormycosis",
+  "icon": "icons/collectibles_553_mucormycosis.png",
+  "quote": "",
+  "desc": "25% chance to shoot a sticky spore tear · Not affected by luck · Spores blow up after 2.5 seconds, dealing damage, poisoning nearby enemies and releasing more spores"
+ },
+ {
+  "id": "2spooky",
+  "gid": 554,
+  "name": "2Spooky",
+  "icon": "icons/collectibles_554_2spooky.png",
+  "quote": "",
+  "desc": "Fears enemies in a small radius around Isaac"
+ },
+ {
+  "id": "goldenrazor",
+  "gid": 555,
+  "name": "Golden Razor",
+  "icon": "icons/collectibles_555_goldenrazor.png",
+  "quote": "",
+  "desc": "+5 coins on pickup · Pay 5 coins and receive for the room: · ↑ +1.2 Damage"
+ },
+ {
+  "id": "sulfur",
+  "gid": 556,
+  "name": "Sulfur",
+  "icon": "icons/collectibles_556_sulfur.png",
+  "quote": "",
+  "desc": "Brimstone for the room · Using it multiple times in one room grants increased damage and a larger beam"
+ },
+ {
+  "id": "fortunecookie",
+  "gid": 557,
+  "name": "Fortune Cookie",
+  "icon": "icons/collectibles_557_fortunecookie.png",
+  "quote": "",
+  "desc": "Grants one of the following rewards: · A fortune · A Soul Heart · A Rune or Soul Stone · A Tarot card · A Trinket"
+ },
+ {
+  "id": "eyesore",
+  "gid": 558,
+  "name": "Eye Sore",
+  "icon": "icons/collectibles_558_eyesore.png",
+  "quote": "",
+  "desc": "Chance to shoot 1-3 extra tears in random directions · Not affected by luck"
+ },
+ {
+  "id": "120volt",
+  "gid": 559,
+  "name": "120 Volt",
+  "icon": "icons/collectibles_559_120volt.png",
+  "quote": "",
+  "desc": "Repeatedly zaps nearby enemies · Electricity deals up to 3.75x Isaac's damage per second · Sparks can arc to up to 4 other enemies"
+ },
+ {
+  "id": "ithurts",
+  "gid": 560,
+  "name": "It Hurts",
+  "icon": "icons/collectibles_560_ithurts.png",
+  "quote": "",
+  "desc": "When taking damage, receive for the room: · ↑ +1.2 Fire rate on the first hit · ↑ +0.4 Fire rate for each additional hit · Releases a ring of 10 tears around Isaac"
+ },
+ {
+  "id": "almondmilk",
+  "gid": 561,
+  "name": "Almond Milk",
+  "icon": "icons/collectibles_561_almondmilk.png",
+  "quote": "",
+  "desc": "↑ x4 Fire rate multiplier · ↓ x0.3 Damage multiplier · ↓ -0.16 Tear size · Tears gain random worm trinket effects and some item effects"
+ },
+ {
+  "id": "rockbottom",
+  "gid": 562,
+  "name": "Rock Bottom",
+  "icon": "icons/collectibles_562_rockbottom.png",
+  "quote": "",
+  "desc": "↑ Prevents stats from being lowered for the rest of the run"
+ },
+ {
+  "id": "enigmabombs",
+  "gid": 563,
+  "name": "Nancy Bombs",
+  "icon": "icons/collectibles_563_enigmabombs.png",
+  "quote": "",
+  "desc": "+5 Bombs · Isaac's bombs explode with random effects"
+ },
+ {
+  "id": "barofsoap",
+  "gid": 564,
+  "name": "A Bar of Soap",
+  "icon": "icons/collectibles_564_barofsoap.png",
+  "quote": "",
+  "desc": "↑ +0.5 Tears · ↑ +0.2 Shot speed"
+ },
+ {
+  "id": "bloodpuppy",
+  "gid": 565,
+  "name": "Blood Puppy",
+  "icon": "icons/collectibles_565_bloodpuppy.png",
+  "quote": "",
+  "desc": "Chases enemies · After killing 15 enemies, it deals more damage, spawns a half Red Heart every 10 kills, but tries to hurt Isaac · After killing 40 enemies, it deals even more damage, spawns full Red Hearts, and can destroy rocks · Dealing enough damage to it returns it to its first phase"
+ },
+ {
+  "id": "dreamcatcher",
+  "gid": 566,
+  "name": "Dream Catcher",
+  "icon": "icons/collectibles_566_dreamcatcher.png",
+  "quote": "",
+  "desc": "+1 half Soul Heart when entering a new floor · The stage transition nightmare reveals the next floor's boss fight and Treasure Room item"
+ },
+ {
+  "id": "paschalcandle",
+  "gid": 567,
+  "name": "Paschal Candle",
+  "icon": "icons/collectibles_567_paschalcandle.png",
+  "quote": "",
+  "desc": "↑ Clearing a room without taking damage grants +0.4 Fire rate · Caps at +2 Fire rate (5 rooms)"
+ },
+ {
+  "id": "divineintervention",
+  "gid": 568,
+  "name": "Divine Intervention",
+  "icon": "icons/collectibles_568_divineintervention.png",
+  "quote": "",
+  "desc": "Double-tapping a fire key creates a shield · The shield lasts 1 second, pushes enemies away and reflects enemy projectiles and lasers"
+ },
+ {
+  "id": "bloodoath",
+  "gid": 569,
+  "name": "Blood Oath",
+  "icon": "icons/collectibles_569_bloodoath.png",
+  "quote": "",
+  "desc": "Entering a new floor drains all of Isaac's Red Hearts, but grants speed and damage bonuses for each heart lost · Each half heart lost counts as an individual hit for on-hit effects"
+ },
+ {
+  "id": "playdohcookie",
+  "gid": 570,
+  "name": "Playdough Cookie",
+  "icon": "icons/collectibles_570_playdohcookie.png",
+  "quote": "",
+  "desc": "Each of Isaac's tears have a different color and status effect"
+ },
+ {
+  "id": "socks",
+  "gid": 571,
+  "name": "Orphan Socks",
+  "icon": "icons/collectibles_571_socks.png",
+  "quote": "",
+  "desc": "↑ +0.3 Speed · +2 Soul Hearts · Immune to creep and floor spikes"
+ },
+ {
+  "id": "occulteye",
+  "gid": 572,
+  "name": "Eye of the Occult",
+  "icon": "icons/collectibles_572_occulteye.png",
+  "quote": "",
+  "desc": "↑ +1 Damage · ↑ +2 Range · ↓ -0.16 Shot speed · Isaac's tears can be controlled in mid-air"
+ },
+ {
+  "id": "immaculateheart",
+  "gid": 573,
+  "name": "Immaculate Heart",
+  "icon": "icons/collectibles_573_immaculateheart.png",
+  "quote": "",
+  "desc": "↑ +1 Health · ↑ x1.2 Damage multiplier · Full health · 20% chance to shoot an extra orbiting spectral tear"
+ },
+ {
+  "id": "monstrance",
+  "gid": 574,
+  "name": "Monstrance",
+  "icon": "icons/collectibles_574_monstrance.png",
+  "quote": "",
+  "desc": "Isaac is surrounded by a damaging aura · The closer enemies are to Isaac, the more damage the aura deals to them"
+ },
+ {
+  "id": "theintruder",
+  "gid": 575,
+  "name": "The Intruder",
+  "icon": "icons/collectibles_575_theintruder.png",
+  "quote": "",
+  "desc": "Buries itself in Isaac's head and shoots 4 extra slowing tears that deal 1.5 damage · Taking damage has a 25% chance to make the spider exit the head and chase enemies"
+ },
+ {
+  "id": "dirtymind",
+  "gid": 576,
+  "name": "Dirty Mind",
+  "icon": "icons/collectibles_576_dirtymind.png",
+  "quote": "",
+  "desc": "All Dip (small poop) enemies are friendly · Destroying poop spawns 1-4 Dips · Dip type depends on the poop type · Rocks have a 6.25% chance to be replaced with poop"
+ },
+ {
+  "id": "damocles",
+  "gid": 577,
+  "name": "Damocles",
+  "icon": "icons/collectibles_577_damocles.png",
+  "quote": "",
+  "desc": "Hangs a sword above Isaac's head, which doubles all pedestal items · Does not double items that have a price or come from chests · After taking any damage, the sword has an extremely low chance to instantly kill Isaac every frame · Invincibility effects can prevent the death"
+ },
+ {
+  "id": "freelemonade",
+  "gid": 578,
+  "name": "Free Lemonade",
+  "icon": "icons/collectibles_578_freelemonade.png",
+  "quote": "",
+  "desc": "Creates a large pool of yellow creep · The creep deals 24 damage per second"
+ },
+ {
+  "id": "spiritsword",
+  "gid": 579,
+  "name": "Spirit Sword",
+  "icon": "icons/collectibles_579_spiritsword.png",
+  "quote": "",
+  "desc": "Instead of shooting tears, swing a sword · The sword deals 3x Isaac's damage +3.5 and swings as fast as the fire button is tapped · Charging does a spin attack + projectile shot · Shoots projectiles with swings at full health"
+ },
+ {
+  "id": "secretkey",
+  "gid": 580,
+  "name": "Red Key",
+  "icon": "icons/collectibles_580_secretkey.png",
+  "quote": "",
+  "desc": "Creates a red room adjacent to a regular room, indicated by a door outline · Red Rooms can be special rooms · Entering a room outside the 13x13 floor map teleports Isaac to the I AM ERROR room"
+ },
+ {
+  "id": "psyfly",
+  "gid": 581,
+  "name": "Psy Fly",
+  "icon": "icons/collectibles_581_psyfly.png",
+  "quote": "",
+  "desc": "Chases and blocks enemy projectiles · Deals 15 contact damage per second"
+ },
+ {
+  "id": "wavycap",
+  "gid": 582,
+  "name": "Wavy Cap",
+  "icon": "icons/collectibles_582_wavycap.png",
+  "quote": "",
+  "desc": "↑ +0.75 Fire rate · ↓ -0.03 Speed · Distorts the screen · Takes longer to recharge each use · Leaving or clearing rooms reduces the effects"
+ },
+ {
+  "id": "rocketinajar",
+  "gid": 583,
+  "name": "Rocket in a Jar",
+  "icon": "icons/collectibles_583_rocketinajar.png",
+  "quote": "",
+  "desc": "+5 Bombs · Placing a bomb while shooting fires a rocket in that direction instead"
+ },
+ {
+  "id": "bookofvirtues",
+  "gid": 584,
+  "name": "Book of Virtues",
+  "icon": "icons/collectibles_584_bookofvirtues.png",
+  "quote": "",
+  "desc": "+12.5% Angel Room chance while held · Spawns an orbital wisp familiar that shoots spectral tears but can be destroyed · Can be combined with a second active item to create special wisps · Turns the first Devil Room into an Angel Room · Allows Angel Rooms to spawn after taking a Devil deal"
+ },
+ {
+  "id": "alabasterbox",
+  "gid": 585,
+  "name": "Alabaster Box",
+  "icon": "icons/collectibles_585_alabasterbox.png",
+  "quote": "",
+  "desc": "Must be charged by picking up Soul Hearts, then spawns: · Three Soul Hearts · Two Angel Room items · Only spawns 2 Soul Hearts and 1 Angel item if a Devil deal was taken previously"
+ },
+ {
+  "id": "jacobsladder586",
+  "gid": 586,
+  "name": "The Stairway",
+  "icon": "icons/collectibles_586_jacobsladder.png",
+  "quote": "",
+  "desc": "Spawns a ladder in the first room of every floor that leads to a unique Angel Room shop with items and pickups"
+ },
+ {
+  "id": "sol",
+  "gid": 588,
+  "name": "Sol",
+  "icon": "icons/collectibles_588_sol.png",
+  "quote": "",
+  "desc": "Reveals the location of the Boss Room · When the floor boss is defeated, receive for the floor: · ↑ +3 Damage · ↑ +1 Luck · The Sun effect · Fully recharges the active item · Removes any curses"
+ },
+ {
+  "id": "luna",
+  "gid": 589,
+  "name": "Luna",
+  "icon": "icons/collectibles_589_luna.png",
+  "quote": "",
+  "desc": "Adds an extra Secret Room and Super Secret Room to each floor · Reveals one Secret Room each floor · Secret Rooms contain a beam of light that grant for the floor: · ↑ +0.5 Fire rate · ↑ Additional +0.5 Fire rate from the first beam per floor · Half a Soul Heart"
+ },
+ {
+  "id": "mercurius",
+  "gid": 590,
+  "name": "Mercurius",
+  "icon": "icons/collectibles_590_mercurius.png",
+  "quote": "",
+  "desc": "↑ +0.4 Speed · Most doors stay permanently open"
+ },
+ {
+  "id": "venus",
+  "gid": 591,
+  "name": "Venus",
+  "icon": "icons/collectibles_591_venus.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Heals 1 heart · Charms nearby enemies"
+ },
+ {
+  "id": "terra",
+  "gid": 592,
+  "name": "Terra",
+  "icon": "icons/collectibles_592_terra.png",
+  "quote": "",
+  "desc": "↑ +1 Damage · Replaces Isaac's tears with rocks · Rocks deal variable damage, can destroy obstacles and have increased knockback"
+ },
+ {
+  "id": "mars",
+  "gid": 593,
+  "name": "Mars",
+  "icon": "icons/collectibles_593_mars.png",
+  "quote": "",
+  "desc": "Double-tapping a movement key makes Isaac dash · During a dash, Isaac is invincible and deals 4x his damage +8 · 3 seconds cooldown"
+ },
+ {
+  "id": "jupiter",
+  "gid": 594,
+  "name": "Jupiter",
+  "icon": "icons/collectibles_594_jupiter.png",
+  "quote": "",
+  "desc": "↑ +2 Empty heart containers · ↓ -0.3 Speed · Heals half a heart · Speed builds up to +0.5 while standing still · Moving releases poison clouds · Poison immunity"
+ },
+ {
+  "id": "saturnus",
+  "gid": 595,
+  "name": "Saturnus",
+  "icon": "icons/collectibles_595_saturnus.png",
+  "quote": "",
+  "desc": "Entering a room causes 7 tears to orbit Isaac · Those tears last for 13 seconds and deal 1.5x Isaac's damage +5 · Enemy projectiles have a chance to orbit Isaac"
+ },
+ {
+  "id": "uranus",
+  "gid": 596,
+  "name": "Uranus",
+  "icon": "icons/collectibles_596_uranus.png",
+  "quote": "",
+  "desc": "Isaac shoots petrifying tears that freeze enemies on death · Touching a frozen enemy makes it slide away and explode into 10 ice shards"
+ },
+ {
+  "id": "neptunus",
+  "gid": 597,
+  "name": "Neptunus",
+  "icon": "icons/collectibles_597_neptunus.png",
+  "quote": "",
+  "desc": "Not shooting builds up a tear bonus over 3 seconds · The tear bonus decreases as Isaac shoots"
+ },
+ {
+  "id": "pluto",
+  "gid": 598,
+  "name": "Pluto",
+  "icon": "icons/collectibles_598_pluto.png",
+  "quote": "",
+  "desc": "↑ +0.7 Tears · Significantly shrinks Isaac, allowing him to squeeze between objects · Projectiles can pass over him"
+ },
+ {
+  "id": "voodoohead",
+  "gid": 599,
+  "name": "Voodoo Head",
+  "icon": "icons/collectibles_599_voodoohead.png",
+  "quote": "",
+  "desc": "Spawns an additional Curse Room each floor · Improves Curse Room layouts and rewards · Spawns a coin in every Curse Room"
+ },
+ {
+  "id": "eyedrops",
+  "gid": 600,
+  "name": "Eye Drops",
+  "icon": "icons/collectibles_600_eyedrops.png",
+  "quote": "",
+  "desc": "↑ x1.4 Fire rate multiplier for the left eye"
+ },
+ {
+  "id": "actofcontrition",
+  "gid": 601,
+  "name": "Act of Contrition",
+  "icon": "icons/collectibles_601_actofcontrition.png",
+  "quote": "",
+  "desc": "↑ +0.7 Tears · +1 Eternal Heart · Allows Angel Rooms to spawn even after taking a devil deal · Taking Red Heart damage doesn't reduce Devil/Angel Room chance as much"
+ },
+ {
+  "id": "membercard",
+  "gid": 602,
+  "name": "Member Card",
+  "icon": "icons/collectibles_602_membercard.png",
+  "quote": "",
+  "desc": "Opens a trapdoor in every Shop · The trapdoor leads to an underground shop that sells trinkets, runes, cards, special hearts and items from any pool"
+ },
+ {
+  "id": "batterypack",
+  "gid": 603,
+  "name": "Battery Pack",
+  "icon": "icons/collectibles_603_batterypack.png",
+  "quote": "",
+  "desc": "Spawns 2-4 batteries · Fully recharges the active item"
+ },
+ {
+  "id": "momsbracelet",
+  "gid": 604,
+  "name": "Mom's Bracelet",
+  "icon": "icons/collectibles_604_momsbracelet.png",
+  "quote": "",
+  "desc": "Allows Isaac to pick up and throw rocks, TNT, poops, friendly Dips, Hosts and other obstacles · Allows carrying them between rooms"
+ },
+ {
+  "id": "thescooper",
+  "gid": 605,
+  "name": "The Scooper",
+  "icon": "icons/collectibles_605_thescooper.png",
+  "quote": "",
+  "desc": "↑ x1.35 Damage multiplier for the right eye · Summons a Peeper familiar for the room, which leaves a trail of red creep and deals 36 contact damage per second"
+ },
+ {
+  "id": "oculusrift",
+  "gid": 606,
+  "name": "Ocular Rift",
+  "icon": "icons/collectibles_606_oculusrift.png",
+  "quote": "",
+  "desc": "5% chance to shoot tears that create rifts where they land · 20% chance at 15 luck · Rifts do 3x Isaac's damage per second and pull in nearby enemies, pickups, and projectiles"
+ },
+ {
+  "id": "boiledbaby",
+  "gid": 607,
+  "name": "Boiled Baby",
+  "icon": "icons/collectibles_607_boiledbaby.png",
+  "quote": "",
+  "desc": "Shoots chaotic bursts of tears in all directions · Deals 3.5 or 5.25 damage per tear"
+ },
+ {
+  "id": "freezerbaby",
+  "gid": 608,
+  "name": "Freezer Baby",
+  "icon": "icons/collectibles_608_freezerbaby.png",
+  "quote": "",
+  "desc": "Shoots petrifying tears that deal 3.5 damage · Freezes enemies upon killing them"
+ },
+ {
+  "id": "floriansd6",
+  "gid": 609,
+  "name": "Eternal D6",
+  "icon": "icons/collectibles_609_floriansd6.png",
+  "quote": "",
+  "desc": "Rerolls all pedestal items in the room · Has a 25% chance to delete items instead of rerolling them"
+ },
+ {
+  "id": "birdcage",
+  "gid": 610,
+  "name": "Bird Cage",
+  "icon": "icons/collectibles_610_birdcage.png",
+  "quote": "",
+  "desc": "Leaps on the enemy that deals the first damage to Isaac in a room · Deals 45 damage and releases a rock wave · Chases enemies afterwards for 6.5 contact damage per second"
+ },
+ {
+  "id": "larynx",
+  "gid": 611,
+  "name": "Larynx",
+  "icon": "icons/collectibles_611_larynx.png",
+  "quote": "",
+  "desc": "Isaac screams, damages and knocks back nearby enemies · The scream gets stronger the more charges the item has"
+ },
+ {
+  "id": "lostsoul",
+  "gid": 612,
+  "name": "Lost Soul",
+  "icon": "icons/collectibles_612_lostsoul.png",
+  "quote": "",
+  "desc": "Dies in one hit and respawns at the start of the next floor · If it is brought alive to the next floor, it can spawn: · 3 Soul Hearts · 2 Eternal Hearts · A Treasure Room item · An Angel Room item"
+ },
+ {
+  "id": "bloodbombs",
+  "gid": 614,
+  "name": "Blood Bombs",
+  "icon": "icons/collectibles_614_bloodbombs.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Heals 4 hearts · If Isaac has no bombs, one can be placed at the cost of half a heart · Isaac's bombs leave red creep"
+ },
+ {
+  "id": "lildumpy",
+  "gid": 615,
+  "name": "Lil Dumpy",
+  "icon": "icons/collectibles_615_lildumpy.png",
+  "quote": "",
+  "desc": "Deflects an enemy or projectile right before Isaac would take damage from it · Needs to be touched after deflecting to be reactivated"
+ },
+ {
+  "id": "birdseye",
+  "gid": 616,
+  "name": "Bird's Eye",
+  "icon": "icons/collectibles_616_birdseye.png",
+  "quote": "",
+  "desc": "8% chance to shoot a red fire that blocks enemy shots and deals contact damage · 50% chance at 10 luck · Fires disappear after blocking 4 shots, dealing damage 4 times or after 10 seconds"
+ },
+ {
+  "id": "lodestone",
+  "gid": 617,
+  "name": "Lodestone",
+  "icon": "icons/collectibles_617_lodestone.png",
+  "quote": "",
+  "desc": "17% chance to shoot magnetizing tears · 100% chance at 5 luck · Magnetized enemies attract nearby pickups, projectiles and enemies"
+ },
+ {
+  "id": "rottentomato",
+  "gid": 618,
+  "name": "Rotten Tomato",
+  "icon": "icons/collectibles_618_rottentomato.png",
+  "quote": "",
+  "desc": "17% chance to shoot tears that mark enemies · 100% chance at 5 luck · Marked enemies are targeted by other enemies"
+ },
+ {
+  "id": "birthright",
+  "gid": 619,
+  "name": "Birthright",
+  "icon": "icons/collectibles_619_birthright.png",
+  "quote": "",
+  "desc": "Has a different effect for each character"
+ },
+ {
+  "id": "redstew",
+  "gid": 621,
+  "name": "Red Stew",
+  "icon": "icons/collectibles_621_redstew.png",
+  "quote": "",
+  "desc": "↑ +21.6 Damage · Full health · The damage up wears off over 3 minutes · Killing enemies while the effect is active extends it"
+ },
+ {
+  "id": "genesis",
+  "gid": 622,
+  "name": "Genesis",
+  "icon": "icons/collectibles_622_genesis.png",
+  "quote": "",
+  "desc": "Removes all of Isaac's items and pickups · Teleports Isaac to a bedroom with pickups and chests · For every item removed, Isaac can choose between 3 items from the same pool · Leaving the bedroom takes Isaac to the next floor"
+ },
+ {
+  "id": "sharpkey",
+  "gid": 623,
+  "name": "Sharp Key",
+  "icon": "icons/collectibles_623_sharpkey.png",
+  "quote": "",
+  "desc": "+5 Keys · Throws one of Isaac's keys in the direction he shoots · Thrown keys deal damage, destroy obstacles, and open doors · Enemies killed with keys can spawn the contents of a chest, including items"
+ },
+ {
+  "id": "boosterpack",
+  "gid": 624,
+  "name": "Booster Pack",
+  "icon": "icons/collectibles_624_boosterpack.png",
+  "quote": "",
+  "desc": "Spawns 5 random cards"
+ },
+ {
+  "id": "megamush",
+  "gid": 625,
+  "name": "Mega Mush",
+  "icon": "icons/collectibles_625_megamush.png",
+  "quote": "",
+  "desc": "Gigantifies Isaac and grants: · ↑ x4 Damage multiplier · ↑ +2 Range · ↓ -1.9 Tears · Invincibility · Ability to crush enemies and obstacles · Lasts for 30 seconds and persists between rooms and floors"
+ },
+ {
+  "id": "knifepiece1",
+  "gid": 626,
+  "name": "Knife Piece 1",
+  "icon": "icons/collectibles_626_knifepiece1.png",
+  "quote": "",
+  "desc": "Turns into a throwable knife that deals 25 damage when combined with Knife Piece 2 · The knife can open a door made of flesh"
+ },
+ {
+  "id": "knifepiece2",
+  "gid": 627,
+  "name": "Knife Piece 2",
+  "icon": "icons/collectibles_627_knifepiece2.png",
+  "quote": "",
+  "desc": "Turns into a throwable knife that deals 25 damage when combined with Knife Piece 1 · The knife can open a door made of flesh"
+ },
+ {
+  "id": "deathcertificate",
+  "gid": 628,
+  "name": "Death Certificate",
+  "icon": "icons/collectibles_628_deathcertificate.png",
+  "quote": "",
+  "desc": "Teleports Isaac to a floor that contains every item in the game · Choosing an item from this floor teleports Isaac back to the room he came from"
+ },
+ {
+  "id": "botfly",
+  "gid": 629,
+  "name": "Bot Fly",
+  "icon": "icons/collectibles_629_botfly.png",
+  "quote": "",
+  "desc": "Shoots shielded tears to destroy enemy projectiles · Deals 3 contact damage per second"
+ },
+ {
+  "id": "meatcleaver",
+  "gid": 631,
+  "name": "Meat Cleaver",
+  "icon": "icons/collectibles_631_meatcleaver.png",
+  "quote": "",
+  "desc": "Splits all enemies in the room into 2 smaller versions with 40% health · Enemies that naturally split (like Envy) take enough damage to split instead · Deals 25 damage to enemies that can't be split"
+ },
+ {
+  "id": "evilcharm",
+  "gid": 632,
+  "name": "Evil Charm",
+  "icon": "icons/collectibles_632_evilcharm.png",
+  "quote": "",
+  "desc": "↑ +2 Luck · Immune to burn, confusion, fear, and poison effects"
+ },
+ {
+  "id": "dogma",
+  "gid": 633,
+  "name": "Dogma",
+  "icon": "icons/collectibles_633_dogma.png",
+  "quote": "",
+  "desc": "↑ +0.1 Speed · ↑ +2 Damage · Flight and one-time Holy Mantle shield · Heals Isaac with Red and Soul Hearts if he has less than 6 hearts"
+ },
+ {
+  "id": "purgatory",
+  "gid": 634,
+  "name": "Purgatory",
+  "icon": "icons/collectibles_634_purgatory.png",
+  "quote": "",
+  "desc": "Red cracks spawn on the ground in hostile rooms · Walking over the cracks summons homing exploding ghosts"
+ },
+ {
+  "id": "stitches",
+  "gid": 635,
+  "name": "Stitches",
+  "icon": "icons/collectibles_635_stitches.png",
+  "quote": "",
+  "desc": "Spawns a familiar that moves in the direction Isaac shoots · On use, Isaac swaps places with the familiar and becomes briefly invincible · Teleporting onto things can damage or destroy them"
+ },
+ {
+  "id": "rkey",
+  "gid": 636,
+  "name": "R Key",
+  "icon": "icons/collectibles_636_rkey.png",
+  "quote": "",
+  "desc": "Restarts the entire run · All items, trinkets, stats and pickups collected are kept · The timer does not reset"
+ },
+ {
+  "id": "knockoutdrops",
+  "gid": 637,
+  "name": "Knockout Drops",
+  "icon": "icons/collectibles_637_knockoutdrops.png",
+  "quote": "",
+  "desc": "10% chance to shoot a fist that inflicts confusion and extreme knockback · 100% chance at 9 luck · Enemies take damage when they get knocked into a wall/obstacle"
+ },
+ {
+  "id": "eraser",
+  "gid": 638,
+  "name": "Eraser",
+  "icon": "icons/collectibles_638_eraser.png",
+  "quote": "",
+  "desc": "Throws an eraser that instantly kills an enemy · Prevents the erased enemy from spawning for the rest of the run · Deals 15 damage to bosses · Can only be used once per floor"
+ },
+ {
+  "id": "yuckheart",
+  "gid": 639,
+  "name": "Yuck Heart",
+  "icon": "icons/collectibles_639_yuckheart.png",
+  "quote": "",
+  "desc": "+1 Rotten Heart"
+ },
+ {
+  "id": "urnofsouls",
+  "gid": 640,
+  "name": "Urn of Souls",
+  "icon": "icons/collectibles_640_urnofsouls.png",
+  "quote": "",
+  "desc": "Spews a stream of flames · Killing an enemy adds a charge to the urn"
+ },
+ {
+  "id": "akeldama",
+  "gid": 641,
+  "name": "Akeldama",
+  "icon": "icons/collectibles_641_akeldama.png",
+  "quote": "",
+  "desc": "Creates a chain of tears behind Isaac in hostile rooms · The tears deal 3.5 damage"
+ },
+ {
+  "id": "magicskin",
+  "gid": 642,
+  "name": "Magic Skin",
+  "icon": "icons/collectibles_642_magicskin.png",
+  "quote": "",
+  "desc": "Spawns an item from the current room's item pool · Turns 1 heart container or 1 Bone Heart or 2 Soul Hearts into a Broken Heart · Replaces future items if Isaac isn't holding it (33% after 1 use, 50% after 2, 100% after 3) · Lower chance if Magic Skin is on a pedestal on the current floor"
+ },
+ {
+  "id": "revelation",
+  "gid": 643,
+  "name": "Revelation",
+  "icon": "icons/collectibles_643_revelation.png",
+  "quote": "",
+  "desc": "+2 Soul Hearts · Flight · Chargeable high damage holy beam · Does not replace Isaac's tears"
+ },
+ {
+  "id": "consolationprize",
+  "gid": 644,
+  "name": "Consolation Prize",
+  "icon": "icons/collectibles_644_consolationprize.png",
+  "quote": "",
+  "desc": "↑ Increases Isaac's lowest stat out of Speed, Fire rate, Damage, and Range · Spawns either 3 coins, 1 bomb, or 1 key depending on what Isaac has the least of"
+ },
+ {
+  "id": "tinytoma",
+  "gid": 645,
+  "name": "Tinytoma",
+  "icon": "icons/collectibles_645_tinytoma.png",
+  "quote": "",
+  "desc": "Large orbital that blocks shots · Deals 3.5 contact damage per second · Splits into smaller versions of itself upon taking 3 hits · The smaller versions break into blue spiders · Respawns 5 seconds after fully disappearing"
+ },
+ {
+  "id": "brimstonebombs",
+  "gid": 646,
+  "name": "Brimstone Bombs",
+  "icon": "icons/collectibles_646_brimstonebombs.png",
+  "quote": "",
+  "desc": "+5 Bombs · Isaac's bombs release a 4-way blood beam · The beams don't hurt Isaac"
+ },
+ {
+  "id": "assaultbattery",
+  "gid": 647,
+  "name": "4.5 Volt",
+  "icon": "icons/collectibles_647_assaultbattery.png",
+  "quote": "",
+  "desc": "Clearing rooms no longer charges active items · Dealing damage to enemies slowly fills up the charge bar · Damage needed per charge increases each floor"
+ },
+ {
+  "id": "pillcrusher",
+  "gid": 648,
+  "name": "Pill Crusher",
+  "icon": "icons/collectibles_648_pillcrusher.png",
+  "quote": "",
+  "desc": "Active item: destroys your current pill and grants a permanent stat boost based on the pill's effect."
+ },
+ {
+  "id": "fruityplum",
+  "gid": 649,
+  "name": "Fruity Plum",
+  "icon": "icons/collectibles_649_fruityplum.png",
+  "quote": "",
+  "desc": "Propels herself diagonally around the room, firing tears in her path that deal 3 damage · Deals 6 contact damage per second"
+ },
+ {
+  "id": "plumflute",
+  "gid": 650,
+  "name": "Plum Flute",
+  "icon": "icons/collectibles_650_plumflute.png",
+  "quote": "",
+  "desc": "Summons a friendly Baby Plum in the room for 10 seconds"
+ },
+ {
+  "id": "starofbethlehem",
+  "gid": 651,
+  "name": "Star of Bethlehem",
+  "icon": "icons/collectibles_651_starofbethlehem.png",
+  "quote": "",
+  "desc": "Slowly travels from the first room of the floor to the Boss Room · Moves faster if you're ahead of it, and slower if you're behind it · Standing in its aura grants: · ↑ x2.5 Tears multiplier · ↑ x1.8 Damage multiplier · Homing tears · 50% chance to ignore damage"
+ },
+ {
+  "id": "cubebaby",
+  "gid": 652,
+  "name": "Cube Baby",
+  "icon": "icons/collectibles_652_cubebaby.png",
+  "quote": "",
+  "desc": "Can be kicked around by walking into it · Slows and deals up to 17.5 contact damage depending on speed · Freezes enemies it kills"
+ },
+ {
+  "id": "vaderetro",
+  "gid": 653,
+  "name": "Vade Retro",
+  "icon": "icons/collectibles_653_vaderetro.png",
+  "quote": "",
+  "desc": "Holding the item causes non-ghost enemies to spawn small red ghosts on death · Using the item causes the ghosts to explode · Using the item also kills any ghost enemies (including bosses) that have less than 50% HP left"
+ },
+ {
+  "id": "falsephd",
+  "gid": 654,
+  "name": "False PHD",
+  "icon": "icons/collectibles_654_falsephd.png",
+  "quote": "",
+  "desc": "+1 Black Heart · Identifies all pills · Converts all good pills into bad pills · ↑ Eating a stat down pill grants +0.6 damage · Eating other bad pills spawns a Black Heart"
+ },
+ {
+  "id": "spintowin",
+  "gid": 655,
+  "name": "Spin to Win",
+  "icon": "icons/collectibles_655_spintowin.png",
+  "quote": "",
+  "desc": "Passively grants an orbital that blocks enemy shots and deals 10.5 contact damage per second · Using the item grants: · ↑ +0.5 Speed · Increases speed and damage of orbitals"
+ },
+ {
+  "id": "vasculitis",
+  "gid": 657,
+  "name": "Vasculitis",
+  "icon": "icons/collectibles_657_vasculitis.png",
+  "quote": "",
+  "desc": "Enemies explode into tears upon death, which inherit the effects upon death"
+ },
+ {
+  "id": "giantcell",
+  "gid": 658,
+  "name": "Giant Cell",
+  "icon": "icons/collectibles_658_giantcell.png",
+  "quote": "",
+  "desc": "Taking damage spawns a Minisaac · Minisaacs chase and shoot at nearby enemies"
+ },
+ {
+  "id": "tropicamide",
+  "gid": 659,
+  "name": "Tropicamide",
+  "icon": "icons/collectibles_659_tropicamide.png",
+  "quote": "",
+  "desc": "↑ +2.5 Range · ↑ +0.22 Tear size"
+ },
+ {
+  "id": "cardreading",
+  "gid": 660,
+  "name": "Card Reading",
+  "icon": "icons/collectibles_660_cardreading.png",
+  "quote": "",
+  "desc": "Spawns two portals in the first room of each floor · Leaving the room despawns the portals · Red: Boss Room · Yellow: Item Room · Blue: Secret Room"
+ },
+ {
+  "id": "quints",
+  "gid": 661,
+  "name": "Quints",
+  "icon": "icons/collectibles_661_quints.png",
+  "quote": "",
+  "desc": "Killing an enemy spawns a stationary familiar in its place · Caps at 5 familiars"
+ },
+ {
+  "id": "toothandnail",
+  "gid": 663,
+  "name": "Tooth and Nail",
+  "icon": "icons/collectibles_663_toothandnail.png",
+  "quote": "",
+  "desc": "1 second of invincibility every 6 seconds · Isaac flashes right before the effect triggers"
+ },
+ {
+  "id": "bingeeater",
+  "gid": 664,
+  "name": "Binge Eater",
+  "icon": "icons/collectibles_664_bingeeater.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Full health · Item pedestals cycle between their item and a food item · Picking up a food item grants: · Heal 2 hearts · ↑ Temporary +3.6 damage · ↑ 2 permanent stat ups (depending on the food) · ↓ -0.03 speed"
+ },
+ {
+  "id": "guppyseye",
+  "gid": 665,
+  "name": "Guppy's Eye",
+  "icon": "icons/collectibles_665_guppyseye.png",
+  "quote": "",
+  "desc": "Reveals the contents of chests, sacks, shopkeepers, and fireplaces before they're opened or destroyed"
+ },
+ {
+  "id": "strawman",
+  "gid": 667,
+  "name": "Strawman",
+  "icon": "icons/collectibles_667_strawman.png",
+  "quote": "",
+  "desc": "+1 Bomb · Spawns Keeper as a second character · When he dies, spawns blue spiders and permanently removes Strawman and any item that he has picked up from the inventory · Devil Room items cost coins while Strawman is alive · Strawman can pick up story items"
+ },
+ {
+  "id": "dadsnote",
+  "gid": 668,
+  "name": "Dad's Note",
+  "icon": "icons/collectibles_668_dadsnote.png",
+  "quote": "",
+  "desc": "Begins the Ascent · Trinkets left in previous Treasure or Boss Rooms turn into Cracked Keys"
+ },
+ {
+  "id": "sausage",
+  "gid": 669,
+  "name": "Sausage",
+  "icon": "icons/collectibles_669_sausage.png",
+  "quote": "",
+  "desc": "↑ +1 Health · ↑ +0.2 Speed · ↑ +0.5 Tears · ↑ +0.5 Damage · ↑ +2.5 Range · ↑ +0.16 Shot speed · ↑ +1 Luck · Full health · ↑ +6.9% Devil/Angel Room chance · ↑ +6.9% Planetarium chance"
+ },
+ {
+  "id": "options",
+  "gid": 670,
+  "name": "Options?",
+  "icon": "icons/collectibles_670_options.png",
+  "quote": "",
+  "desc": "Allows Isaac to choose from two different room clear rewards"
+ },
+ {
+  "id": "candyheart",
+  "gid": 671,
+  "name": "Candy Heart",
+  "icon": "icons/collectibles_671_candyheart.png",
+  "quote": "",
+  "desc": "↑ Healing with Red Hearts grants random permanent stat ups · Spawns a Red Heart"
+ },
+ {
+  "id": "poundofflesh",
+  "gid": 672,
+  "name": "A Pound of Flesh",
+  "icon": "icons/collectibles_672_poundofflesh.png",
+  "quote": "",
+  "desc": "Devil Room items cost coins · Shop items cost hearts · Consumables in Shops are surrounded by spikes"
+ },
+ {
+  "id": "redemption",
+  "gid": 673,
+  "name": "Redemption",
+  "icon": "icons/collectibles_673_redemption.png",
+  "quote": "",
+  "desc": "Entering a new floor after visiting a Devil Room and not taking any item/pickup grants: · ↑ +1 Damage · +1 Soul Heart"
+ },
+ {
+  "id": "spiritshackles",
+  "gid": 674,
+  "name": "Spirit Shackles",
+  "icon": "icons/collectibles_674_spiritshackles.png",
+  "quote": "",
+  "desc": "Taking fatal damage transforms Isaac into a ghost chained to his dead body and allows him to continue to fight with half a heart · If the ghost survives, Isaac revives after 10 seconds · Must be recharged by picking up a Soul Heart"
+ },
+ {
+  "id": "crackedorb",
+  "gid": 675,
+  "name": "Cracked Orb",
+  "icon": "icons/collectibles_675_crackedorb.png",
+  "quote": "",
+  "desc": "Taking damage: · Unlocks all locked doors in the room · Reveals a random room on the map · Destroys all tinted and crawlspace rocks"
+ },
+ {
+  "id": "emptyheart",
+  "gid": 676,
+  "name": "Empty Heart",
+  "icon": "icons/collectibles_676_emptyheart.png",
+  "quote": "",
+  "desc": "+1 Empty heart container when at 1 Red Heart or less at the start of a new floor"
+ },
+ {
+  "id": "astralprojection",
+  "gid": 677,
+  "name": "Astral Projection",
+  "icon": "icons/collectibles_677_astralprojection.png",
+  "quote": "",
+  "desc": "Taking damage in an uncleared room grants for the fight: · Spectral tears · Flight · Negates the next damage taken · Stops time for 2 seconds · Greatly increases speed and fire rate for 2 seconds"
+ },
+ {
+  "id": "csection",
+  "gid": 678,
+  "name": "C Section",
+  "icon": "icons/collectibles_678_csection.png",
+  "quote": "",
+  "desc": "Replaces Isaac's tears with a charge attack that shoots homing, spectral fetus tears · Fetus tears deal about 2.8x Isaac's damage per second"
+ },
+ {
+  "id": "lilabaddon",
+  "gid": 679,
+  "name": "Lil Abaddon",
+  "icon": "icons/collectibles_679_lilabaddon.png",
+  "quote": "",
+  "desc": "Familiar that charges and unleashes a Maw of the Void circle · It deals 52.5 damage over 1 second"
+ },
+ {
+  "id": "montezumasrevenge",
+  "gid": 680,
+  "name": "Montezuma's Revenge",
+  "icon": "icons/collectibles_680_montezumasrevenge.png",
+  "quote": "",
+  "desc": "Firing charges up a short-ranged high damage backwards beam · Does not replace Isaac's tears"
+ },
+ {
+  "id": "lilportal",
+  "gid": 681,
+  "name": "Lil Portal",
+  "icon": "icons/collectibles_681_lilportal.png",
+  "quote": "",
+  "desc": "Deals contact damage and flies forward · Consumes pickups in its path · Each pickup consumed increases its size, damage, and spawns a blue fly · Consuming four pickups spawns a portal to an unexplored room"
+ },
+ {
+  "id": "wormfriend",
+  "gid": 682,
+  "name": "Worm Friend",
+  "icon": "icons/collectibles_682_wormfriend.png",
+  "quote": "",
+  "desc": "Sometimes bursts out of the ground and grabs an enemy · Grabbed enemies take 8 damage per second, are slowed and cannot move"
+ },
+ {
+  "id": "bonespurs",
+  "gid": 683,
+  "name": "Bone Spurs",
+  "icon": "icons/collectibles_683_bonespurs.png",
+  "quote": "",
+  "desc": "Enemies spawn bone shards on death · Bones block projectiles and deal contact damage"
+ },
+ {
+  "id": "hungrysoul",
+  "gid": 684,
+  "name": "Hungry Soul",
+  "icon": "icons/collectibles_684_hungrysoul.png",
+  "quote": "",
+  "desc": "Killing an enemy has a 33% chance to spawn a ghost · Ghosts chase enemies, deal contact damage and explode after 5 seconds · Isaac doesn't take damage from the explosion"
+ },
+ {
+  "id": "jarofwisps",
+  "gid": 685,
+  "name": "Jar of Wisps",
+  "icon": "icons/collectibles_685_jarofwisps.png",
+  "quote": "",
+  "desc": "Spawns a random wisp · Spawns one additional wisp with each use, up to 12"
+ },
+ {
+  "id": "soullocket",
+  "gid": 686,
+  "name": "Soul Locket",
+  "icon": "icons/collectibles_686_soullocket.png",
+  "quote": "",
+  "desc": "↑ Picking up Soul Hearts grants random permanent stat ups · Spawns a Soul Heart"
+ },
+ {
+  "id": "friendfinder",
+  "gid": 687,
+  "name": "Friend Finder",
+  "icon": "icons/collectibles_687_friendfinder.png",
+  "quote": "",
+  "desc": "Spawns a random friendly monster that mimics Isaac's movements and attacks"
+ },
+ {
+  "id": "innerchild",
+  "gid": 688,
+  "name": "Inner Child",
+  "icon": "icons/collectibles_688_innerchild.png",
+  "quote": "",
+  "desc": "+1 Life · Upon death: · Respawns Isaac in the same room with half a heart · ↑ +0.2 Speed · ↑ Massive size down"
+ },
+ {
+  "id": "glitchedcrown",
+  "gid": 689,
+  "name": "Glitched Crown",
+  "icon": "icons/collectibles_689_glitchedcrown.png",
+  "quote": "",
+  "desc": "Item pedestals quickly cycle between 5 random items"
+ },
+ {
+  "id": "bellyjelly",
+  "gid": 690,
+  "name": "Belly Jelly",
+  "icon": "icons/collectibles_690_bellyjelly.png",
+  "quote": "",
+  "desc": "Enemies bounce off of Isaac · 50% chance to negate contact damage · 50% chance to deflect enemy projectiles"
+ },
+ {
+  "id": "sacredorb",
+  "gid": 691,
+  "name": "Sacred Orb",
+  "icon": "icons/collectibles_691_sacredorb.png",
+  "quote": "",
+  "desc": "Prevents Quality / items from spawning · Quality items have a 33% chance to be rerolled"
+ },
+ {
+  "id": "sanguinebond",
+  "gid": 692,
+  "name": "Sanguine Bond",
+  "icon": "icons/collectibles_692_sanguinebond.png",
+  "quote": "",
+  "desc": "Spawns a set of spikes in the Devil Room · Taking damage on the spikes grants: · 35%: Nothing · 33%: ↑ +0.5 Damage · 15%: 6 pennies · 10%: 2 Black Hearts · 5%: Random Devil item · 2%: Leviathan transformation"
+ },
+ {
+  "id": "theswarm",
+  "gid": 693,
+  "name": "The Swarm",
+  "icon": "icons/collectibles_693_theswarm.png",
+  "quote": "",
+  "desc": "Grants 8 orbital flies · Clearing a room spawns a new fly · Flies turn into blue flies after blocking a shot"
+ },
+ {
+  "id": "heartbreak",
+  "gid": 694,
+  "name": "Heartbreak",
+  "icon": "icons/collectibles_694_heartbreak.png",
+  "quote": "",
+  "desc": "↑ +0.25 Damage for each Broken Heart · +3 Broken Hearts · Every fatal hit grants +2 Broken Hearts · Isaac dies at 12 Broken Hearts"
+ },
+ {
+  "id": "bloodygust",
+  "gid": 695,
+  "name": "Bloody Gust",
+  "icon": "icons/collectibles_695_bloodygust.png",
+  "quote": "",
+  "desc": "When taking damage, receive for the floor: · ↑ Speed up · ↑ Fire rate up · Caps at +1.02 speed and +3 fire rate"
+ },
+ {
+  "id": "salvation",
+  "gid": 696,
+  "name": "Salvation",
+  "icon": "icons/collectibles_696_salvation.png",
+  "quote": "",
+  "desc": "Isaac is surrounded by a halo · Enemies that stand in the halo for too long are hit by a cross-shaped beam of light · Taking damage increases the size of the halo for the floor"
+ },
+ {
+  "id": "vanishingtwin",
+  "gid": 697,
+  "name": "Vanishing Twin",
+  "icon": "icons/collectibles_697_vanishingtwin.png",
+  "quote": "",
+  "desc": "Entering a boss room spawns a clone of the boss · Defeating the clone spawns an extra item · The clone is slower and has 75% health"
+ },
+ {
+  "id": "twistedpair",
+  "gid": 698,
+  "name": "Twisted Pair",
+  "icon": "icons/collectibles_698_twistedpair.png",
+  "quote": "",
+  "desc": "Two familiars that shoot tears with the same stats and effects as Isaac · They deal 37.5% of Isaac's damage"
+ },
+ {
+  "id": "azazelsrage",
+  "gid": 699,
+  "name": "Azazel's Rage",
+  "icon": "icons/collectibles_699_azazelsrage.png",
+  "quote": "",
+  "desc": "Clearing 4 rooms fires a large Brimstone beam upon entering the next room"
+ },
+ {
+  "id": "echochamber",
+  "gid": 700,
+  "name": "Echo Chamber",
+  "icon": "icons/collectibles_700_echochamber.png",
+  "quote": "",
+  "desc": "Using a rune, card or pill also uses a copy of the last 3 runes/cards/pills used after picking up Echo Chamber"
+ },
+ {
+  "id": "isaacstomb",
+  "gid": 701,
+  "name": "Isaac's Tomb",
+  "icon": "icons/collectibles_701_isaacstomb.png",
+  "quote": "",
+  "desc": "Spawns an Old Chest at the start of every floor · Old Chests require a key to unlock and can contain Soul Hearts, trinkets or Mom, Dad and Angel items"
+ },
+ {
+  "id": "bloodsoul",
+  "gid": 702,
+  "name": "Vengeful Spirit",
+  "icon": "icons/collectibles_702_bloodsoul.png",
+  "quote": "",
+  "desc": "Taking damage spawns an orbital wisp · Wisps shoot tears, do not block shots and disappear on the next floor · Caps at 6 wisps"
+ },
+ {
+  "id": "esaujr",
+  "gid": 703,
+  "name": "Esau Jr.",
+  "icon": "icons/collectibles_703_esaujr.png",
+  "quote": "",
+  "desc": "Swaps between the current character and Esau Jr. · Esau Jr. has 3 Black Hearts, +2 Damage, flight, and random items equal to the number of items the player has the first time this item is used · Characters have independent items and health · Dying as either character ends the run"
+ },
+ {
+  "id": "berserk",
+  "gid": 704,
+  "name": "Berserk!",
+  "icon": "icons/collectibles_704_berserk.png",
+  "quote": "",
+  "desc": "Charges with damage dealt · Receive for 5 seconds: · ↑ +0.4 Speed · ↓ x0.5 Fire rate multiplier · ↑ +2 Fire rate · ↑ +3 Damage · Restricts attacks to a melee that reflects shots · Each kill increases the duration by 1 second and grants brief invincibility"
+ },
+ {
+  "id": "darkarts",
+  "gid": 705,
+  "name": "Dark Arts",
+  "icon": "icons/collectibles_705_darkarts.png",
+  "quote": "",
+  "desc": "Receive for 1 second (or until shooting):↑ +1 Speed · Isaac can pass through enemies/projectiles and paralyzes them · When the effect ends, damages paralyzed enemies, removes paralyzed projectiles and creates a blast at Isaac's location · The attacks and blast are more powerful the more enemies/projectiles have been hit"
+ },
+ {
+  "id": "abyss",
+  "gid": 706,
+  "name": "Abyss",
+  "icon": "icons/collectibles_706_abyss.png",
+  "quote": "",
+  "desc": "Consumes all item pedestals in the room and spawns a locust familiar for each one · Locusts deal Isaac's damage 2-3 times an attack · Some items spawn a special locust when consumed"
+ },
+ {
+  "id": "supper",
+  "gid": 707,
+  "name": "Supper",
+  "icon": "icons/collectibles_707_supper.png",
+  "quote": "",
+  "desc": "↑ +1 Health · Heals 1 heart"
+ },
+ {
+  "id": "stapler",
+  "gid": 708,
+  "name": "Stapler",
+  "icon": "icons/collectibles_708_stapler.png",
+  "quote": "",
+  "desc": "↑ +1 Damage · All of Isaac's tears are shot from the right eye"
+ },
+ {
+  "id": "suplex",
+  "gid": 709,
+  "name": "Suplex!",
+  "icon": "icons/collectibles_709_suplex.png",
+  "quote": "",
+  "desc": "Isaac dashes in the direction he moves · Dashing into an enemy or boss picks it up and slams it into the ground · Slam deals damage and spawns rock waves based on Isaac's size · You're invincible during the dash and slam"
+ },
+ {
+  "id": "bagofcrafting",
+  "gid": 710,
+  "name": "Bag of Crafting",
+  "icon": "icons/collectibles_710_bagofcrafting.png",
+  "quote": "",
+  "desc": "Collects up to 8 pickups which cannot be dropped · Using the item with 8 pickups in the bag crafts an item · Item quality is based on the quality of the pickups"
+ },
+ {
+  "id": "flip",
+  "gid": 711,
+  "name": "Flip",
+  "icon": "icons/collectibles_711_flip.png",
+  "quote": "",
+  "desc": "Entering a room with item pedestals displays a ghostly second item on the pedestals · Using the item flips the real and ghostly item · Using Flip after taking the first item allows Isaac to pick up the other item · Ghostly items alone on pedestals disappear after leaving the room"
+ },
+ {
+  "id": "lemegeton",
+  "gid": 712,
+  "name": "Lemegeton",
+  "icon": "icons/collectibles_712_lemegeton.png",
+  "quote": "",
+  "desc": "Spawns an orbital that grants a random item's effect · The items have a 25% chance to be from the current room's item pool and 75% chance to be from a random item pool"
+ },
+ {
+  "id": "sumptorium",
+  "gid": 713,
+  "name": "Sumptorium",
+  "icon": "icons/collectibles_713_sumptorium.png",
+  "quote": "",
+  "desc": "Removes half a heart and creates a clot · Clots copy Isaac's tears · Each type of heart generates a clot with different HP, damage and tear effect"
+ },
+ {
+  "id": "recall",
+  "gid": 714,
+  "name": "Recall",
+  "icon": "icons/collectibles_714_recall.png",
+  "quote": "",
+  "desc": "Retrieves the Forgotten's body from any distance · The Soul is invincible while the Forgotten is returning"
+ },
+ {
+  "id": "hold",
+  "gid": 715,
+  "name": "Hold",
+  "icon": "icons/collectibles_715_hold.png",
+  "quote": "",
+  "desc": "Using the item when empty stores the next poop inside · Using the item with a poop inside uses that poop"
+ },
+ {
+  "id": "keeperssack",
+  "gid": 716,
+  "name": "Keeper's Sack",
+  "icon": "icons/collectibles_716_keeperssack.png",
+  "quote": "",
+  "desc": "Spawns 3 coins and 1 key · Spending 3 coins grants either: · ↑ +0.03 Speed · ↑ +0.5 Damage · ↑ +0.25 Range"
+ },
+ {
+  "id": "keeperskin",
+  "gid": 717,
+  "name": "Keeper's Kin",
+  "icon": "icons/collectibles_717_keeperskin.png",
+  "quote": "",
+  "desc": "Rocks and other obstacles spawn 2 blue spiders when destroyed · Rocks can occasionally spawn blue spiders in hostile rooms"
+ },
+ {
+  "id": "keepersbox",
+  "gid": 719,
+  "name": "Keeper's Box",
+  "icon": "icons/collectibles_719_keepersbox.png",
+  "quote": "",
+  "desc": "Spawns a random Shop item/pickup to be purchased"
+ },
+ {
+  "id": "everythingjar",
+  "gid": 720,
+  "name": "Everything Jar",
+  "icon": "icons/collectibles_720_everythingjar.png",
+  "quote": "",
+  "desc": "Spawns pickups based on the number of charges · Charge Rewards: · 1: 2: 3: 4: · 5: 6: 7: 8: · 9: 10: 11: · Triggers a powerful random effect at 12 charges"
+ },
+ {
+  "id": "tmtrainer",
+  "gid": 721,
+  "name": "TMTRAINER",
+  "icon": "icons/collectibles_721_tmtrainer.png",
+  "quote": "",
+  "desc": "Causes all future items to be glitched · Glitched items have completely random effects"
+ },
+ {
+  "id": "animasola",
+  "gid": 722,
+  "name": "Anima Sola",
+  "icon": "icons/collectibles_722_animasola.png",
+  "quote": "",
+  "desc": "Chains down the nearest enemy for 5 seconds · Chained enemies cannot move or attack"
+ },
+ {
+  "id": "spindowndice",
+  "gid": 723,
+  "name": "Spindown Dice",
+  "icon": "icons/collectibles_723_spindowndice.png",
+  "quote": "",
+  "desc": "Rerolls all items in the room by decreasing their internal ID by one"
+ },
+ {
+  "id": "hypercoagulation",
+  "gid": 724,
+  "name": "Hypercoagulation",
+  "icon": "icons/collectibles_724_hypercoagulation.png",
+  "quote": "",
+  "desc": "Taking damage drops a half or full Red Heart depending on how much Isaac lost · The hearts launch out and despawn after 1.5 seconds"
+ },
+ {
+  "id": "ibs",
+  "gid": 725,
+  "name": "IBS",
+  "icon": "icons/collectibles_725_ibs.png",
+  "quote": "",
+  "desc": "Dealing enough damage causes Isaac to flash red · Releasing the fire button while Isaac is flashing either: · Throws a random poop · Creates buffing creep · Farts a poison cloud · Spawns 5 live bombs"
+ },
+ {
+  "id": "hemoptysis",
+  "gid": 726,
+  "name": "Hemoptysis",
+  "icon": "icons/collectibles_726_hemoptysis.png",
+  "quote": "",
+  "desc": "Double-tapping a fire button makes Isaac sneeze blood · The sneeze deals 1.5x Isaac's damage · 1 second cooldown · Affected enemies take extra damage from Brimstone beams"
+ },
+ {
+  "id": "ghostbombs",
+  "gid": 727,
+  "name": "Ghost Bombs",
+  "icon": "icons/collectibles_727_ghostbombs.png",
+  "quote": "",
+  "desc": "+5 Bombs · Isaac's bombs spawn ghosts that chase enemies · Ghosts deal 2x Isaac's damage per second and explode after 10 seconds"
+ },
+ {
+  "id": "gello",
+  "gid": 728,
+  "name": "Gello",
+  "icon": "icons/collectibles_728_gello.png",
+  "quote": "",
+  "desc": "A demon familiar bursts out of Isaac for the room · The demon shoots towards the nearest enemy, mimicing Isaac's tears, stats and effects · Its tears deal 75% of Isaac's damage"
+ },
+ {
+  "id": "decapattack",
+  "gid": 729,
+  "name": "Decap Attack",
+  "icon": "icons/collectibles_729_decapattack.png",
+  "quote": "",
+  "desc": "Throws Isaac's head in a direction · The head deals contact damage and shoots tears from where it lands · Using the item again or stepping on the head reattaches it"
+ },
+ {
+  "id": "glasseye",
+  "gid": 730,
+  "name": "Glass Eye",
+  "icon": "icons/collectibles_730_glasseye.png",
+  "quote": "",
+  "desc": "↑ +0.75 Damage · ↑ +1 Luck"
+ },
+ {
+  "id": "stye",
+  "gid": 731,
+  "name": "Stye",
+  "icon": "icons/collectibles_731_stye.png",
+  "quote": "",
+  "desc": "↑ x1.28 Damage multiplier for the right eye · ↑ +6.5 Range for the right eye · ↓ -0.3 Shot speed for the right eye"
+ },
+ {
+  "id": "momsring",
+  "gid": 732,
+  "name": "Mom's Ring",
+  "icon": "icons/collectibles_732_momsring.png",
+  "quote": "",
+  "desc": "↑ +1 Damage · Spawns a random rune or soul stone"
+ }
 ]
